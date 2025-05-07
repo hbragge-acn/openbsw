@@ -7,8 +7,8 @@ set(CMAKE_CXX_FLAGS
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} \
 --specs=nano.specs -specs=nosys.specs")
 
-set(CMAKE_C_COMPILER arm-none-eabi-gcc)
-set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
-set(CMAKE_ASM_COMPILER arm-none-eabi-as)
-set(CMAKE_LINKER arm-none-eabi-g++)
-set(CMAKE_AR arm-none-eabi-ar)
+set(CMAKE_C_COMPILER "$ENV{HOME}/bin/arm-gcc/bin/arm-none-eabi-gcc")
+set(CMAKE_CXX_COMPILER "$ENV{HOME}/bin/arm-gcc/bin/arm-none-eabi-g++")
+set(CMAKE_ASM_COMPILER "$ENV{HOME}/bin/arm-gcc/bin/arm-none-eabi-as")
+set(CMAKE_LINKER "$ENV{HOME}/bin/arm-gcc/bin/arm-none-eabi-g++")
+set(CMAKE_AR "$ENV{HOME}/bin/arm-gcc/bin/arm-none-eabi-ar")
