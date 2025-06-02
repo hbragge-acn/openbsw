@@ -2,10 +2,9 @@
 
 #pragma once
 
-#include "lifecycle/AsyncLifecycleComponent.h"
-
 #include <async/Async.h>
 #include <bsp/eeprom/IEepromDriver.h>
+#include <lifecycle/AsyncLifecycleComponent.h>
 #include <storage/EepStorage.h>
 #include <storage/FeeStorage.h>
 #include <storage/LinkedBuffer.h>
