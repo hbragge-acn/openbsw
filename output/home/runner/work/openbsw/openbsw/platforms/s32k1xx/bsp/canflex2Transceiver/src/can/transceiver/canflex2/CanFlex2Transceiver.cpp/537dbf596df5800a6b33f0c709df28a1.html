@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../../../../../s32k1xx.html">s32k1xx</a></li>
+        
+        <li><a href="../../../../../../../bsp.html">bsp</a></li>
+        
+        <li><a href="../../../../../../canflex2Transceiver.html">canflex2Transceiver</a></li>
+        
+        <li><a href="../../../../../src.html">src</a></li>
+        
+        <li><a href="../../../../can.html">can</a></li>
+        
+        <li><a href="../../../transceiver.html">transceiver</a></li>
+        
+        <li ><a href="../../canflex2.html">canflex2</a>
+            </li>
+
+        
+        <li class="active"><a href="../CanFlex2Transceiver.cpp.html">CanFlex2Transceiver.cpp</a>:84
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">bios::CanFlex2Transceiver::write(can::CANFrame const&amp;, can::ICANFrameSentListener*)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0001dca0</td>
+                <td>
+    
+    
+</td>
+                <td>32 (static)</td>
+                <td>396</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (2)</th>
+                <td colspan="5">
+                
+                    <a href="./e3bc184628778d0f73fa86fb51eb24df.html">bios::CanFlex2Transceiver::write(can::CANFrame const&amp;) (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./edf0de080bd70ce4243738ed989937cb.html">bios::CanFlex2Transceiver::write(can::CANFrame const&amp;, can::ICANFrameSentListener&amp;) (4)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (5,
+                            <span title="sum of used bytes by all callees">
+                            Σ=584
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../bspFlexCan/src/can/FlexCANDevice.cpp/72ef0647a5d920be2f28554d857f39e1.html">bios::FlexCANDevice::getTransmitBuffer(can::CANFrame const&amp;, bool) (176)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../bspFlexCan/src/can/FlexCANDevice.cpp/de9afb3f00ea1ccea1910cd447de9d33.html">bios::FlexCANDevice::transmit(can::CANFrame const&amp;, unsigned char, bool) (256)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../libs/bsw/cpp2can/src/can/transceiver/AbstractCANTransceiver.cpp/0dcca8866f0480fa593c276289f0eafd.html">can::AbstractCANTransceiver::notifySentListeners(can::CANFrame const&amp;) (60)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../executables/referenceApp/configuration/common/src/busid/BusId.cpp/782471e4f443e8ce061ae5f22d3d51a9.html">common::busid::BusIdTraits::getName(unsigned char) (36)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../libs/bsw/util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...) (56)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./7cb8fadcdab70f36cecf385ce3259a07.html">bios::CanFlex2Transceiver::CanFlex2Transceiver(unsigned char, unsigned char, bios::FlexCANDevice::Config const&amp;, bios::CanPhy&amp;, bios::IEcuPowerStateController&amp;) (212)</a></pre>
+    
+
+    <pre>
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dca0:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+
+       1dca4:	f890 5128 	ldrb.w	r5, [r0, #296]	; 0x128
+
+       1dca8:	2d04      	cmp	r5, #4
+
+       1dcaa:	b082      	sub	sp, #8
+
+       1dcac:	4604      	mov	r4, r0
+
+       1dcae:	460e      	mov	r6, r1
+
+       1dcb0:	f000 8094 	beq.w	1dddc <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0x13c>
+
+       1dcb4:	2d00      	cmp	r5, #0
+
+       1dcb6:	d055      	beq.n	1dd64 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xc4>
+
+       1dcb8:	4617      	mov	r7, r2
+
+    getMachineStateRegisterValueAndSuspendAllInterrupts():
+
+       1dcba:	f3ef 8810 	mrs	r8, PRIMASK
+
+       1dcbe:	b672      	cpsid	i
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dcc0:	2a00      	cmp	r2, #0
+
+       1dcc2:	d070      	beq.n	1dda6 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0x106>
+
+    _ZNK3etl10deque_base4fullEv():
+
+       1dcc4:	f8d0 540c 	ldr.w	r5, [r0, #1036]	; 0x40c
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dcc8:	f8d0 3410 	ldr.w	r3, [r0, #1040]	; 0x410
+
+       1dccc:	429d      	cmp	r5, r3
+
+       1dcce:	d053      	beq.n	1dd78 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xd8>
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dcd0:	f8d0 3428 	ldr.w	r3, [r0, #1064]	; 0x428
+
+    _ZNK3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratordeEv():
+
+       1dcd4:	f8d0 242c 	ldr.w	r2, [r0, #1068]	; 0x42c
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dcd8:	6899      	ldr	r1, [r3, #8]
+
+    _ZNK3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratordeEv():
+
+       1dcda:	f8d0 3424 	ldr.w	r3, [r0, #1060]	; 0x424
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dcde:	3901      	subs	r1, #1
+
+    _ZN4bios19CanFlex2Transceiver17TxJobWithCallbackC4ERN3can21ICANFrameSentListenerERKNS2_8CANFrameE():
+
+       1dce0:	f842 7033 	str.w	r7, [r2, r3, lsl #3]
+
+    _ZNK3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratordeEv():
+
+       1dce4:	eb02 02c3 	add.w	r2, r2, r3, lsl #3
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dce8:	428b      	cmp	r3, r1
+
+    _ZN4bios19CanFlex2Transceiver17TxJobWithCallbackC4ERN3can21ICANFrameSentListenerERKNS2_8CANFrameE():
+
+       1dcea:	6056      	str	r6, [r2, #4]
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dcec:	d054      	beq.n	1dd98 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xf8>
+
+       1dcee:	3301      	adds	r3, #1
+
+       1dcf0:	f8c0 3424 	str.w	r3, [r0, #1060]	; 0x424
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE12emplace_backIJRN3can21ICANFrameSentListenerERKNS6_8CANFrameEEEERS3_DpOT_():
+
+       1dcf4:	1c6b      	adds	r3, r5, #1
+
+       1dcf6:	f8c0 340c 	str.w	r3, [r0, #1036]	; 0x40c
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dcfa:	bb65      	cbnz	r5, 1dd56 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xb6>
+
+       1dcfc:	f504 759c 	add.w	r5, r4, #312	; 0x138
+
+       1dd00:	2201      	movs	r2, #1
+
+       1dd02:	4631      	mov	r1, r6
+
+       1dd04:	4628      	mov	r0, r5
+
+       1dd06:	f000 fb1d 	bl	1e344 <<a href="../../../../../../bspFlexCan/src/can/FlexCANDevice.cpp/72ef0647a5d920be2f28554d857f39e1.html">bios::FlexCANDevice::getTransmitBuffer(can::CANFrame const&, bool)</a>>
+
+       1dd0a:	28ff      	cmp	r0, #255	; 0xff
+
+       1dd0c:	4602      	mov	r2, r0
+
+       1dd0e:	d041      	beq.n	1dd94 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xf4>
+
+       1dd10:	4628      	mov	r0, r5
+
+       1dd12:	2301      	movs	r3, #1
+
+       1dd14:	4631      	mov	r1, r6
+
+       1dd16:	f000 fb6d 	bl	1e3f4 <<a href="../../../../../../bspFlexCan/src/can/FlexCANDevice.cpp/de9afb3f00ea1ccea1910cd447de9d33.html">bios::FlexCANDevice::transmit(can::CANFrame const&, unsigned char, bool)</a>>
+
+       1dd1a:	b1e0      	cbz	r0, 1dd56 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xb6>
+
+       1dd1c:	2501      	movs	r5, #1
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dd1e:	f8d4 241c 	ldr.w	r2, [r4, #1052]	; 0x41c
+
+    _ZNK3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratordeEv():
+
+       1dd22:	f8d4 3418 	ldr.w	r3, [r4, #1048]	; 0x418
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dd26:	6892      	ldr	r2, [r2, #8]
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE21destroy_element_frontEv():
+
+       1dd28:	f8d4 140c 	ldr.w	r1, [r4, #1036]	; 0x40c
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dd2c:	3a01      	subs	r2, #1
+
+       1dd2e:	4293      	cmp	r3, r2
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE21destroy_element_frontEv():
+
+       1dd30:	f101 31ff 	add.w	r1, r1, #4294967295	; 0xffffffff
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dd34:	bf14      	ite	ne
+
+       1dd36:	3301      	addne	r3, #1
+
+       1dd38:	2300      	moveq	r3, #0
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE21destroy_element_frontEv():
+
+       1dd3a:	f8c4 140c 	str.w	r1, [r4, #1036]	; 0x40c
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dd3e:	f8c4 3418 	str.w	r3, [r4, #1048]	; 0x418
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dd42:	f388 8810 	msr	PRIMASK, r8
+
+    _ZN4bios19CanFlex2Transceiver28notifyRegisteredSentListenerERKN3can8CANFrameE():
+
+       1dd46:	4620      	mov	r0, r4
+
+       1dd48:	4631      	mov	r1, r6
+
+       1dd4a:	f004 faf7 	bl	2233c <<a href="../../../../../../../../../libs/bsw/cpp2can/src/can/transceiver/AbstractCANTransceiver.cpp/0dcca8866f0480fa593c276289f0eafd.html">can::AbstractCANTransceiver::notifySentListeners(can::CANFrame const&)</a>>
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dd4e:	4628      	mov	r0, r5
+
+       1dd50:	b002      	add	sp, #8
+
+       1dd52:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+       1dd56:	f388 8810 	msr	PRIMASK, r8
+
+    resumeAllInterrupts():
+
+       1dd5a:	2500      	movs	r5, #0
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dd5c:	4628      	mov	r0, r5
+
+       1dd5e:	b002      	add	sp, #8
+
+       1dd60:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+       1dd64:	f8b0 3402 	ldrh.w	r3, [r0, #1026]	; 0x402
+
+       1dd68:	2503      	movs	r5, #3
+
+       1dd6a:	3301      	adds	r3, #1
+
+       1dd6c:	f8a0 3402 	strh.w	r3, [r0, #1026]	; 0x402
+
+       1dd70:	4628      	mov	r0, r5
+
+       1dd72:	b002      	add	sp, #8
+
+       1dd74:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+       1dd78:	f8d0 3404 	ldr.w	r3, [r0, #1028]	; 0x404
+
+       1dd7c:	3301      	adds	r3, #1
+
+       1dd7e:	f8c0 3404 	str.w	r3, [r0, #1028]	; 0x404
+
+       1dd82:	f388 8810 	msr	PRIMASK, r8
+
+    _ZN4bios19CanFlex2Transceiver28notifyRegisteredSentListenerERKN3can8CANFrameE():
+
+       1dd86:	f004 fad9 	bl	2233c <<a href="../../../../../../../../../libs/bsw/cpp2can/src/can/transceiver/AbstractCANTransceiver.cpp/0dcca8866f0480fa593c276289f0eafd.html">can::AbstractCANTransceiver::notifySentListeners(can::CANFrame const&)</a>>
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dd8a:	2502      	movs	r5, #2
+
+       1dd8c:	4628      	mov	r0, r5
+
+       1dd8e:	b002      	add	sp, #8
+
+       1dd90:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+       1dd94:	2502      	movs	r5, #2
+
+       1dd96:	e7c2      	b.n	1dd1e <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0x7e>
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratorppEv():
+
+       1dd98:	2300      	movs	r3, #0
+
+       1dd9a:	f8c0 3424 	str.w	r3, [r0, #1060]	; 0x424
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE12emplace_backIJRN3can21ICANFrameSentListenerERKNS6_8CANFrameEEEERS3_DpOT_():
+
+       1dd9e:	1c6b      	adds	r3, r5, #1
+
+       1dda0:	f8c0 340c 	str.w	r3, [r0, #1036]	; 0x40c
+
+    _ZN3etl6idequeIN4bios19CanFlex2Transceiver17TxJobWithCallbackEE8iteratormIEi():
+
+       1dda4:	e7a9      	b.n	1dcfa <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0x5a>
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dda6:	f500 759c 	add.w	r5, r0, #312	; 0x138
+
+       1ddaa:	4628      	mov	r0, r5
+
+       1ddac:	f000 faca 	bl	1e344 <<a href="../../../../../../bspFlexCan/src/can/FlexCANDevice.cpp/72ef0647a5d920be2f28554d857f39e1.html">bios::FlexCANDevice::getTransmitBuffer(can::CANFrame const&, bool)</a>>
+
+       1ddb0:	28ff      	cmp	r0, #255	; 0xff
+
+       1ddb2:	4602      	mov	r2, r0
+
+       1ddb4:	d029      	beq.n	1de0a <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0x16a>
+
+       1ddb6:	4628      	mov	r0, r5
+
+       1ddb8:	463b      	mov	r3, r7
+
+       1ddba:	4631      	mov	r1, r6
+
+       1ddbc:	f000 fb1a 	bl	1e3f4 <<a href="../../../../../../bspFlexCan/src/can/FlexCANDevice.cpp/de9afb3f00ea1ccea1910cd447de9d33.html">bios::FlexCANDevice::transmit(can::CANFrame const&, unsigned char, bool)</a>>
+
+       1ddc0:	4605      	mov	r5, r0
+
+       1ddc2:	b9d0      	cbnz	r0, 1ddfa <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0x15a>
+
+       1ddc4:	f8d4 3408 	ldr.w	r3, [r4, #1032]	; 0x408
+
+       1ddc8:	3301      	adds	r3, #1
+
+       1ddca:	f8c4 3408 	str.w	r3, [r4, #1032]	; 0x408
+
+       1ddce:	f388 8810 	msr	PRIMASK, r8
+
+    _ZN4bios19CanFlex2Transceiver28notifyRegisteredSentListenerERKN3can8CANFrameE():
+
+       1ddd2:	4631      	mov	r1, r6
+
+       1ddd4:	4620      	mov	r0, r4
+
+       1ddd6:	f004 fab1 	bl	2233c <<a href="../../../../../../../../../libs/bsw/cpp2can/src/can/transceiver/AbstractCANTransceiver.cpp/0dcca8866f0480fa593c276289f0eafd.html">can::AbstractCANTransceiver::notifySentListeners(can::CANFrame const&)</a>>
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1ddda:	e7bf      	b.n	1dd5c <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xbc>
+
+       1dddc:	4b11      	ldr	r3, [pc, #68]	; (1de24 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0x184>)
+
+    _ZNK3can8CANFrame5getIdEv():
+
+       1ddde:	680a      	ldr	r2, [r1, #0]
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dde0:	f890 0129 	ldrb.w	r0, [r0, #297]	; 0x129
+
+       1dde4:	781e      	ldrb	r6, [r3, #0]
+
+    _ZNK3can8CANFrame5getIdEv():
+
+       1dde6:	9201      	str	r2, [sp, #4]
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1dde8:	f004 fd40 	bl	2286c <<a href="../../../../../../../../../executables/referenceApp/configuration/common/src/busid/BusId.cpp/782471e4f443e8ce061ae5f22d3d51a9.html">common::busid::BusIdTraits::getName(unsigned char)</a>>
+
+       1ddec:	9a01      	ldr	r2, [sp, #4]
+
+       1ddee:	490e      	ldr	r1, [pc, #56]	; (1de28 <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0x188>)
+
+       1ddf0:	4603      	mov	r3, r0
+
+       1ddf2:	4630      	mov	r0, r6
+
+       1ddf4:	f7e5 f9fc 	bl	31f0 <<a href="../../../../../../../../../libs/bsw/util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html">util::logger::Logger::warn(unsigned char, char const*, ...)</a>>
+
+       1ddf8:	e7b0      	b.n	1dd5c <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xbc>
+
+       1ddfa:	f388 8810 	msr	PRIMASK, r8
+
+    _ZN4bios19CanFlex2Transceiver28notifyRegisteredSentListenerERKN3can8CANFrameE():
+
+       1ddfe:	4631      	mov	r1, r6
+
+       1de00:	4620      	mov	r0, r4
+
+       1de02:	f004 fa9b 	bl	2233c <<a href="../../../../../../../../../libs/bsw/cpp2can/src/can/transceiver/AbstractCANTransceiver.cpp/0dcca8866f0480fa593c276289f0eafd.html">can::AbstractCANTransceiver::notifySentListeners(can::CANFrame const&)</a>>
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1de06:	2501      	movs	r5, #1
+
+       1de08:	e7a8      	b.n	1dd5c <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xbc>
+
+       1de0a:	f8d4 3404 	ldr.w	r3, [r4, #1028]	; 0x404
+
+       1de0e:	3301      	adds	r3, #1
+
+       1de10:	f8c4 3404 	str.w	r3, [r4, #1028]	; 0x404
+
+       1de14:	f388 8810 	msr	PRIMASK, r8
+
+    _ZN4bios19CanFlex2Transceiver28notifyRegisteredSentListenerERKN3can8CANFrameE():
+
+       1de18:	4631      	mov	r1, r6
+
+       1de1a:	4620      	mov	r0, r4
+
+       1de1c:	f004 fa8e 	bl	2233c <<a href="../../../../../../../../../libs/bsw/cpp2can/src/can/transceiver/AbstractCANTransceiver.cpp/0dcca8866f0480fa593c276289f0eafd.html">can::AbstractCANTransceiver::notifySentListeners(can::CANFrame const&)</a>>
+
+    bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*):
+
+       1de20:	2502      	movs	r5, #2
+
+       1de22:	e79b      	b.n	1dd5c <<a href="./537dbf596df5800a6b33f0c709df28a1.html">bios::CanFlex2Transceiver::write(can::CANFrame const&, can::ICANFrameSentListener*)</a>+0xbc>
+
+       1de24:	1ffe014e 	.word	0x1ffe014e
+
+       1de28:	000289cc 	.word	0x000289cc
+
+    </pre>
+
+    
+    <pre><a href="./e3bc184628778d0f73fa86fb51eb24df.html">bios::CanFlex2Transceiver::write(can::CANFrame const&amp;) (8)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 100</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 124</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    100
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    124
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../../../../../libs/bsw/util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    52
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../../../../../../../libs/bsw/util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html" class="icon-function">util::logger::Logger::warn(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">32
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2025</span>
+        
+    </div>
+    </div>
+</body>
+</html>

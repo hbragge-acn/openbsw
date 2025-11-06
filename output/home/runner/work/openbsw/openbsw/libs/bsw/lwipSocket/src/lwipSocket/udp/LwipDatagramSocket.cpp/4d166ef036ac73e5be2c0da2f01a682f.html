@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../lwipSocket.html">lwipSocket</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../lwipSocket.html">lwipSocket</a></li>
+        
+        <li ><a href="../../udp.html">udp</a>
+            </li>
+
+        
+        <li class="active"><a href="../LwipDatagramSocket.cpp.html">LwipDatagramSocket.cpp</a>:419
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">udp::LwipDatagramSocket::send(udp::DatagramPacket const&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0001bf70</td>
+                <td>
+    
+    
+</td>
+                <td>56 (static)</td>
+                <td>304</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (12,
+                            <span title="sum of used bytes by all callees">
+                            Σ=884
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../utils/TaskAssert.cpp/39c8284cc5e0e36feda703ba48572d03.html">lwiputils::TASK_ASSERT_HOOK() (4)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../utils/FilterFrame.cpp/54d7e9a3f27474890c3c37bb54d9dda9.html">lwiputils::to_lwipIp(ip::IPAddress const&amp;, ip4_addr*) (72)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/udp.c/6885d48e74680759c4eea6c60dd1b94c.html">udp_new_ip_type (32)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/udp.c/f4a8153b7ba352484a66f2271242c850.html">udp_connect (116)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/00f9d6c635a80626d607c18477d3504a.html">pbuf_alloc (276)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/udp.c/dcfb604bd5ed7315fa92c89f9881d013.html">udp_send (48)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/9b6fd2596874539050b4147be9634d35.html">pbuf_free (8)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/udp.c/554cfee26965a2222880ba2ac60608ce.html">udp_remove (60)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/ipv4/ip4.c/a30d884704b67281b26f54b966ad46b4.html">ip4_route_src (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../3rdparty/lwip/src/core/udp.c/f8c887f66b79e75c3d421fb1ed410582.html">udp_sendto_if (124)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...) (88)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./88315387bcec21dc779be8958d485421.html">udp::LwipDatagramSocket::send(etl::span&lt;unsigned char const, 4294967295u&gt; const&amp;) (104)</a></pre>
+    
+
+    <pre>
+
+    udp::LwipDatagramSocket::send(udp::DatagramPacket const&):
+
+       1bf70:	b5f0      	push	{r4, r5, r6, r7, lr}
+
+       1bf72:	b089      	sub	sp, #36	; 0x24
+
+       1bf74:	4605      	mov	r5, r0
+
+       1bf76:	460c      	mov	r4, r1
+
+       1bf78:	f000 fc4e 	bl	1c818 <<a href="../../utils/TaskAssert.cpp/39c8284cc5e0e36feda703ba48572d03.html">lwiputils::TASK_ASSERT_HOOK()</a>>
+
+    _ZNK3udp14DatagramPacket10getAddressEv():
+
+       1bf7c:	2210      	movs	r2, #16
+
+       1bf7e:	eb0d 0002 	add.w	r0, sp, r2
+
+       1bf82:	4621      	mov	r1, r4
+
+       1bf84:	f7e4 fb1b 	bl	5be <<a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN9lwiputils9to_lwipIpERKN2ip9IPAddressE():
+
+       1bf88:	2300      	movs	r3, #0
+
+       1bf8a:	a804      	add	r0, sp, #16
+
+       1bf8c:	a903      	add	r1, sp, #12
+
+       1bf8e:	9303      	str	r3, [sp, #12]
+
+       1bf90:	f000 fbde 	bl	1c750 <<a href="../../utils/FilterFrame.cpp/54d7e9a3f27474890c3c37bb54d9dda9.html">lwiputils::to_lwipIp(ip::IPAddress const&, ip4_addr*)</a>>
+
+    udp::LwipDatagramSocket::send(udp::DatagramPacket const&):
+
+       1bf94:	682b      	ldr	r3, [r5, #0]
+
+       1bf96:	4a3e      	ldr	r2, [pc, #248]	; (1c090 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x120>)
+
+       1bf98:	689b      	ldr	r3, [r3, #8]
+
+       1bf9a:	4293      	cmp	r3, r2
+
+       1bf9c:	d131      	bne.n	1c002 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x92>
+
+    udp::LwipDatagramSocket::isBound() const():
+
+       1bf9e:	68e8      	ldr	r0, [r5, #12]
+
+    udp::LwipDatagramSocket::send(udp::DatagramPacket const&):
+
+       1bfa0:	2800      	cmp	r0, #0
+
+       1bfa2:	d133      	bne.n	1c00c <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x9c>
+
+       1bfa4:	2000      	movs	r0, #0
+
+       1bfa6:	f7ee ff9f 	bl	aee8 <<a href="../../../../../../3rdparty/lwip/src/core/udp.c/6885d48e74680759c4eea6c60dd1b94c.html">udp_new_ip_type</a>>
+
+       1bfaa:	4605      	mov	r5, r0
+
+       1bfac:	2800      	cmp	r0, #0
+
+       1bfae:	d060      	beq.n	1c072 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x102>
+
+       1bfb0:	7a43      	ldrb	r3, [r0, #9]
+
+       1bfb2:	f043 0304 	orr.w	r3, r3, #4
+
+       1bfb6:	7243      	strb	r3, [r0, #9]
+
+       1bfb8:	8a22      	ldrh	r2, [r4, #16]
+
+       1bfba:	a903      	add	r1, sp, #12
+
+       1bfbc:	f7ee ff22 	bl	ae04 <<a href="../../../../../../3rdparty/lwip/src/core/udp.c/f4a8153b7ba352484a66f2271242c850.html">udp_connect</a>>
+
+    _ZNK3udp14DatagramPacket9getLengthEv():
+
+       1bfc0:	8b26      	ldrh	r6, [r4, #24]
+
+    _ZNK3udp14DatagramPacket7getDataEv():
+
+       1bfc2:	6967      	ldr	r7, [r4, #20]
+
+    _ZN3udp18LwipDatagramSocket8udpWriteEP7udp_pcbPKvj():
+
+       1bfc4:	f44f 7220 	mov.w	r2, #640	; 0x280
+
+       1bfc8:	4631      	mov	r1, r6
+
+       1bfca:	203c      	movs	r0, #60	; 0x3c
+
+       1bfcc:	f7f2 f8d4 	bl	e178 <<a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/00f9d6c635a80626d607c18477d3504a.html">pbuf_alloc</a>>
+
+       1bfd0:	4604      	mov	r4, r0
+
+       1bfd2:	2800      	cmp	r0, #0
+
+       1bfd4:	d055      	beq.n	1c082 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x112>
+
+       1bfd6:	4632      	mov	r2, r6
+
+       1bfd8:	4639      	mov	r1, r7
+
+       1bfda:	6840      	ldr	r0, [r0, #4]
+
+       1bfdc:	f7e4 faef 	bl	5be <<a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       1bfe0:	4621      	mov	r1, r4
+
+       1bfe2:	4628      	mov	r0, r5
+
+       1bfe4:	f7ee fef6 	bl	add4 <<a href="../../../../../../3rdparty/lwip/src/core/udp.c/dcfb604bd5ed7315fa92c89f9881d013.html">udp_send</a>>
+
+       1bfe8:	4602      	mov	r2, r0
+
+       1bfea:	4620      	mov	r0, r4
+
+       1bfec:	4614      	mov	r4, r2
+
+       1bfee:	f7f2 fa1f 	bl	e430 <<a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/9b6fd2596874539050b4147be9634d35.html">pbuf_free</a>>
+
+    udp::LwipDatagramSocket::send(udp::DatagramPacket const&):
+
+       1bff2:	4628      	mov	r0, r5
+
+       1bff4:	f7ee ff4a 	bl	ae8c <<a href="../../../../../../3rdparty/lwip/src/core/udp.c/554cfee26965a2222880ba2ac60608ce.html">udp_remove</a>>
+
+       1bff8:	2c00      	cmp	r4, #0
+
+       1bffa:	d12f      	bne.n	1c05c <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0xec>
+
+       1bffc:	2000      	movs	r0, #0
+
+       1bffe:	b009      	add	sp, #36	; 0x24
+
+       1c000:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+       1c002:	4628      	mov	r0, r5
+
+       1c004:	4798      	blx	r3
+
+       1c006:	2800      	cmp	r0, #0
+
+       1c008:	d0cc      	beq.n	1bfa4 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x34>
+
+       1c00a:	68e8      	ldr	r0, [r5, #12]
+
+       1c00c:	a903      	add	r1, sp, #12
+
+       1c00e:	f7f1 fc79 	bl	d904 <<a href="../../../../../../3rdparty/lwip/src/core/ipv4/ip4.c/a30d884704b67281b26f54b966ad46b4.html">ip4_route_src</a>>
+
+       1c012:	4606      	mov	r6, r0
+
+       1c014:	2800      	cmp	r0, #0
+
+       1c016:	d0c5      	beq.n	1bfa4 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x34>
+
+       1c018:	8b21      	ldrh	r1, [r4, #24]
+
+       1c01a:	f44f 7220 	mov.w	r2, #640	; 0x280
+
+       1c01e:	203c      	movs	r0, #60	; 0x3c
+
+       1c020:	f7f2 f8aa 	bl	e178 <<a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/00f9d6c635a80626d607c18477d3504a.html">pbuf_alloc</a>>
+
+       1c024:	4607      	mov	r7, r0
+
+       1c026:	b310      	cbz	r0, 1c06e <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0xfe>
+
+       1c028:	8b22      	ldrh	r2, [r4, #24]
+
+       1c02a:	6961      	ldr	r1, [r4, #20]
+
+       1c02c:	6840      	ldr	r0, [r0, #4]
+
+       1c02e:	f7e4 fac6 	bl	5be <<a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       1c032:	8a23      	ldrh	r3, [r4, #16]
+
+       1c034:	68e8      	ldr	r0, [r5, #12]
+
+       1c036:	9600      	str	r6, [sp, #0]
+
+       1c038:	aa03      	add	r2, sp, #12
+
+       1c03a:	4639      	mov	r1, r7
+
+       1c03c:	f7ee fe2e 	bl	ac9c <<a href="../../../../../../3rdparty/lwip/src/core/udp.c/f8c887f66b79e75c3d421fb1ed410582.html">udp_sendto_if</a>>
+
+       1c040:	4604      	mov	r4, r0
+
+       1c042:	4638      	mov	r0, r7
+
+       1c044:	f7f2 f9f4 	bl	e430 <<a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/9b6fd2596874539050b4147be9634d35.html">pbuf_free</a>>
+
+       1c048:	2c00      	cmp	r4, #0
+
+       1c04a:	d0d7      	beq.n	1bffc <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x8c>
+
+       1c04c:	4b11      	ldr	r3, [pc, #68]	; (1c094 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x124>)
+
+       1c04e:	4912      	ldr	r1, [pc, #72]	; (1c098 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x128>)
+
+       1c050:	7818      	ldrb	r0, [r3, #0]
+
+       1c052:	4622      	mov	r2, r4
+
+       1c054:	f7e5 ff5a 	bl	1f0c <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       1c058:	2001      	movs	r0, #1
+
+       1c05a:	e7d0      	b.n	1bffe <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x8e>
+
+       1c05c:	4622      	mov	r2, r4
+
+       1c05e:	4b0d      	ldr	r3, [pc, #52]	; (1c094 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x124>)
+
+       1c060:	490d      	ldr	r1, [pc, #52]	; (1c098 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x128>)
+
+       1c062:	7818      	ldrb	r0, [r3, #0]
+
+       1c064:	f7e5 ff52 	bl	1f0c <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       1c068:	2001      	movs	r0, #1
+
+       1c06a:	b009      	add	sp, #36	; 0x24
+
+       1c06c:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+       1c06e:	2001      	movs	r0, #1
+
+       1c070:	e7c5      	b.n	1bffe <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x8e>
+
+       1c072:	4b08      	ldr	r3, [pc, #32]	; (1c094 <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x124>)
+
+       1c074:	4909      	ldr	r1, [pc, #36]	; (1c09c <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0x12c>)
+
+       1c076:	7818      	ldrb	r0, [r3, #0]
+
+       1c078:	f7e5 ff48 	bl	1f0c <<a href="../../../../../util/include/util/logger/Logger.h/e675253f5bfedd299c26bd0145e28698.html">util::logger::Logger::error(unsigned char, char const*, ...)</a>>
+
+       1c07c:	2001      	movs	r0, #1
+
+       1c07e:	b009      	add	sp, #36	; 0x24
+
+       1c080:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+       1c082:	4628      	mov	r0, r5
+
+       1c084:	f7ee ff02 	bl	ae8c <<a href="../../../../../../3rdparty/lwip/src/core/udp.c/554cfee26965a2222880ba2ac60608ce.html">udp_remove</a>>
+
+       1c088:	f04f 32ff 	mov.w	r2, #4294967295	; 0xffffffff
+
+       1c08c:	e7e7      	b.n	1c05e <<a href="./4d166ef036ac73e5be2c0da2f01a682f.html">udp::LwipDatagramSocket::send(udp::DatagramPacket const&)</a>+0xee>
+
+       1c08e:	bf00      	nop
+
+       1c090:	0001bbf9 	.word	0x0001bbf9
+
+       1c094:	1ffe0151 	.word	0x1ffe0151
+
+       1c098:	00028174 	.word	0x00028174
+
+       1c09c:	000281a8 	.word	0x000281a8
+
+    </pre>
+
+    
+    <pre><a href="./f2f5656e97314ab302190148d48a92bf.html">udp::LwipDatagramSocket::bind(ip::IPAddress const*, unsigned short) (248)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 504</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 3,608</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    504
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    3,608
+                    
+                    
+                </td>
+                <td class="col_size">136</td>
+                <td><a href="../../../../../../3rdparty/printf/src/printf/printf.c/aead89a8c09454d3b52c82329b9d6539.html" class="icon-function">out_rev_</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    464
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                112 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    3,472
+                    
+                    
+                </td>
+                <td class="col_size">656</td>
+                <td><a href="../../../../../../3rdparty/printf/src/printf/printf.c/ac6598d6032c1151c802f0c9a9979746.html" class="icon-function">print_integer</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    352
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,816
+                    
+                    
+                </td>
+                <td class="col_size">1,572</td>
+                <td><a href="../../../../../../3rdparty/printf/src/printf/printf.c/6d7d630ec5529648e33ae989eebb2cb7.html" class="icon-function">_vsnprintf</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    256
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,244
+                    
+                    
+                </td>
+                <td class="col_size">32</td>
+                <td><a href="../../../../../../3rdparty/printf/src/printf/printf.c/529535ce0d5bfecabb7841bebeaf251c.html" class="icon-function">vsnprintf_</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    240
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,212
+                    
+                    
+                </td>
+                <td class="col_size">52</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/logger/logger.cpp/98866fb3d81ee8db78cbfd1e2dfd931d.html" class="icon-function">log_lwipInfo</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    224
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,160
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/memp.c/39d50c52143357af896630c36b8c515f.html" class="icon-function">memp_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,100
+                    
+                    
+                </td>
+                <td class="col_size">112</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/9b6fd2596874539050b4147be9634d35.html" class="icon-function">pbuf_free</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                    
+                    208
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    988
+                    
+                    
+                </td>
+                <td class="col_size">276</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/pbuf.c/00f9d6c635a80626d607c18477d3504a.html" class="icon-function">pbuf_alloc</a></td>
+            </tr>
+        
+            <tr>
+                <th>9</th>
+                <td class="col_size">
+                    
+                    176
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    712
+                    
+                    
+                </td>
+                <td class="col_size">352</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/udp.c/98b639583090b8420a937b79d3bd3d07.html" class="icon-function">udp_sendto_if_src</a></td>
+            </tr>
+        
+            <tr>
+                <th>10</th>
+                <td class="col_size">
+                    
+                    120
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    360
+                    
+                    
+                </td>
+                <td class="col_size">124</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/udp.c/f8c887f66b79e75c3d421fb1ed410582.html" class="icon-function">udp_sendto_if</a></td>
+            </tr>
+        
+            <tr>
+                <th>11</th>
+                <td class="col_size">
+                    
+                    96
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    236
+                    
+                    
+                </td>
+                <td class="col_size">188</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/udp.c/264b0211f261e99db5cfc73564929450.html" class="icon-function">udp_sendto</a></td>
+            </tr>
+        
+            <tr>
+                <th>12</th>
+                <td class="col_size">
+                    
+                    64
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">48</td>
+                <td><a href="../../../../../../3rdparty/lwip/src/core/udp.c/dcfb604bd5ed7315fa92c89f9881d013.html" class="icon-function">udp_send</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">56
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2025</span>
+        
+    </div>
+    </div>
+</body>
+</html>

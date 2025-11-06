@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../../../../../s32k1xx.html">s32k1xx</a></li>
+        
+        <li><a href="../../../../../../../bsp.html">bsp</a></li>
+        
+        <li><a href="../../../../../../canflex2Transceiver.html">canflex2Transceiver</a></li>
+        
+        <li><a href="../../../../../src.html">src</a></li>
+        
+        <li><a href="../../../../can.html">can</a></li>
+        
+        <li><a href="../../../transceiver.html">transceiver</a></li>
+        
+        <li ><a href="../../canflex2.html">canflex2</a>
+            </li>
+
+        
+        <li class="active"><a href="../CanFlex2Transceiver.cpp.html">CanFlex2Transceiver.cpp</a>:347
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">bios::CanFlex2Transceiver::cyclicTask()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0001dfc0</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>8 (static)</td>
+                <td>184</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../../libs/3rdparty/etl/include/etl/private/delegate_cpp11.h/00d64e9762b37851d0bddfcb305e3bf0.html">void etl::delegate&lt;void ()&gt;::method_stub&lt;bios::CanFlex2Transceiver, &amp;bios::CanFlex2Transceiver::cyclicTask&gt;(void*) (4)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./2e49d7b060f58df8c2233b286680110a.html">bios::CanFlex2Transceiver::receiveTask() (104)</a></pre>
+    
+
+    <pre>
+
+    _ZN4bios13FlexCANDevice14getBusOffStateEv():
+
+       1dfc0:	f8d0 3140 	ldr.w	r3, [r0, #320]	; 0x140
+
+       1dfc4:	6a1b      	ldr	r3, [r3, #32]
+
+       1dfc6:	011b      	lsls	r3, r3, #4
+
+       1dfc8:	f003 0330 	and.w	r3, r3, #48	; 0x30
+
+       1dfcc:	2b01      	cmp	r3, #1
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1dfce:	b510      	push	{r4, lr}
+
+       1dfd0:	4604      	mov	r4, r0
+
+    _ZN4bios13FlexCANDevice14getBusOffStateEv():
+
+       1dfd2:	d802      	bhi.n	1dfda <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x1a>
+
+       1dfd4:	f890 23fd 	ldrb.w	r2, [r0, #1021]	; 0x3fd
+
+       1dfd8:	b322      	cbz	r2, 1e024 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x64>
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1dfda:	f894 3130 	ldrb.w	r3, [r4, #304]	; 0x130
+
+    _ZN4bios13FlexCANDevice14getBusOffStateEv():
+
+       1dfde:	2201      	movs	r2, #1
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1dfe0:	2b02      	cmp	r3, #2
+
+    _ZN4bios13FlexCANDevice14getBusOffStateEv():
+
+       1dfe2:	f884 23fd 	strb.w	r2, [r4, #1021]	; 0x3fd
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1dfe6:	d111      	bne.n	1e00c <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x4c>
+
+    _ZN4bios13FlexCANDevice6getPhyEv():
+
+       1dfe8:	f8d4 013c 	ldr.w	r0, [r4, #316]	; 0x13c
+
+       1dfec:	4a21      	ldr	r2, [pc, #132]	; (1e074 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0xb4>)
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1dfee:	6803      	ldr	r3, [r0, #0]
+
+       1dff0:	68db      	ldr	r3, [r3, #12]
+
+       1dff2:	4293      	cmp	r3, r2
+
+       1dff4:	d121      	bne.n	1e03a <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x7a>
+
+       1dff6:	f8d4 33e8 	ldr.w	r3, [r4, #1000]	; 0x3e8
+
+    _ZN4bios13FlexCANDevice12clearRxAliveEv():
+
+       1dffa:	2200      	movs	r2, #0
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1dffc:	1a9b      	subs	r3, r3, r2
+
+       1dffe:	bf18      	it	ne
+
+       1e000:	2301      	movne	r3, #1
+
+       1e002:	f884 3455 	strb.w	r3, [r4, #1109]	; 0x455
+
+    _ZN4bios13FlexCANDevice12clearRxAliveEv():
+
+       1e006:	f8c4 23e8 	str.w	r2, [r4, #1000]	; 0x3e8
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1e00a:	bd10      	pop	{r4, pc}
+
+    _ZN3can22AbstractCANTransceiver28notifyStateListenerWithStateENS_28ICANTransceiverStateListener19CANTransceiverStateE():
+
+       1e00c:	f8d4 012c 	ldr.w	r0, [r4, #300]	; 0x12c
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1e010:	2202      	movs	r2, #2
+
+       1e012:	f884 2130 	strb.w	r2, [r4, #304]	; 0x130
+
+    _ZN3can22AbstractCANTransceiver28notifyStateListenerWithStateENS_28ICANTransceiverStateListener19CANTransceiverStateE():
+
+       1e016:	2800      	cmp	r0, #0
+
+       1e018:	d0e6      	beq.n	1dfe8 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x28>
+
+       1e01a:	6803      	ldr	r3, [r0, #0]
+
+       1e01c:	4621      	mov	r1, r4
+
+       1e01e:	681b      	ldr	r3, [r3, #0]
+
+       1e020:	4798      	blx	r3
+
+       1e022:	e7e1      	b.n	1dfe8 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x28>
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1e024:	f890 3130 	ldrb.w	r3, [r0, #304]	; 0x130
+
+       1e028:	2b00      	cmp	r3, #0
+
+       1e02a:	d0dd      	beq.n	1dfe8 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x28>
+
+    _ZN3can22AbstractCANTransceiver28notifyStateListenerWithStateENS_28ICANTransceiverStateListener19CANTransceiverStateE():
+
+       1e02c:	f8d0 012c 	ldr.w	r0, [r0, #300]	; 0x12c
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1e030:	f884 2130 	strb.w	r2, [r4, #304]	; 0x130
+
+    _ZN3can22AbstractCANTransceiver28notifyStateListenerWithStateENS_28ICANTransceiverStateListener19CANTransceiverStateE():
+
+       1e034:	2800      	cmp	r0, #0
+
+       1e036:	d1f0      	bne.n	1e01a <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x5a>
+
+       1e038:	e7d6      	b.n	1dfe8 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x28>
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1e03a:	f8d4 2134 	ldr.w	r2, [r4, #308]	; 0x134
+
+       1e03e:	6951      	ldr	r1, [r2, #20]
+
+       1e040:	4798      	blx	r3
+
+       1e042:	2802      	cmp	r0, #2
+
+       1e044:	d0d7      	beq.n	1dff6 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x36>
+
+       1e046:	2801      	cmp	r0, #1
+
+       1e048:	d003      	beq.n	1e052 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x92>
+
+       1e04a:	2300      	movs	r3, #0
+
+       1e04c:	f884 3400 	strb.w	r3, [r4, #1024]	; 0x400
+
+       1e050:	e7d1      	b.n	1dff6 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x36>
+
+       1e052:	f894 3400 	ldrb.w	r3, [r4, #1024]	; 0x400
+
+       1e056:	2b00      	cmp	r3, #0
+
+       1e058:	d1cd      	bne.n	1dff6 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x36>
+
+    _ZN3can22AbstractCANTransceiver31notifyStateListenerWithPhyErrorEv():
+
+       1e05a:	f8d4 312c 	ldr.w	r3, [r4, #300]	; 0x12c
+
+    bios::CanFlex2Transceiver::cyclicTask():
+
+       1e05e:	f884 0400 	strb.w	r0, [r4, #1024]	; 0x400
+
+    _ZN3can22AbstractCANTransceiver31notifyStateListenerWithPhyErrorEv():
+
+       1e062:	2b00      	cmp	r3, #0
+
+       1e064:	d0c7      	beq.n	1dff6 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x36>
+
+       1e066:	681a      	ldr	r2, [r3, #0]
+
+       1e068:	4621      	mov	r1, r4
+
+       1e06a:	6852      	ldr	r2, [r2, #4]
+
+       1e06c:	4618      	mov	r0, r3
+
+       1e06e:	4790      	blx	r2
+
+       1e070:	e7c1      	b.n	1dff6 <<a href="./ed4b7d1c3fec0d090c412e15d23d9e77.html">bios::CanFlex2Transceiver::cyclicTask()</a>+0x36>
+
+       1e072:	bf00      	nop
+
+       1e074:	0001d955 	.word	0x0001d955
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../../../../libs/3rdparty/etl/include/etl/private/delegate_cpp11.h/00d64e9762b37851d0bddfcb305e3bf0.html">void etl::delegate&lt;void ()&gt;::method_stub&lt;bios::CanFlex2Transceiver, &amp;bios::CanFlex2Transceiver::cyclicTask&gt;(void*) (4)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2025</span>
+        
+    </div>
+    </div>
+</body>
+</html>
