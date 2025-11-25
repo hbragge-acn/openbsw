@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../docan.html">docan</a></li>
+        
+        <li><a href="../../../../include.html">include</a></li>
+        
+        <li><a href="../../../docan.html">docan</a></li>
+        
+        <li ><a href="../../can.html">can</a>
+            </li>
+
+        
+        <li class="active"><a href="../DoCanPhysicalCanTransceiver.h.html">DoCanPhysicalCanTransceiver.h</a>:210
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">docan::DoCanPhysicalCanTransceiver&lt;docan::DoCanNormalAddressing&lt;unsigned short, unsigned char, unsigned short&gt; &gt;::frameReceived(can::CANFrame const&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00004eb0</td>
+                <td>
+    
+    
+</td>
+                <td>96 (static)</td>
+                <td>712</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="./a2e75b238d35085c82d4e0193b969f7b.html">non-virtual thunk to docan::DoCanPhysicalCanTransceiver&lt;docan::DoCanNormalAddressing&lt;unsigned short, unsigned char, unsigned short&gt; &gt;::frameReceived(can::CANFrame const&amp;) (8)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=96
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../addressing/DoCanNormalAddressingFilter.h/24e898223328fc02544fb420607bf66f.html">docan::DoCanNormalAddressingFilter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt;, docan::DoCanNormalAddressingFilterAddressEntry&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt; &gt;::findEntryTypeByReceptionAddress(unsigned long, docan::DoCanNormalAddressingFilterAddressEntry&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt; const*, docan::DoCanNormalAddressingFilterAddressEntry&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt; const*) (68)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../addressing/DoCanNormalAddressingFilter.h/7aacd81e886da33a6b343bac9cc15f4d.html">docan::DoCanNormalAddressingFilter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt;, docan::DoCanNormalAddressingFilterAddressEntry&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt; &gt;::getReceptionParameters(unsigned long, docan::DoCanTransportAddressPair&amp;, unsigned long&amp;) const (64)</a></pre>
+    
+
+    <pre>
+
+    docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&):
+
+        4eb0:	6bc3      	ldr	r3, [r0, #60]	@ 0x3c
+
+        4eb2:	2b00      	cmp	r3, #0
+
+        4eb4:	f000 80ea 	beq.w	508c <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x1dc>
+
+        4eb8:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
+
+        4ebc:	6b46      	ldr	r6, [r0, #52]	@ 0x34
+
+    _ZNK3can8CANFrame16getPayloadLengthEv():
+
+        4ebe:	f891 8010 	ldrb.w	r8, [r1, #16]
+
+    docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&):
+
+        4ec2:	6832      	ldr	r2, [r6, #0]
+
+    _ZNK3can8CANFrame5getIdEv():
+
+        4ec4:	680f      	ldr	r7, [r1, #0]
+
+    docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&):
+
+        4ec6:	f8d2 9004 	ldr.w	r9, [r2, #4]
+
+        4eca:	b090      	sub	sp, #64	@ 0x40
+
+    _ZN5docan25DoCanTransportAddressPairC4Ett():
+
+        4ecc:	2300      	movs	r3, #0
+
+        4ece:	9305      	str	r3, [sp, #20]
+
+        4ed0:	4ba6      	ldr	r3, [pc, #664]	@ (516c <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x2bc>)
+
+        4ed2:	4599      	cmp	r9, r3
+
+        4ed4:	4605      	mov	r5, r0
+
+        4ed6:	460c      	mov	r4, r1
+
+        4ed8:	f040 80d9 	bne.w	508e <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x1de>
+
+    docan::DoCanNormalAddressingFilter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short>, docan::DoCanNormalAddressingFilterAddressEntry<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> > >::getReceptionParameters(unsigned long, docan::DoCanTransportAddressPair&, unsigned long&) const():
+
+        4edc:	f8d6 2118 	ldr.w	r2, [r6, #280]	@ 0x118
+
+        4ee0:	f8d6 110c 	ldr.w	r1, [r6, #268]	@ 0x10c
+
+        4ee4:	4638      	mov	r0, r7
+
+        4ee6:	f7ff ffa1 	bl	4e2c <<a href="../../addressing/DoCanNormalAddressingFilter.h/24e898223328fc02544fb420607bf66f.html">docan::DoCanNormalAddressingFilter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short>, docan::DoCanNormalAddressingFilterAddressEntry<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> > >::findEntryTypeByReceptionAddress(unsigned long, docan::DoCanNormalAddressingFilterAddressEntry<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> > const*, docan::DoCanNormalAddressingFilterAddressEntry<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> > const*)</a>>
+
+        4eea:	b358      	cbz	r0, 4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZNK3etl4spanIPKN5docan15DoCanFrameCodecINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEELj4294967295EE4sizeEv():
+
+        4eec:	f8d6 211c 	ldr.w	r2, [r6, #284]	@ 0x11c
+
+        4ef0:	f8d6 3120 	ldr.w	r3, [r6, #288]	@ 0x120
+
+    _ZNK5docan27DoCanNormalAddressingFilterINS_18DoCanDataLinkLayerImthLm4294967295EtEENS_39DoCanNormalAddressingFilterAddressEntryIS2_EEE13getFrameCodecEh():
+
+        4ef4:	7b06      	ldrb	r6, [r0, #12]
+
+    docan::DoCanNormalAddressingFilter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short>, docan::DoCanNormalAddressingFilterAddressEntry<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> > >::getReceptionParameters(unsigned long, docan::DoCanTransportAddressPair&, unsigned long&) const():
+
+        4ef6:	6841      	ldr	r1, [r0, #4]
+
+        4ef8:	9106      	str	r1, [sp, #24]
+
+    _ZNK3etl4spanIPKN5docan15DoCanFrameCodecINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEELj4294967295EE4sizeEv():
+
+        4efa:	1a9b      	subs	r3, r3, r2
+
+    docan::DoCanNormalAddressingFilter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short>, docan::DoCanNormalAddressingFilterAddressEntry<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> > >::getReceptionParameters(unsigned long, docan::DoCanTransportAddressPair&, unsigned long&) const():
+
+        4efc:	6881      	ldr	r1, [r0, #8]
+
+        4efe:	9105      	str	r1, [sp, #20]
+
+    _ZNK5docan27DoCanNormalAddressingFilterINS_18DoCanDataLinkLayerImthLm4294967295EtEENS_39DoCanNormalAddressingFilterAddressEntryIS2_EEE13getFrameCodecEh():
+
+        4f00:	ebb6 0fa3 	cmp.w	r6, r3, asr #2
+
+        4f04:	d21e      	bcs.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4f06:	f852 3026 	ldr.w	r3, [r2, r6, lsl #2]
+
+    docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&):
+
+        4f0a:	b1db      	cbz	r3, 4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4f0c:	9a06      	ldr	r2, [sp, #24]
+
+    _ZN5docan24DoCanDataLinkAddressPairImEC4ERKS1_():
+
+        4f0e:	920e      	str	r2, [sp, #56]	@ 0x38
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE15decodeFrameTypeERKN3etl4spanIKhLj4294967295EEERNS_9FrameTypeE():
+
+        4f10:	6819      	ldr	r1, [r3, #0]
+
+    _ZN5docan15DoCanConnectionINS_18DoCanDataLinkLayerImthLm4294967295EtEEEC4ERKNS_15DoCanFrameCodecIS2_EERKNS_24DoCanDataLinkAddressPairImEERKNS_25DoCanTransportAddressPairE():
+
+        4f12:	9a05      	ldr	r2, [sp, #20]
+
+        4f14:	920f      	str	r2, [sp, #60]	@ 0x3c
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE15decodeFrameTypeERKN3etl4spanIKhLj4294967295EEERNS_9FrameTypeE():
+
+        4f16:	7a4e      	ldrb	r6, [r1, #9]
+
+        4f18:	45b0      	cmp	r8, r6
+
+    _ZN5docan24DoCanDataLinkAddressPairImEC4ERKS1_():
+
+        4f1a:	e9cd 370c 	strd	r3, r7, [sp, #48]	@ 0x30
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE15decodeFrameTypeERKN3etl4spanIKhLj4294967295EEERNS_9FrameTypeE():
+
+        4f1e:	d911      	bls.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZNK3can8CANFrame10getPayloadEv():
+
+        4f20:	3408      	adds	r4, #8
+
+    docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&):
+
+        4f22:	6bed      	ldr	r5, [r5, #60]	@ 0x3c
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE15decodeFrameTypeERKN3etl4spanIKhLj4294967295EEERNS_9FrameTypeE():
+
+        4f24:	5da2      	ldrb	r2, [r4, r6]
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        4f26:	0910      	lsrs	r0, r2, #4
+
+    _ZNK3etl4spanIKhLj4294967295EEixEj():
+
+        4f28:	eb04 0c06 	add.w	ip, r4, r6
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        4f2c:	2803      	cmp	r0, #3
+
+        4f2e:	d809      	bhi.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4f30:	e8df f000 	tbb	[pc, r0]
+
+        4f34:	0b213a02 	.word	0x0b213a02
+
+        4f38:	2300      	movs	r3, #0
+
+        4f3a:	930b      	str	r3, [sp, #44]	@ 0x2c
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE14checkFrameSizeERKN3etl4spanIKhLj4294967295EEEhNS_21DoCanFrameCodecConfigIhE10SizeConfigE():
+
+        4f3c:	1cb3      	adds	r3, r6, #2
+
+        4f3e:	4598      	cmp	r8, r3
+
+        4f40:	f080 80ac 	bcs.w	509c <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x1ec>
+
+    docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&):
+
+        4f44:	b010      	add	sp, #64	@ 0x40
+
+        4f46:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE14checkFrameSizeERKN3etl4spanIKhLj4294967295EEEhNS_21DoCanFrameCodecConfigIhE10SizeConfigE():
+
+        4f4a:	3603      	adds	r6, #3
+
+        4f4c:	45b0      	cmp	r8, r6
+
+        4f4e:	d3f9      	bcc.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4f50:	798b      	ldrb	r3, [r1, #6]
+
+        4f52:	4598      	cmp	r8, r3
+
+        4f54:	d3f6      	bcc.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4f56:	79cb      	ldrb	r3, [r1, #7]
+
+        4f58:	4598      	cmp	r8, r3
+
+        4f5a:	d8f3      	bhi.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        4f5c:	6828      	ldr	r0, [r5, #0]
+
+        4f5e:	f89c 4002 	ldrb.w	r4, [ip, #2]
+
+        4f62:	f89c 3001 	ldrb.w	r3, [ip, #1]
+
+        4f66:	9400      	str	r4, [sp, #0]
+
+        4f68:	6884      	ldr	r4, [r0, #8]
+
+        4f6a:	f002 020f 	and.w	r2, r2, #15
+
+        4f6e:	4639      	mov	r1, r7
+
+        4f70:	4628      	mov	r0, r5
+
+        4f72:	47a0      	blx	r4
+
+        4f74:	e7e6      	b.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4f76:	2300      	movs	r3, #0
+
+        4f78:	930b      	str	r3, [sp, #44]	@ 0x2c
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE14checkFrameSizeERKN3etl4spanIKhLj4294967295EEEhNS_21DoCanFrameCodecConfigIhE10SizeConfigE():
+
+        4f7a:	1cb3      	adds	r3, r6, #2
+
+        4f7c:	4598      	cmp	r8, r3
+
+        4f7e:	d3e1      	bcc.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4f80:	790b      	ldrb	r3, [r1, #4]
+
+        4f82:	4598      	cmp	r8, r3
+
+        4f84:	d3de      	bcc.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4f86:	794b      	ldrb	r3, [r1, #5]
+
+        4f88:	4598      	cmp	r8, r3
+
+        4f8a:	d8db      	bhi.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        4f8c:	682b      	ldr	r3, [r5, #0]
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE22decodeConsecutiveFrameERKN3etl4spanIKhLj4294967295EEERhRS7_():
+
+        4f8e:	3601      	adds	r6, #1
+
+    _ZNK3etl4spanIKhLj4294967295EEixEj():
+
+        4f90:	4426      	add	r6, r4
+
+    _ZN3etl4spanIKhLj4294967295EEC4IPS1_jEET_T0_():
+
+        4f92:	4444      	add	r4, r8
+
+    _ZN3etl4spanIKhLj4294967295EEaSERKS2_():
+
+        4f94:	940b      	str	r4, [sp, #44]	@ 0x2c
+
+        4f96:	960a      	str	r6, [sp, #40]	@ 0x28
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        4f98:	685c      	ldr	r4, [r3, #4]
+
+        4f9a:	f002 020f 	and.w	r2, r2, #15
+
+        4f9e:	4639      	mov	r1, r7
+
+        4fa0:	4628      	mov	r0, r5
+
+        4fa2:	ab0a      	add	r3, sp, #40	@ 0x28
+
+        4fa4:	47a0      	blx	r4
+
+        4fa6:	e7cd      	b.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE14checkFrameSizeERKN3etl4spanIKhLj4294967295EEEhNS_21DoCanFrameCodecConfigIhE10SizeConfigE():
+
+        4fa8:	1cf7      	adds	r7, r6, #3
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        4faa:	2000      	movs	r0, #0
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE14checkFrameSizeERKN3etl4spanIKhLj4294967295EEEhNS_21DoCanFrameCodecConfigIhE10SizeConfigE():
+
+        4fac:	45b8      	cmp	r8, r7
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        4fae:	e9cd 0008 	strd	r0, r0, [sp, #32]
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE14checkFrameSizeERKN3etl4spanIKhLj4294967295EEEhNS_21DoCanFrameCodecConfigIhE10SizeConfigE():
+
+        4fb2:	9302      	str	r3, [sp, #8]
+
+        4fb4:	d3c6      	bcc.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4fb6:	788f      	ldrb	r7, [r1, #2]
+
+        4fb8:	45b8      	cmp	r8, r7
+
+        4fba:	d3c3      	bcc.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        4fbc:	78c9      	ldrb	r1, [r1, #3]
+
+        4fbe:	4588      	cmp	r8, r1
+
+        4fc0:	d8c0      	bhi.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZN3etl6copy_nIPKcjPhEET1_T_T0_S4_():
+
+        4fc2:	f88d 201c 	strb.w	r2, [sp, #28]
+
+        4fc6:	f89c 2001 	ldrb.w	r2, [ip, #1]
+
+    _ZNK3etl14unaligned_typeItLi4321EEcvtEv():
+
+        4fca:	f8ad 0028 	strh.w	r0, [sp, #40]	@ 0x28
+
+    _ZN3etl6copy_nIPKcjPhEET1_T_T0_S4_():
+
+        4fce:	f88d 201d 	strb.w	r2, [sp, #29]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj2ELi4321ELb1EE19copy_store_to_valueItEEvPKhRT_():
+
+        4fd2:	a907      	add	r1, sp, #28
+
+        4fd4:	2202      	movs	r2, #2
+
+        4fd6:	a80a      	add	r0, sp, #40	@ 0x28
+
+        4fd8:	f7fb facb 	bl	572 <<a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl13reverse_bytesItEENS_9enable_ifIXaaaasrNS_11is_integralIT_EE5valuesrNS_11is_unsignedIS3_EE5valueeqsrNS_15integral_limitsIS3_EE4bitsLj16EES3_E4typeES3_():
+
+        4fdc:	f8bd 2028 	ldrh.w	r2, [sp, #40]	@ 0x28
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE16decodeFirstFrameERKN3etl4spanIKhLj4294967295EEERtSA_RhRS7_():
+
+        4fe0:	9b02      	ldr	r3, [sp, #8]
+
+    _ZN3etl13reverse_bytesItEENS_9enable_ifIXaaaasrNS_11is_integralIT_EE5valuesrNS_11is_unsignedIS3_EE5valueeqsrNS_15integral_limitsIS3_EE4bitsLj16EES3_E4typeES3_():
+
+        4fe2:	ba52      	rev16	r2, r2
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE16decodeFirstFrameERKN3etl4spanIKhLj4294967295EEERtSA_RhRS7_():
+
+        4fe4:	f108 37ff 	add.w	r7, r8, #4294967295	@ 0xffffffff
+
+        4fe8:	1bbf      	subs	r7, r7, r6
+
+        4fea:	f3c2 020b 	ubfx	r2, r2, #0, #12
+
+        4fee:	b2ff      	uxtb	r7, r7
+
+        4ff0:	2a00      	cmp	r2, #0
+
+        4ff2:	d075      	beq.n	50e0 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x230>
+
+        4ff4:	fbb2 f1f7 	udiv	r1, r2, r7
+
+        4ff8:	4692      	mov	sl, r2
+
+        4ffa:	f04f 0802 	mov.w	r8, #2
+
+        4ffe:	3101      	adds	r1, #1
+
+        5000:	fa1f f981 	uxth.w	r9, r1
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE23fitsIntoLongSingleFrameEt():
+
+        5004:	6819      	ldr	r1, [r3, #0]
+
+        5006:	9302      	str	r3, [sp, #8]
+
+        5008:	7a48      	ldrb	r0, [r1, #9]
+
+        500a:	f891 c001 	ldrb.w	ip, [r1, #1]
+
+        500e:	1c41      	adds	r1, r0, #1
+
+        5010:	4561      	cmp	r1, ip
+
+        5012:	db13      	blt.n	503c <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x18c>
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        5014:	f8df c15c 	ldr.w	ip, [pc, #348]	@ 5174 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x2c4>
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE23fitsIntoLongSingleFrameEt():
+
+        5018:	4955      	ldr	r1, [pc, #340]	@ (5170 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x2c0>)
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        501a:	f8cd c028 	str.w	ip, [sp, #40]	@ 0x28
+
+        501e:	f44f 7cb9 	mov.w	ip, #370	@ 0x172
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE23fitsIntoLongSingleFrameEt():
+
+        5022:	6809      	ldr	r1, [r1, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        5024:	f8cd c02c 	str.w	ip, [sp, #44]	@ 0x2c
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE23fitsIntoLongSingleFrameEt():
+
+        5028:	a80a      	add	r0, sp, #40	@ 0x28
+
+        502a:	9203      	str	r2, [sp, #12]
+
+        502c:	4788      	blx	r1
+
+        502e:	9b02      	ldr	r3, [sp, #8]
+
+        5030:	9a03      	ldr	r2, [sp, #12]
+
+        5032:	681b      	ldr	r3, [r3, #0]
+
+        5034:	7a58      	ldrb	r0, [r3, #9]
+
+        5036:	f893 c001 	ldrb.w	ip, [r3, #1]
+
+        503a:	1c41      	adds	r1, r0, #1
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE24fitsIntoShortSingleFrameEt():
+
+        503c:	b2c9      	uxtb	r1, r1
+
+        503e:	f1bc 0f08 	cmp.w	ip, #8
+
+        5042:	bf94      	ite	ls
+
+        5044:	ebc1 010c 	rsbls	r1, r1, ip
+
+        5048:	f1c1 0108 	rsbhi	r1, r1, #8
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE16decodeFirstFrameERKN3etl4spanIKhLj4294967295EEERtSA_RhRS7_():
+
+        504c:	f1b9 0f01 	cmp.w	r9, #1
+
+        5050:	f43f af78 	beq.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        5054:	4551      	cmp	r1, sl
+
+        5056:	f6bf af75 	bge.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE23fitsIntoLongSingleFrameEt():
+
+        505a:	1c83      	adds	r3, r0, #2
+
+        505c:	b2db      	uxtb	r3, r3
+
+        505e:	ebac 0c03 	sub.w	ip, ip, r3
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE16decodeFirstFrameERKN3etl4spanIKhLj4294967295EEERtSA_RhRS7_():
+
+        5062:	45e2      	cmp	sl, ip
+
+        5064:	f77f af6e 	ble.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        5068:	4446      	add	r6, r8
+
+        506a:	1c79      	adds	r1, r7, #1
+
+    _ZNK3etl4spanIKhLj4294967295EEixEj():
+
+        506c:	4426      	add	r6, r4
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE16decodeFirstFrameERKN3etl4spanIKhLj4294967295EEERtSA_RhRS7_():
+
+        506e:	eba1 0108 	sub.w	r1, r1, r8
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        5072:	682c      	ldr	r4, [r5, #0]
+
+    _ZN3etl4spanIKhLj4294967295EEaSERKS2_():
+
+        5074:	9608      	str	r6, [sp, #32]
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        5076:	4628      	mov	r0, r5
+
+        5078:	ad08      	add	r5, sp, #32
+
+    _ZN3etl4spanIKhLj4294967295EEC4IPS1_jEET_T0_():
+
+        507a:	440e      	add	r6, r1
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        507c:	9700      	str	r7, [sp, #0]
+
+        507e:	9501      	str	r5, [sp, #4]
+
+        5080:	6824      	ldr	r4, [r4, #0]
+
+    _ZN3etl4spanIKhLj4294967295EEaSERKS2_():
+
+        5082:	9609      	str	r6, [sp, #36]	@ 0x24
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        5084:	464b      	mov	r3, r9
+
+        5086:	a90c      	add	r1, sp, #48	@ 0x30
+
+        5088:	47a0      	blx	r4
+
+        508a:	e75b      	b.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        508c:	4770      	bx	lr
+
+    docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&):
+
+        508e:	ab06      	add	r3, sp, #24
+
+        5090:	4630      	mov	r0, r6
+
+        5092:	aa05      	add	r2, sp, #20
+
+        5094:	4639      	mov	r1, r7
+
+        5096:	47c8      	blx	r9
+
+        5098:	4603      	mov	r3, r0
+
+        509a:	e736      	b.n	4f0a <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x5a>
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE14checkFrameSizeERKN3etl4spanIKhLj4294967295EEEhNS_21DoCanFrameCodecConfigIhE10SizeConfigE():
+
+        509c:	7808      	ldrb	r0, [r1, #0]
+
+        509e:	4580      	cmp	r8, r0
+
+        50a0:	f4ff af50 	bcc.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        50a4:	7849      	ldrb	r1, [r1, #1]
+
+        50a6:	4588      	cmp	r8, r1
+
+        50a8:	f63f af4c 	bhi.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE17decodeSingleFrameERKN3etl4spanIKhLj4294967295EEERtRS7_():
+
+        50ac:	2a00      	cmp	r2, #0
+
+        50ae:	d050      	beq.n	5152 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x2a2>
+
+        50b0:	f1b8 0f08 	cmp.w	r8, #8
+
+        50b4:	f63f af46 	bhi.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        50b8:	1c73      	adds	r3, r6, #1
+
+        50ba:	18d1      	adds	r1, r2, r3
+
+        50bc:	4588      	cmp	r8, r1
+
+        50be:	f4ff af41 	bcc.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZNK3etl4spanIKhLj4294967295EEixEj():
+
+        50c2:	4423      	add	r3, r4
+
+    _ZN3etl4spanIKhLj4294967295EEC4IPS1_jEET_T0_():
+
+        50c4:	1898      	adds	r0, r3, r2
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        50c6:	6829      	ldr	r1, [r5, #0]
+
+    _ZN3etl4spanIKhLj4294967295EEaSERKS2_():
+
+        50c8:	e9cd 300a 	strd	r3, r0, [sp, #40]	@ 0x28
+
+    _ZN5docan17DoCanFrameDecoderINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11decodeFrameERKNS_15DoCanConnectionIS2_EERKN3etl4spanIKhLj4294967295EEERNS_19IDoCanFrameReceiverIS2_EE():
+
+        50cc:	a80a      	add	r0, sp, #40	@ 0x28
+
+        50ce:	2300      	movs	r3, #0
+
+        50d0:	9001      	str	r0, [sp, #4]
+
+        50d2:	9300      	str	r3, [sp, #0]
+
+        50d4:	680c      	ldr	r4, [r1, #0]
+
+        50d6:	2301      	movs	r3, #1
+
+        50d8:	a90c      	add	r1, sp, #48	@ 0x30
+
+        50da:	4628      	mov	r0, r5
+
+        50dc:	47a0      	blx	r4
+
+        50de:	e731      	b.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE16decodeFirstFrameERKN3etl4spanIKhLj4294967295EEERtSA_RhRS7_():
+
+        50e0:	6818      	ldr	r0, [r3, #0]
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE14checkFrameSizeERKN3etl4spanIKhLj4294967295EEEhNS_21DoCanFrameCodecConfigIhE10SizeConfigE():
+
+        50e2:	7a41      	ldrb	r1, [r0, #9]
+
+        50e4:	3106      	adds	r1, #6
+
+        50e6:	4588      	cmp	r8, r1
+
+        50e8:	f4ff af2c 	bcc.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        50ec:	7881      	ldrb	r1, [r0, #2]
+
+        50ee:	4588      	cmp	r8, r1
+
+        50f0:	f4ff af28 	bcc.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        50f4:	78c1      	ldrb	r1, [r0, #3]
+
+        50f6:	4588      	cmp	r8, r1
+
+        50f8:	f63f af24 	bhi.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE16decodeFirstFrameERKN3etl4spanIKhLj4294967295EEERtSA_RhRS7_():
+
+        50fc:	1cb1      	adds	r1, r6, #2
+
+    _ZNK3etl4spanIKhLj4294967295EEixEj():
+
+        50fe:	4421      	add	r1, r4
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+        5100:	920a      	str	r2, [sp, #40]	@ 0x28
+
+        5102:	a80a      	add	r0, sp, #40	@ 0x28
+
+        5104:	1e4a      	subs	r2, r1, #1
+
+        5106:	3103      	adds	r1, #3
+
+    _ZN3etl6copy_nIPKcjPhEET1_T_T0_S4_():
+
+        5108:	f812 cf01 	ldrb.w	ip, [r2, #1]!
+
+        510c:	f800 cb01 	strb.w	ip, [r0], #1
+
+        5110:	4291      	cmp	r1, r2
+
+        5112:	d1f9      	bne.n	5108 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x258>
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        5114:	2200      	movs	r2, #0
+
+        5116:	9207      	str	r2, [sp, #28]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        5118:	a807      	add	r0, sp, #28
+
+        511a:	2204      	movs	r2, #4
+
+        511c:	a90a      	add	r1, sp, #40	@ 0x28
+
+        511e:	9302      	str	r3, [sp, #8]
+
+        5120:	f7fb fa27 	bl	572 <<a href="../../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+        5124:	9a07      	ldr	r2, [sp, #28]
+
+        5126:	fa92 fa82 	rev.w	sl, r2
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE16decodeFirstFrameERKN3etl4spanIKhLj4294967295EEERtSA_RhRS7_():
+
+        512a:	f5aa 5280 	sub.w	r2, sl, #4096	@ 0x1000
+
+        512e:	f5b2 4f70 	cmp.w	r2, #61440	@ 0xf000
+
+        5132:	f4bf af07 	bcs.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        5136:	fbba f1f7 	udiv	r1, sl, r7
+
+        513a:	f64f 72ff 	movw	r2, #65535	@ 0xffff
+
+        513e:	4291      	cmp	r1, r2
+
+        5140:	f43f af00 	beq.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        5144:	9b02      	ldr	r3, [sp, #8]
+
+        5146:	b289      	uxth	r1, r1
+
+        5148:	fa1f f28a 	uxth.w	r2, sl
+
+        514c:	f04f 0806 	mov.w	r8, #6
+
+        5150:	e755      	b.n	4ffe <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x14e>
+
+    _ZNK5docan15DoCanFrameCodecINS_18DoCanDataLinkLayerImthLm4294967295EtEEE17decodeSingleFrameERKN3etl4spanIKhLj4294967295EEERtRS7_():
+
+        5152:	f1b8 0f08 	cmp.w	r8, #8
+
+        5156:	f67f aef5 	bls.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        515a:	f89c 2001 	ldrb.w	r2, [ip, #1]
+
+        515e:	18d0      	adds	r0, r2, r3
+
+        5160:	4288      	cmp	r0, r1
+
+        5162:	f63f aeef 	bhi.w	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        5166:	4580      	cmp	r8, r0
+
+        5168:	d2ab      	bcs.n	50c2 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x212>
+
+        516a:	e6eb      	b.n	4f44 <<a href="./22ccc282aa51c94b5157be7211072b9b.html">docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::frameReceived(can::CANFrame const&)</a>+0x94>
+
+        516c:	00004e71 	.word	0x00004e71
+
+        5170:	1ffe0120 	.word	0x1ffe0120
+
+        5174:	00023224 	.word	0x00023224
+
+    </pre>
+
+    
+    <pre><a href="./a2e75b238d35085c82d4e0193b969f7b.html">non-virtual thunk to docan::DoCanPhysicalCanTransceiver&lt;docan::DoCanNormalAddressing&lt;unsigned short, unsigned char, unsigned short&gt; &gt;::frameReceived(can::CANFrame const&amp;) (8)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 112</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 68</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../addressing/DoCanNormalAddressingFilter.h/24e898223328fc02544fb420607bf66f.html" class="icon-function">docan::DoCanNormalAddressingFilter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt;, docan::DoCanNormalAddressingFilterAddressEntry&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt; &gt;::findEntryTypeByReceptionAddress(unsigned long, docan::DoCanNormalAddressingFilterAddressEntry&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt; const*, docan::DoCanNormalAddressingFilterAddressEntry&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt; const*)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">96
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2025</span>
+        
+    </div>
+    </div>
+</body>
+</html>
