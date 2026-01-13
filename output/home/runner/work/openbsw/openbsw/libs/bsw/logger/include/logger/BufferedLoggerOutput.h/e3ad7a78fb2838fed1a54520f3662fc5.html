@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../logger.html">logger</a></li>
+        
+        <li><a href="../../../include.html">include</a></li>
+        
+        <li ><a href="../../logger.html">logger</a>
+            </li>
+
+        
+        <li class="active"><a href="../BufferedLoggerOutput.h.html">BufferedLoggerOutput.h</a>:241
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">logger::BufferedLoggerOutput&lt;interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate&gt;::logOutput(util::logger::ComponentInfo const&amp;, util::logger::LevelInfo const&amp;, char const*, std::__va_list)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00011634</td>
+                <td>
+    
+    
+</td>
+                <td>240 (static)</td>
+                <td>676</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (9,
+                            <span title="sum of used bytes by all callees">
+                            Σ=1188
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/21e3a263adc5c0d6d9c9de10133e31fd.html">etl_get_high_resolution_clock (104)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/985b4898f9e942c80a378b866de7bf13.html">__aeabi_ldivmod (160)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../EntrySerializer.h/b1d0c5d6729c87013eb973ea38c9b9ac.html">logger::EntrySerializer&lt;unsigned short, unsigned long, logger::SectionPredicate&gt;::EntryWriter::writeString(char const*) (128)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/PrintfArgumentReader.cpp/3978f963a885df700870d63157b69f0c.html">util::format::PrintfArgumentReader::PrintfArgumentReader(estd::internal::_va_list_ref&lt;std::__va_list&gt;) (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/PrintfFormatScanner.cpp/ccd636cd5a0dc4c7046a42f9280eacca.html">util::format::PrintfFormatScanner::PrintfFormatScanner(char const*) (84)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/PrintfFormatScanner.cpp/e3061f747afadd1732a6fb9ae6054c32.html">util::format::PrintfFormatScanner::nextToken() (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/PrintfArgumentReader.cpp/5e08a175f1772f8b8e16625740724fa4.html">util::format::PrintfArgumentReader::readArgument(util::format::ParamDatatype) (124)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../EntrySerializer.h/7b256d36aa89ab1e86ede44d63d6833f.html">logger::EntrySerializer&lt;unsigned short, unsigned long, logger::SectionPredicate&gt;::EntryWriter::writeParamVariant(util::format::ParamDatatype, util::format::ParamVariant const&amp;) (484)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../loggerIntegration/src/logger/LoggerComposition.cpp/232e4ed732d7094da7054702ab440454.html">logger::LoggerComposition::stop(etl::delegate&lt;void ()&gt; const&amp;) (80)</a></pre>
+    
+
+    <pre>
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       11634:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+       11638:	4604      	mov	r4, r0
+
+       1163a:	6880      	ldr	r0, [r0, #8]
+
+       1163c:	461f      	mov	r7, r3
+
+       1163e:	6803      	ldr	r3, [r0, #0]
+
+       11640:	4690      	mov	r8, r2
+
+       11642:	681b      	ldr	r3, [r3, #0]
+
+       11644:	4aa0      	ldr	r2, [pc, #640]	@ (118c8 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x294>)
+
+       11646:	4293      	cmp	r3, r2
+
+       11648:	b0b3      	sub	sp, #204	@ 0xcc
+
+       1164a:	460e      	mov	r6, r1
+
+       1164c:	f040 8133 	bne.w	118b6 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x282>
+
+    _ZN3etl6chrono21high_resolution_clock3nowEv():
+
+       11650:	f00e fe22 	bl	20298 <<a href="../../../../../../executables/referenceApp/platforms/s32k148evb/bspConfiguration/src/bsp/SystemTimer/SystemTimer.cpp/21e3a263adc5c0d6d9c9de10133e31fd.html">etl_get_high_resolution_clock</a>>
+
+    _ZN3etl6chrono13duration_castINS0_8durationImNS_5ratioILx1ELx1000EEEEExNS3_ILx1ELx1000000000EEEEET_RKNS2_IT0_T1_EE():
+
+       11654:	4a9d      	ldr	r2, [pc, #628]	@ (118cc <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x298>)
+
+       11656:	2300      	movs	r3, #0
+
+       11658:	f7ef f8da 	bl	810 <<a href="../../../../../../../../../../../unknown/unknown/985b4898f9e942c80a378b866de7bf13.html">__aeabi_ldivmod</a>>
+
+       1165c:	4605      	mov	r5, r0
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+       1165e:	f8d8 3000 	ldr.w	r3, [r8]
+
+    _ZNK4util6logger13ComponentInfo8getIndexEv():
+
+       11662:	f896 a000 	ldrb.w	sl, [r6]
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+       11666:	2b00      	cmp	r3, #0
+
+       11668:	f000 811b 	beq.w	118a2 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x26e>
+
+       1166c:	ae12      	add	r6, sp, #72	@ 0x48
+
+       1166e:	f893 8008 	ldrb.w	r8, [r3, #8]
+
+       11672:	9b3c      	ldr	r3, [sp, #240]	@ 0xf0
+
+       11674:	9303      	str	r3, [sp, #12]
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       11676:	2204      	movs	r2, #4
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE9serializeERKN3etl4spanIhLj4294967295EEEmhN4util6logger5LevelEPKcSt9__va_list():
+
+       11678:	f104 032c 	add.w	r3, r4, #44	@ 0x2c
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       1167c:	a902      	add	r1, sp, #8
+
+       1167e:	4630      	mov	r0, r6
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriterC4EPhS4_RKS1_():
+
+       11680:	9307      	str	r3, [sp, #28]
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       11682:	9502      	str	r5, [sp, #8]
+
+       11684:	f88d a005 	strb.w	sl, [sp, #5]
+
+       11688:	f7ee ff73 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       1168c:	2201      	movs	r2, #1
+
+       1168e:	f10d 0105 	add.w	r1, sp, #5
+
+       11692:	a813      	add	r0, sp, #76	@ 0x4c
+
+       11694:	f7ee ff6d 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       11698:	2201      	movs	r2, #1
+
+       1169a:	f10d 0106 	add.w	r1, sp, #6
+
+       1169e:	f10d 004d 	add.w	r0, sp, #77	@ 0x4d
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE9serializeERKN3etl4spanIhLj4294967295EEEmhN4util6logger5LevelEPKcSt9__va_list():
+
+       116a2:	f88d 8006 	strb.w	r8, [sp, #6]
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       116a6:	f7ee ff64 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE9serializeERKN3etl4spanIhLj4294967295EEEmhN4util6logger5LevelEPKcSt9__va_list():
+
+       116aa:	f10d 034e 	add.w	r3, sp, #78	@ 0x4e
+
+       116ae:	aa32      	add	r2, sp, #200	@ 0xc8
+
+       116b0:	4639      	mov	r1, r7
+
+       116b2:	a804      	add	r0, sp, #16
+
+       116b4:	9205      	str	r2, [sp, #20]
+
+       116b6:	9306      	str	r3, [sp, #24]
+
+       116b8:	9604      	str	r6, [sp, #16]
+
+       116ba:	f7ff fd49 	bl	11150 <<a href="../EntrySerializer.h/b1d0c5d6729c87013eb973ea38c9b9ac.html">logger::EntrySerializer<unsigned short, unsigned long, logger::SectionPredicate>::EntryWriter::writeString(char const*)</a>>
+
+       116be:	a903      	add	r1, sp, #12
+
+       116c0:	a808      	add	r0, sp, #32
+
+       116c2:	f8dd 9010 	ldr.w	r9, [sp, #16]
+
+       116c6:	f8dd 8014 	ldr.w	r8, [sp, #20]
+
+       116ca:	9d06      	ldr	r5, [sp, #24]
+
+       116cc:	f003 fda8 	bl	15220 <<a href="../../../../util/src/util/format/PrintfArgumentReader.cpp/3978f963a885df700870d63157b69f0c.html">util::format::PrintfArgumentReader::PrintfArgumentReader(estd::internal::_va_list_ref<std::__va_list>)</a>>
+
+       116d0:	4639      	mov	r1, r7
+
+       116d2:	a80c      	add	r0, sp, #48	@ 0x30
+
+       116d4:	f003 fd14 	bl	15100 <<a href="../../../../util/src/util/format/PrintfFormatScanner.cpp/ccd636cd5a0dc4c7046a42f9280eacca.html">util::format::PrintfFormatScanner::PrintfFormatScanner(char const*)</a>>
+
+    _ZNK4util6format19PrintfFormatScanner8hasTokenEv():
+
+       116d8:	f89d 7038 	ldrb.w	r7, [sp, #56]	@ 0x38
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE9serializeERKN3etl4spanIhLj4294967295EEEmhN4util6logger5LevelEPKcSt9__va_list():
+
+       116dc:	2f02      	cmp	r7, #2
+
+       116de:	d107      	bne.n	116f0 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xbc>
+
+       116e0:	e027      	b.n	11732 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xfe>
+
+       116e2:	a80c      	add	r0, sp, #48	@ 0x30
+
+       116e4:	f003 fcf0 	bl	150c8 <<a href="../../../../util/src/util/format/PrintfFormatScanner.cpp/e3061f747afadd1732a6fb9ae6054c32.html">util::format::PrintfFormatScanner::nextToken()</a>>
+
+    _ZNK4util6format19PrintfFormatScanner8hasTokenEv():
+
+       116e8:	f89d 7038 	ldrb.w	r7, [sp, #56]	@ 0x38
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE9serializeERKN3etl4spanIhLj4294967295EEEmhN4util6logger5LevelEPKcSt9__va_list():
+
+       116ec:	2f02      	cmp	r7, #2
+
+       116ee:	d020      	beq.n	11732 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xfe>
+
+       116f0:	2f01      	cmp	r7, #1
+
+       116f2:	d1f6      	bne.n	116e2 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xae>
+
+       116f4:	9b10      	ldr	r3, [sp, #64]	@ 0x40
+
+       116f6:	3302      	adds	r3, #2
+
+       116f8:	f000 809e 	beq.w	11838 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x204>
+
+       116fc:	9b11      	ldr	r3, [sp, #68]	@ 0x44
+
+       116fe:	3302      	adds	r3, #2
+
+       11700:	d073      	beq.n	117ea <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x1b6>
+
+       11702:	f89d 703f 	ldrb.w	r7, [sp, #63]	@ 0x3f
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter16copyParamVariantERN4util6format20PrintfArgumentReaderENS5_13ParamDatatypeE():
+
+       11706:	a808      	add	r0, sp, #32
+
+       11708:	4639      	mov	r1, r7
+
+       1170a:	f003 fd4b 	bl	151a4 <<a href="../../../../util/src/util/format/PrintfArgumentReader.cpp/5e08a175f1772f8b8e16625740724fa4.html">util::format::PrintfArgumentReader::readArgument(util::format::ParamDatatype)</a>>
+
+       1170e:	4639      	mov	r1, r7
+
+       11710:	4602      	mov	r2, r0
+
+       11712:	a804      	add	r0, sp, #16
+
+       11714:	e9cd 9804 	strd	r9, r8, [sp, #16]
+
+       11718:	9506      	str	r5, [sp, #24]
+
+       1171a:	f7ff fd59 	bl	111d0 <<a href="../EntrySerializer.h/7b256d36aa89ab1e86ede44d63d6833f.html">logger::EntrySerializer<unsigned short, unsigned long, logger::SectionPredicate>::EntryWriter::writeParamVariant(util::format::ParamDatatype, util::format::ParamVariant const&)</a>>
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE9serializeERKN3etl4spanIhLj4294967295EEEmhN4util6logger5LevelEPKcSt9__va_list():
+
+       1171e:	a80c      	add	r0, sp, #48	@ 0x30
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter16copyParamVariantERN4util6format20PrintfArgumentReaderENS5_13ParamDatatypeE():
+
+       11720:	e9dd 9804 	ldrd	r9, r8, [sp, #16]
+
+       11724:	9d06      	ldr	r5, [sp, #24]
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE9serializeERKN3etl4spanIhLj4294967295EEEmhN4util6logger5LevelEPKcSt9__va_list():
+
+       11726:	f003 fccf 	bl	150c8 <<a href="../../../../util/src/util/format/PrintfFormatScanner.cpp/e3061f747afadd1732a6fb9ae6054c32.html">util::format::PrintfFormatScanner::nextToken()</a>>
+
+    _ZNK4util6format19PrintfFormatScanner8hasTokenEv():
+
+       1172a:	f89d 7038 	ldrb.w	r7, [sp, #56]	@ 0x38
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE9serializeERKN3etl4spanIhLj4294967295EEEmhN4util6logger5LevelEPKcSt9__va_list():
+
+       1172e:	2f02      	cmp	r7, #2
+
+       11730:	d1de      	bne.n	116f0 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xbc>
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       11732:	f3ef 8710 	mrs	r7, PRIMASK
+
+    getMachineStateRegisterValueAndSuspendAllInterrupts():
+
+       11736:	b672      	cpsid	i
+
+    _ZNK6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter7getSizeEv():
+
+       11738:	eba5 0509 	sub.w	r5, r5, r9
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       1173c:	b2ad      	uxth	r5, r5
+
+    _ZN6logger11EntryBufferILh128EmE8addEntryERKN3etl4spanIKhLj4294967295EEE():
+
+       1173e:	2d80      	cmp	r5, #128	@ 0x80
+
+       11740:	bf28      	it	cs
+
+       11742:	2580      	movcs	r5, #128	@ 0x80
+
+       11744:	6a61      	ldr	r1, [r4, #36]	@ 0x24
+
+       11746:	f8d4 c028 	ldr.w	ip, [r4, #40]	@ 0x28
+
+       1174a:	f105 0801 	add.w	r8, r5, #1
+
+       1174e:	eb08 0301 	add.w	r3, r8, r1
+
+       11752:	4563      	cmp	r3, ip
+
+       11754:	d915      	bls.n	11782 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x14e>
+
+       11756:	69e0      	ldr	r0, [r4, #28]
+
+    _ZNK6logger11EntryBufferILh128EmE11movePointerIPhEEvRT_j():
+
+       11758:	f8d4 e010 	ldr.w	lr, [r4, #16]
+
+       1175c:	3001      	adds	r0, #1
+
+    _ZN6logger11EntryBufferILh128EmE8addEntryERKN3etl4spanIKhLj4294967295EEE():
+
+       1175e:	6963      	ldr	r3, [r4, #20]
+
+       11760:	61e0      	str	r0, [r4, #28]
+
+       11762:	781a      	ldrb	r2, [r3, #0]
+
+       11764:	3201      	adds	r2, #1
+
+    _ZNK6logger11EntryBufferILh128EmE11movePointerIPhEEvRT_j():
+
+       11766:	4413      	add	r3, r2
+
+       11768:	459e      	cmp	lr, r3
+
+       1176a:	bf98      	it	ls
+
+       1176c:	eba3 030c 	subls.w	r3, r3, ip
+
+    _ZN6logger11EntryBufferILh128EmE8addEntryERKN3etl4spanIKhLj4294967295EEE():
+
+       11770:	1a89      	subs	r1, r1, r2
+
+    _ZNK6logger11EntryBufferILh128EmE11movePointerIPhEEvRT_j():
+
+       11772:	6163      	str	r3, [r4, #20]
+
+    _ZN6logger11EntryBufferILh128EmE8addEntryERKN3etl4spanIKhLj4294967295EEE():
+
+       11774:	eb08 0301 	add.w	r3, r8, r1
+
+       11778:	459c      	cmp	ip, r3
+
+       1177a:	6261      	str	r1, [r4, #36]	@ 0x24
+
+       1177c:	f100 0001 	add.w	r0, r0, #1
+
+       11780:	d3ed      	bcc.n	1175e <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x12a>
+
+       11782:	69a3      	ldr	r3, [r4, #24]
+
+       11784:	701d      	strb	r5, [r3, #0]
+
+    _ZNK6logger11EntryBufferILh128EmE11movePointerIPhEEvRT_j():
+
+       11786:	69a0      	ldr	r0, [r4, #24]
+
+       11788:	6922      	ldr	r2, [r4, #16]
+
+       1178a:	3001      	adds	r0, #1
+
+       1178c:	4290      	cmp	r0, r2
+
+       1178e:	61a0      	str	r0, [r4, #24]
+
+       11790:	d302      	bcc.n	11798 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x164>
+
+       11792:	6aa3      	ldr	r3, [r4, #40]	@ 0x28
+
+       11794:	1ac0      	subs	r0, r0, r3
+
+       11796:	61a0      	str	r0, [r4, #24]
+
+    _ZN6logger11EntryBufferILh128EmE8addEntryERKN3etl4spanIKhLj4294967295EEE():
+
+       11798:	1943      	adds	r3, r0, r5
+
+       1179a:	429a      	cmp	r2, r3
+
+       1179c:	d374      	bcc.n	11888 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x254>
+
+       1179e:	4631      	mov	r1, r6
+
+       117a0:	462a      	mov	r2, r5
+
+       117a2:	f7ee fee6 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZNK6logger11EntryBufferILh128EmE11movePointerIPhEEvRT_j():
+
+       117a6:	69a3      	ldr	r3, [r4, #24]
+
+       117a8:	6922      	ldr	r2, [r4, #16]
+
+       117aa:	442b      	add	r3, r5
+
+       117ac:	4293      	cmp	r3, r2
+
+       117ae:	61a3      	str	r3, [r4, #24]
+
+       117b0:	d302      	bcc.n	117b8 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x184>
+
+       117b2:	6aa2      	ldr	r2, [r4, #40]	@ 0x28
+
+       117b4:	1a9b      	subs	r3, r3, r2
+
+       117b6:	61a3      	str	r3, [r4, #24]
+
+    _ZN6logger11EntryBufferILh128EmE8addEntryERKN3etl4spanIKhLj4294967295EEE():
+
+       117b8:	6a62      	ldr	r2, [r4, #36]	@ 0x24
+
+       117ba:	6a23      	ldr	r3, [r4, #32]
+
+       117bc:	4442      	add	r2, r8
+
+       117be:	3301      	adds	r3, #1
+
+       117c0:	6262      	str	r2, [r4, #36]	@ 0x24
+
+       117c2:	6223      	str	r3, [r4, #32]
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       117c4:	f387 8810 	msr	PRIMASK, r7
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE8get_headEv():
+
+       117c8:	6ba5      	ldr	r5, [r4, #56]	@ 0x38
+
+    _ZN3etl14intrusive_listIN6logger15ILoggerListenerENS_18bidirectional_linkILj0EEEE3endEv():
+
+       117ca:	3434      	adds	r4, #52	@ 0x34
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       117cc:	42ac      	cmp	r4, r5
+
+       117ce:	d009      	beq.n	117e4 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x1b0>
+
+    _ZNK3etl14intrusive_listIN6logger15ILoggerListenerENS_18bidirectional_linkILj0EEEE8iteratordeEv():
+
+       117d0:	2d00      	cmp	r5, #0
+
+       117d2:	d077      	beq.n	118c4 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x290>
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       117d4:	f855 3c04 	ldr.w	r3, [r5, #-4]
+
+       117d8:	1f28      	subs	r0, r5, #4
+
+       117da:	681b      	ldr	r3, [r3, #0]
+
+       117dc:	4798      	blx	r3
+
+    _ZN3etl14intrusive_listIN6logger15ILoggerListenerENS_18bidirectional_linkILj0EEEE8iteratorppEv():
+
+       117de:	686d      	ldr	r5, [r5, #4]
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       117e0:	42ac      	cmp	r4, r5
+
+       117e2:	d1f5      	bne.n	117d0 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x19c>
+
+       117e4:	b033      	add	sp, #204	@ 0xcc
+
+       117e6:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter16copyParamVariantERN4util6format20PrintfArgumentReaderENS5_13ParamDatatypeE():
+
+       117ea:	2106      	movs	r1, #6
+
+       117ec:	a808      	add	r0, sp, #32
+
+       117ee:	f003 fcd9 	bl	151a4 <<a href="../../../../util/src/util/format/PrintfArgumentReader.cpp/5e08a175f1772f8b8e16625740724fa4.html">util::format::PrintfArgumentReader::readArgument(util::format::ParamDatatype)</a>>
+
+       117f2:	2306      	movs	r3, #6
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       117f4:	45a8      	cmp	r8, r5
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter16copyParamVariantERN4util6format20PrintfArgumentReaderENS5_13ParamDatatypeE():
+
+       117f6:	4607      	mov	r7, r0
+
+    logger::EntrySerializer<unsigned short, unsigned long, logger::SectionPredicate>::EntryWriter::writeParamVariant(util::format::ParamDatatype, util::format::ParamVariant const&):
+
+       117f8:	f88d 3007 	strb.w	r3, [sp, #7]
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       117fc:	f105 0a01 	add.w	sl, r5, #1
+
+       11800:	d909      	bls.n	11816 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x1e2>
+
+       11802:	45d0      	cmp	r8, sl
+
+       11804:	bf34      	ite	cc
+
+       11806:	eba8 0205 	subcc.w	r2, r8, r5
+
+       1180a:	2201      	movcs	r2, #1
+
+       1180c:	f10d 0107 	add.w	r1, sp, #7
+
+       11810:	4628      	mov	r0, r5
+
+       11812:	f7ee feae 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       11816:	2f00      	cmp	r7, #0
+
+       11818:	d052      	beq.n	118c0 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x28c>
+
+       1181a:	45d0      	cmp	r8, sl
+
+       1181c:	f105 0505 	add.w	r5, r5, #5
+
+       11820:	f67f af6f 	bls.w	11702 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xce>
+
+       11824:	45a8      	cmp	r8, r5
+
+       11826:	bf34      	ite	cc
+
+       11828:	eba8 020a 	subcc.w	r2, r8, sl
+
+       1182c:	2204      	movcs	r2, #4
+
+       1182e:	4639      	mov	r1, r7
+
+       11830:	4650      	mov	r0, sl
+
+       11832:	f7ee fe9e 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       11836:	e764      	b.n	11702 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xce>
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter16copyParamVariantERN4util6format20PrintfArgumentReaderENS5_13ParamDatatypeE():
+
+       11838:	2106      	movs	r1, #6
+
+       1183a:	a808      	add	r0, sp, #32
+
+       1183c:	f003 fcb2 	bl	151a4 <<a href="../../../../util/src/util/format/PrintfArgumentReader.cpp/5e08a175f1772f8b8e16625740724fa4.html">util::format::PrintfArgumentReader::readArgument(util::format::ParamDatatype)</a>>
+
+       11840:	2306      	movs	r3, #6
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       11842:	45a8      	cmp	r8, r5
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter16copyParamVariantERN4util6format20PrintfArgumentReaderENS5_13ParamDatatypeE():
+
+       11844:	4683      	mov	fp, r0
+
+    logger::EntrySerializer<unsigned short, unsigned long, logger::SectionPredicate>::EntryWriter::writeParamVariant(util::format::ParamDatatype, util::format::ParamVariant const&):
+
+       11846:	f88d 3007 	strb.w	r3, [sp, #7]
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       1184a:	f105 0a01 	add.w	sl, r5, #1
+
+       1184e:	d909      	bls.n	11864 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x230>
+
+       11850:	45d0      	cmp	r8, sl
+
+       11852:	bf34      	ite	cc
+
+       11854:	eba8 0205 	subcc.w	r2, r8, r5
+
+       11858:	463a      	movcs	r2, r7
+
+       1185a:	f10d 0107 	add.w	r1, sp, #7
+
+       1185e:	4628      	mov	r0, r5
+
+       11860:	f7ee fe87 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       11864:	f1bb 0f00 	cmp.w	fp, #0
+
+       11868:	d028      	beq.n	118bc <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x288>
+
+       1186a:	45d0      	cmp	r8, sl
+
+       1186c:	f105 0505 	add.w	r5, r5, #5
+
+       11870:	f67f af44 	bls.w	116fc <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xc8>
+
+       11874:	45a8      	cmp	r8, r5
+
+       11876:	bf34      	ite	cc
+
+       11878:	eba8 020a 	subcc.w	r2, r8, sl
+
+       1187c:	2204      	movcs	r2, #4
+
+       1187e:	4659      	mov	r1, fp
+
+       11880:	4650      	mov	r0, sl
+
+       11882:	f7ee fe76 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       11886:	e739      	b.n	116fc <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xc8>
+
+    _ZN6logger11EntryBufferILh128EmE8addEntryERKN3etl4spanIKhLj4294967295EEE():
+
+       11888:	eba2 0900 	sub.w	r9, r2, r0
+
+       1188c:	4631      	mov	r1, r6
+
+       1188e:	464a      	mov	r2, r9
+
+       11890:	f7ee fe6f 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+       11894:	68e0      	ldr	r0, [r4, #12]
+
+       11896:	61a0      	str	r0, [r4, #24]
+
+       11898:	eb06 0109 	add.w	r1, r6, r9
+
+       1189c:	eba5 0509 	sub.w	r5, r5, r9
+
+       118a0:	e77e      	b.n	117a0 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x16c>
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+       118a2:	4b0b      	ldr	r3, [pc, #44]	@ (118d0 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x29c>)
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+       118a4:	4a0b      	ldr	r2, [pc, #44]	@ (118d4 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x2a0>)
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+       118a6:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+       118a8:	9212      	str	r2, [sp, #72]	@ 0x48
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+       118aa:	ae12      	add	r6, sp, #72	@ 0x48
+
+       118ac:	4630      	mov	r0, r6
+
+       118ae:	4798      	blx	r3
+
+       118b0:	f8d8 3000 	ldr.w	r3, [r8]
+
+       118b4:	e6db      	b.n	1166e <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x3a>
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       118b6:	4798      	blx	r3
+
+       118b8:	4605      	mov	r5, r0
+
+       118ba:	e6d0      	b.n	1165e <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0x2a>
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       118bc:	4655      	mov	r5, sl
+
+    logger::EntrySerializer<unsigned short, unsigned long, logger::SectionPredicate>::EntryWriter::writeParamVariant(util::format::ParamDatatype, util::format::ParamVariant const&):
+
+       118be:	e71d      	b.n	116fc <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xc8>
+
+    _ZN6logger15EntrySerializerItmNS_16SectionPredicateEE11EntryWriter10writeBytesEPKvt():
+
+       118c0:	4655      	mov	r5, sl
+
+    logger::EntrySerializer<unsigned short, unsigned long, logger::SectionPredicate>::EntryWriter::writeParamVariant(util::format::ParamDatatype, util::format::ParamVariant const&):
+
+       118c2:	e71e      	b.n	11702 <<a href="./e3ad7a78fb2838fed1a54520f3662fc5.html">logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list)</a>+0xce>
+
+    logger::BufferedLoggerOutput<interrupts::SuspendResumeAllInterruptsScopedLock, (unsigned char)128, unsigned short, unsigned long, unsigned long, logger::SectionPredicate>::logOutput(util::logger::ComponentInfo const&, util::logger::LevelInfo const&, char const*, std::__va_list):
+
+       118c4:	682b      	ldr	r3, [r5, #0]
+
+       118c6:	deff      	udf	#255	@ 0xff
+
+       118c8:	00010a49 	.word	0x00010a49
+
+       118cc:	000f4240 	.word	0x000f4240
+
+       118d0:	1ffe0120 	.word	0x1ffe0120
+
+       118d4:	00024698 	.word	0x00024698
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../executables/referenceApp/platforms/s32k148evb/main/src/main.cpp/e1601aa9c9101f5167f5233c773d1a54.html">boardInit (20)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 336</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 916</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    336
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    916
+                    
+                    
+                </td>
+                <td class="col_size">304</td>
+                <td><a href="../EntrySerializer.h/0e9e844bc53233a34fc0d33d4143e4b0.html" class="icon-function">logger::EntrySerializer&lt;unsigned short, unsigned long, logger::SectionPredicate&gt;::EntryWriter::writeString(unsigned char, char const*, unsigned short)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    296
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    612
+                    
+                    
+                </td>
+                <td class="col_size">128</td>
+                <td><a href="../EntrySerializer.h/b1d0c5d6729c87013eb973ea38c9b9ac.html" class="icon-function">logger::EntrySerializer&lt;unsigned short, unsigned long, logger::SectionPredicate&gt;::EntryWriter::writeString(char const*)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    264
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">484</td>
+                <td><a href="../EntrySerializer.h/7b256d36aa89ab1e86ede44d63d6833f.html" class="icon-function">logger::EntrySerializer&lt;unsigned short, unsigned long, logger::SectionPredicate&gt;::EntryWriter::writeParamVariant(util::format::ParamDatatype, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">240
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

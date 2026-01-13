@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../runtime.html">runtime</a></li>
+        
+        <li><a href="../../../include.html">include</a></li>
+        
+        <li ><a href="../../runtime.html">runtime</a>
+            </li>
+
+        
+        <li class="active"><a href="../StatisticsWriter.h.html">StatisticsWriter.h</a>:97
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">void runtime::StatisticsWriter::formatStatisticsGroup&lt;runtime::StatisticsContainer&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics&gt;::Iterator&gt;(runtime::StatisticsWriter::FormatStatistics&lt;runtime::StatisticsContainer&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics&gt;::Iterator::StatisticsType&gt;::Type, char const*, unsigned long, runtime::StatisticsContainer&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics&gt;::Iterator)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000f5c8</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>72 (static)</td>
+                <td>348</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../executables/referenceApp/consoleCommands/src/lifecycle/console/StatisticsCommand.cpp/2b1eaa5476cafe9c518ecab084049cbf.html">void (anonymous namespace)::printCpu&lt;runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 10u, runtime::RuntimeStatistics&gt;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 3u, runtime::RuntimeStatistics&gt; &gt;(util::command::CommandContext&amp;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 10u, runtime::RuntimeStatistics&gt; const&amp;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 3u, runtime::RuntimeStatistics&gt; const&amp;, etl::optional&lt;unsigned long&gt; const&amp;, unsigned long) (392)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (3,
+                            <span title="sum of used bytes by all callees">
+                            Σ=80
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../src/runtime/StatisticsWriter.cpp/c64c2dd8388696d6a386b9fd1eac6e7c.html">runtime::StatisticsWriter::setMode(runtime::StatisticsWriter::Mode::Type) (4)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../src/runtime/StatisticsWriter.cpp/a8660f5a5c15b5a39d019c9f9e665cb3.html">runtime::StatisticsWriter::writeText(char const*, unsigned long, char const*) (52)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../src/runtime/StatisticsWriter.cpp/c4faa6e56be83bcd36a965cbdb83a7e8.html">runtime::StatisticsWriter::writeEol() (24)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../executables/referenceApp/consoleCommands/src/lifecycle/console/StatisticsCommand.cpp/ca5b03467aa2a98bbb96d28bd14844eb.html">lifecycle::StatisticsCommand::cyclic_1000ms() (332)</a></pre>
+    
+
+    <pre>
+
+    void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator):
+
+        f5c8:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+        f5cc:	469a      	mov	sl, r3
+
+        f5ce:	b089      	sub	sp, #36	@ 0x24
+
+        f5d0:	2300      	movs	r3, #0
+
+        f5d2:	e9cd 1200 	strd	r1, r2, [sp]
+
+        f5d6:	4619      	mov	r1, r3
+
+        f5d8:	e9cd 3304 	strd	r3, r3, [sp, #16]
+
+        f5dc:	e9cd 3306 	strd	r3, r3, [sp, #24]
+
+        f5e0:	4605      	mov	r5, r0
+
+        f5e2:	9c13      	ldr	r4, [sp, #76]	@ 0x4c
+
+        f5e4:	f006 ff88 	bl	164f8 <<a href="../../../src/runtime/StatisticsWriter.cpp/c64c2dd8388696d6a386b9fd1eac6e7c.html">runtime::StatisticsWriter::setMode(runtime::StatisticsWriter::Mode::Type)</a>>
+
+        f5e8:	9e01      	ldr	r6, [sp, #4]
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f5ea:	4b4b      	ldr	r3, [pc, #300]	@ (f718 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x150>)
+
+        f5ec:	9a12      	ldr	r2, [sp, #72]	@ 0x48
+
+        f5ee:	f8dd 9000 	ldr.w	r9, [sp]
+
+        f5f2:	4651      	mov	r1, sl
+
+        f5f4:	4628      	mov	r0, r5
+
+        f5f6:	f006 ffe3 	bl	165c0 <<a href="../../../src/runtime/StatisticsWriter.cpp/a8660f5a5c15b5a39d019c9f9e665cb3.html">runtime::StatisticsWriter::writeText(char const*, unsigned long, char const*)</a>>
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f5fa:	2e00      	cmp	r6, #0
+
+        f5fc:	d06d      	beq.n	f6da <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x112>
+
+        f5fe:	aa04      	add	r2, sp, #16
+
+        f600:	4629      	mov	r1, r5
+
+        f602:	4648      	mov	r0, r9
+
+        f604:	47b0      	blx	r6
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f606:	4628      	mov	r0, r5
+
+        f608:	f006 ff78 	bl	164fc <<a href="../../../src/runtime/StatisticsWriter.cpp/c4faa6e56be83bcd36a965cbdb83a7e8.html">runtime::StatisticsWriter::writeEol()</a>>
+
+    void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator):
+
+        f60c:	2101      	movs	r1, #1
+
+        f60e:	4628      	mov	r0, r5
+
+        f610:	f006 ff72 	bl	164f8 <<a href="../../../src/runtime/StatisticsWriter.cpp/c64c2dd8388696d6a386b9fd1eac6e7c.html">runtime::StatisticsWriter::setMode(runtime::StatisticsWriter::Mode::Type)</a>>
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f614:	4b40      	ldr	r3, [pc, #256]	@ (f718 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x150>)
+
+        f616:	9a12      	ldr	r2, [sp, #72]	@ 0x48
+
+        f618:	4651      	mov	r1, sl
+
+        f61a:	4628      	mov	r0, r5
+
+        f61c:	f006 ffd0 	bl	165c0 <<a href="../../../src/runtime/StatisticsWriter.cpp/a8660f5a5c15b5a39d019c9f9e665cb3.html">runtime::StatisticsWriter::writeText(char const*, unsigned long, char const*)</a>>
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f620:	aa04      	add	r2, sp, #16
+
+        f622:	4629      	mov	r1, r5
+
+        f624:	4648      	mov	r0, r9
+
+        f626:	47b0      	blx	r6
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f628:	4628      	mov	r0, r5
+
+        f62a:	f006 ff67 	bl	164fc <<a href="../../../src/runtime/StatisticsWriter.cpp/c4faa6e56be83bcd36a965cbdb83a7e8.html">runtime::StatisticsWriter::writeEol()</a>>
+
+    void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator):
+
+        f62e:	2102      	movs	r1, #2
+
+        f630:	4628      	mov	r0, r5
+
+        f632:	f006 ff61 	bl	164f8 <<a href="../../../src/runtime/StatisticsWriter.cpp/c64c2dd8388696d6a386b9fd1eac6e7c.html">runtime::StatisticsWriter::setMode(runtime::StatisticsWriter::Mode::Type)</a>>
+
+    _ZNK3etl8delegateIFPKcjEEclIJRKjEEES2_DpOT_():
+
+        f636:	f8df 80e8 	ldr.w	r8, [pc, #232]	@ f720 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x158>
+
+        f63a:	68e1      	ldr	r1, [r4, #12]
+
+        f63c:	f8d4 c010 	ldr.w	ip, [r4, #16]
+
+    _ZNK7runtime18StatisticsIteratorINS_17RuntimeStatisticsEE8hasValueEv():
+
+        f640:	4663      	mov	r3, ip
+
+    void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator):
+
+        f642:	428b      	cmp	r3, r1
+
+        f644:	d946      	bls.n	f6d4 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x10c>
+
+    _ZNK3etl8delegateIFPKcjEE8is_validEv():
+
+        f646:	68a3      	ldr	r3, [r4, #8]
+
+    _ZNK3etl8delegateIFPKcjEEclIJRKjEEES2_DpOT_():
+
+        f648:	2b00      	cmp	r3, #0
+
+        f64a:	d03a      	beq.n	f6c2 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0xfa>
+
+        f64c:	6860      	ldr	r0, [r4, #4]
+
+        f64e:	4798      	blx	r3
+
+    _ZNK3etl4spanIKN7runtime17RuntimeStatisticsELj4294967295EEixEj():
+
+        f650:	68e7      	ldr	r7, [r4, #12]
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f652:	9a12      	ldr	r2, [sp, #72]	@ 0x48
+
+    _ZNK3etl8delegateIFPKcjEEclIJRKjEEES2_DpOT_():
+
+        f654:	4603      	mov	r3, r0
+
+    _ZNK3etl4spanIKN7runtime17RuntimeStatisticsELj4294967295EEixEj():
+
+        f656:	6960      	ldr	r0, [r4, #20]
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f658:	4651      	mov	r1, sl
+
+    _ZNK3etl4spanIKN7runtime17RuntimeStatisticsELj4294967295EEixEj():
+
+        f65a:	eb00 1b07 	add.w	fp, r0, r7, lsl #4
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f65e:	4628      	mov	r0, r5
+
+        f660:	f006 ffae 	bl	165c0 <<a href="../../../src/runtime/StatisticsWriter.cpp/a8660f5a5c15b5a39d019c9f9e665cb3.html">runtime::StatisticsWriter::writeText(char const*, unsigned long, char const*)</a>>
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f664:	b336      	cbz	r6, f6b4 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0xec>
+
+        f666:	4629      	mov	r1, r5
+
+        f668:	465a      	mov	r2, fp
+
+        f66a:	4648      	mov	r0, r9
+
+        f66c:	47b0      	blx	r6
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f66e:	4628      	mov	r0, r5
+
+        f670:	f006 ff44 	bl	164fc <<a href="../../../src/runtime/StatisticsWriter.cpp/c4faa6e56be83bcd36a965cbdb83a7e8.html">runtime::StatisticsWriter::writeEol()</a>>
+
+    _ZN7runtime18StatisticsIteratorINS_17RuntimeStatisticsEE4nextEv():
+
+        f674:	68e1      	ldr	r1, [r4, #12]
+
+        f676:	6923      	ldr	r3, [r4, #16]
+
+        f678:	4299      	cmp	r1, r3
+
+        f67a:	d2e2      	bcs.n	f642 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x7a>
+
+        f67c:	3101      	adds	r1, #1
+
+    _ZN7runtime18StatisticsIteratorINS_17RuntimeStatisticsEE10moveToNextEv():
+
+        f67e:	428b      	cmp	r3, r1
+
+    _ZN7runtime18StatisticsIteratorINS_17RuntimeStatisticsEE4nextEv():
+
+        f680:	60e1      	str	r1, [r4, #12]
+
+    _ZN7runtime18StatisticsIteratorINS_17RuntimeStatisticsEE10moveToNextEv():
+
+        f682:	d80c      	bhi.n	f69e <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0xd6>
+
+        f684:	e026      	b.n	f6d4 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x10c>
+
+    _ZNK3etl8delegateIFPKcjEEclIJRjEEES2_DpOT_():
+
+        f686:	68e1      	ldr	r1, [r4, #12]
+
+        f688:	6860      	ldr	r0, [r4, #4]
+
+        f68a:	4798      	blx	r3
+
+    _ZN7runtime18StatisticsIteratorINS_17RuntimeStatisticsEE10moveToNextEv():
+
+        f68c:	6923      	ldr	r3, [r4, #16]
+
+        f68e:	68e1      	ldr	r1, [r4, #12]
+
+        f690:	469c      	mov	ip, r3
+
+        f692:	1c4a      	adds	r2, r1, #1
+
+        f694:	2800      	cmp	r0, #0
+
+        f696:	d1d3      	bne.n	f640 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x78>
+
+        f698:	4293      	cmp	r3, r2
+
+        f69a:	60e2      	str	r2, [r4, #12]
+
+        f69c:	d91a      	bls.n	f6d4 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x10c>
+
+    _ZNK3etl8delegateIFPKcjEE8is_validEv():
+
+        f69e:	68a3      	ldr	r3, [r4, #8]
+
+    _ZNK3etl8delegateIFPKcjEEclIJRjEEES2_DpOT_():
+
+        f6a0:	2b00      	cmp	r3, #0
+
+        f6a2:	d1f0      	bne.n	f686 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0xbe>
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f6a4:	4a1d      	ldr	r2, [pc, #116]	@ (f71c <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x154>)
+
+    _ZNK3etl8delegateIFPKcjEEclIJRjEEES2_DpOT_():
+
+        f6a6:	f8d8 3000 	ldr.w	r3, [r8]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f6aa:	9203      	str	r2, [sp, #12]
+
+    _ZNK3etl8delegateIFPKcjEEclIJRjEEES2_DpOT_():
+
+        f6ac:	a803      	add	r0, sp, #12
+
+        f6ae:	4798      	blx	r3
+
+        f6b0:	68a3      	ldr	r3, [r4, #8]
+
+        f6b2:	e7e8      	b.n	f686 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0xbe>
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f6b4:	4a19      	ldr	r2, [pc, #100]	@ (f71c <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x154>)
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f6b6:	f8d8 3000 	ldr.w	r3, [r8]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f6ba:	9203      	str	r2, [sp, #12]
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f6bc:	a803      	add	r0, sp, #12
+
+        f6be:	4798      	blx	r3
+
+        f6c0:	e7d1      	b.n	f666 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x9e>
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f6c2:	4a16      	ldr	r2, [pc, #88]	@ (f71c <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x154>)
+
+    _ZNK3etl8delegateIFPKcjEEclIJRKjEEES2_DpOT_():
+
+        f6c4:	f8d8 3000 	ldr.w	r3, [r8]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f6c8:	9203      	str	r2, [sp, #12]
+
+    _ZNK3etl8delegateIFPKcjEEclIJRKjEEES2_DpOT_():
+
+        f6ca:	a803      	add	r0, sp, #12
+
+        f6cc:	4798      	blx	r3
+
+        f6ce:	68e1      	ldr	r1, [r4, #12]
+
+        f6d0:	68a3      	ldr	r3, [r4, #8]
+
+        f6d2:	e7bb      	b.n	f64c <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x84>
+
+    void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator):
+
+        f6d4:	b009      	add	sp, #36	@ 0x24
+
+        f6d6:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f6da:	4f11      	ldr	r7, [pc, #68]	@ (f720 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x158>)
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f6dc:	f8df 803c 	ldr.w	r8, [pc, #60]	@ f71c <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x154>
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f6e0:	683b      	ldr	r3, [r7, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f6e2:	f8cd 800c 	str.w	r8, [sp, #12]
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f6e6:	a803      	add	r0, sp, #12
+
+        f6e8:	4798      	blx	r3
+
+        f6ea:	aa04      	add	r2, sp, #16
+
+        f6ec:	4629      	mov	r1, r5
+
+        f6ee:	4648      	mov	r0, r9
+
+        f6f0:	47b0      	blx	r6
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f6f2:	4628      	mov	r0, r5
+
+        f6f4:	f006 ff02 	bl	164fc <<a href="../../../src/runtime/StatisticsWriter.cpp/c4faa6e56be83bcd36a965cbdb83a7e8.html">runtime::StatisticsWriter::writeEol()</a>>
+
+    void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator):
+
+        f6f8:	4628      	mov	r0, r5
+
+        f6fa:	2101      	movs	r1, #1
+
+        f6fc:	f006 fefc 	bl	164f8 <<a href="../../../src/runtime/StatisticsWriter.cpp/c64c2dd8388696d6a386b9fd1eac6e7c.html">runtime::StatisticsWriter::setMode(runtime::StatisticsWriter::Mode::Type)</a>>
+
+    _ZN7runtime16StatisticsWriter20formatStatisticsLineINS_17RuntimeStatisticsEEEvNS0_16FormatStatisticsIT_E4TypeEPKcmS8_RKS4_():
+
+        f700:	4628      	mov	r0, r5
+
+        f702:	4b05      	ldr	r3, [pc, #20]	@ (f718 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x150>)
+
+        f704:	9a12      	ldr	r2, [sp, #72]	@ 0x48
+
+        f706:	4651      	mov	r1, sl
+
+        f708:	f006 ff5a 	bl	165c0 <<a href="../../../src/runtime/StatisticsWriter.cpp/a8660f5a5c15b5a39d019c9f9e665cb3.html">runtime::StatisticsWriter::writeText(char const*, unsigned long, char const*)</a>>
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f70c:	683b      	ldr	r3, [r7, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        f70e:	f8cd 800c 	str.w	r8, [sp, #12]
+
+    _ZNK3etl8delegateIFvRN7runtime16StatisticsWriterERKNS1_17RuntimeStatisticsEEEclIJS3_S6_EEEvDpOT_():
+
+        f712:	a803      	add	r0, sp, #12
+
+        f714:	4798      	blx	r3
+
+        f716:	e783      	b.n	f620 <<a href="./ccdc0a57bac5d74c70d5733239a7247a.html">void runtime::StatisticsWriter::formatStatisticsGroup<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator>(runtime::StatisticsWriter::FormatStatistics<runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator::StatisticsType>::Type, char const*, unsigned long, runtime::StatisticsContainer<runtime::RuntimeStatistics, runtime::RuntimeStatistics>::Iterator)</a>+0x58>
+
+        f718:	00025f4c 	.word	0x00025f4c
+
+        f71c:	00022840 	.word	0x00022840
+
+        f720:	1ffe0120 	.word	0x1ffe0120
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../executables/referenceApp/consoleCommands/src/lifecycle/console/StatisticsCommand.cpp/2b1eaa5476cafe9c518ecab084049cbf.html">void (anonymous namespace)::printCpu&lt;runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 10u, runtime::RuntimeStatistics&gt;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 3u, runtime::RuntimeStatistics&gt; &gt;(util::command::CommandContext&amp;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 10u, runtime::RuntimeStatistics&gt; const&amp;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 3u, runtime::RuntimeStatistics&gt; const&amp;, etl::optional&lt;unsigned long&gt; const&amp;, unsigned long) (392)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 516</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,476</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    516
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,476
+                    
+                    
+                </td>
+                <td class="col_size">432</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/4aadf02dd7dcf4f301c4d79e66b22e38.html" class="icon-function">util::format::PrintfFormatter::formatIntDatatype(char*, util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;, signed char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    492
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,044
+                    
+                    
+                </td>
+                <td class="col_size">436</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/a55fbe8aa7abfc498675bef9f2e3bbf3.html" class="icon-function">util::format::PrintfFormatter::formatIntParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    396
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    608
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/1fd658a3cadf7a6a384e16e0b788aef4.html" class="icon-function">util::format::PrintfFormatter::formatParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    372
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    476
+                    
+                    
+                </td>
+                <td class="col_size">192</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/54d7602074146c5884ce6c1e97059b8b.html" class="icon-function">util::format::PrintfFormatter::format(char const*, util::format::IPrintfArgumentReader&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    316
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                44 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    284
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html" class="icon-function">util::format::StringWriter::printf(char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    272
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    224
+                    
+                    
+                </td>
+                <td class="col_size">172</td>
+                <td><a href="../../../src/runtime/StatisticsWriter.cpp/7bdb59e8862afd3cddcfa638686f2c9f.html" class="icon-function">runtime::StatisticsWriter::handleDefaultMode(char const*, unsigned long, unsigned long, bool, unsigned long&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    240
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">52</td>
+                <td><a href="../../../src/runtime/StatisticsWriter.cpp/a8660f5a5c15b5a39d019c9f9e665cb3.html" class="icon-function">runtime::StatisticsWriter::writeText(char const*, unsigned long, char const*)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">208
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 208</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 820</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    208
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    820
+                    
+                    
+                </td>
+                <td class="col_size">348</td>
+                <td><a href="./ccdc0a57bac5d74c70d5733239a7247a.html" class="icon-function">void runtime::StatisticsWriter::formatStatisticsGroup&lt;runtime::StatisticsContainer&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics&gt;::Iterator&gt;(runtime::StatisticsWriter::FormatStatistics&lt;runtime::StatisticsContainer&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics&gt;::Iterator::StatisticsType&gt;::Type, char const*, unsigned long, runtime::StatisticsContainer&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics&gt;::Iterator)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                120 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    472
+                    
+                    
+                </td>
+                <td class="col_size">392</td>
+                <td><a href="../../../../../../executables/referenceApp/consoleCommands/src/lifecycle/console/StatisticsCommand.cpp/2b1eaa5476cafe9c518ecab084049cbf.html" class="icon-function">void (anonymous namespace)::printCpu&lt;runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 10u, runtime::RuntimeStatistics&gt;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 3u, runtime::RuntimeStatistics&gt; &gt;(util::command::CommandContext&amp;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 10u, runtime::RuntimeStatistics&gt; const&amp;, runtime::declare::StatisticsContainer&lt;runtime::RuntimeStatistics, 3u, runtime::RuntimeStatistics&gt; const&amp;, etl::optional&lt;unsigned long&gt; const&amp;, unsigned long)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">80</td>
+                <td><a href="../../../../../../executables/referenceApp/consoleCommands/src/lifecycle/console/StatisticsCommand.cpp/b4507dcd864d4d2d7fa9f2f694c031d3.html" class="icon-function">lifecycle::StatisticsCommand::executeCommand(util::command::CommandContext&amp;, unsigned char)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

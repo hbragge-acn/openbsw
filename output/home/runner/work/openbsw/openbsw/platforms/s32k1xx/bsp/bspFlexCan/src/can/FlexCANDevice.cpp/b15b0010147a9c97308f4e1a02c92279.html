@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../../../s32k1xx.html">s32k1xx</a></li>
+        
+        <li><a href="../../../../../bsp.html">bsp</a></li>
+        
+        <li><a href="../../../../bspFlexCan.html">bspFlexCan</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../can.html">can</a>
+            </li>
+
+        
+        <li class="active"><a href="../FlexCANDevice.cpp.html">FlexCANDevice.cpp</a>:22
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">bios::FlexCANDevice::FlexCANDevice(bios::FlexCANDevice::Config const&amp;, bios::CanPhy&amp;, etl::delegate&lt;void ()&gt;, bios::IEcuPowerStateController&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0001daec</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>12 (static)</td>
+                <td>152</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../canflex2Transceiver/src/can/transceiver/canflex2/CanFlex2Transceiver.cpp/7cb8fadcdab70f36cecf385ce3259a07.html">bios::CanFlex2Transceiver::CanFlex2Transceiver(unsigned char, unsigned char, bios::FlexCANDevice::Config const&amp;, bios::CanPhy&amp;, bios::IEcuPowerStateController&amp;) (212)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../../libs/bsw/bsp/include/bsp/can/canTransceiver/CanPhy.h/3ede1c1caf5303d3079bacc5b2a4232a.html">bios::CanPhyDummy::init(unsigned long) (4)</a></pre>
+    
+
+    <pre>
+
+    _ZN4bios13FlexCANDeviceC2ERKNS0_6ConfigERNS_6CanPhyEN3etl8delegateIFvvEEERNS_24IEcuPowerStateControllerE():
+
+       1daec:	b082      	sub	sp, #8
+
+       1daee:	b470      	push	{r4, r5, r6}
+
+       1daf0:	680d      	ldr	r5, [r1, #0]
+
+       1daf2:	6001      	str	r1, [r0, #0]
+
+       1daf4:	2110      	movs	r1, #16
+
+       1daf6:	2400      	movs	r4, #0
+
+       1daf8:	6042      	str	r2, [r0, #4]
+
+       1dafa:	9304      	str	r3, [sp, #16]
+
+       1dafc:	eb0d 0201 	add.w	r2, sp, r1
+
+       1db00:	4603      	mov	r3, r0
+
+       1db02:	60c1      	str	r1, [r0, #12]
+
+       1db04:	6085      	str	r5, [r0, #8]
+
+       1db06:	6144      	str	r4, [r0, #20]
+
+    _ZN3etl10queue_baseILj2EEC4Em():
+
+       1db08:	6184      	str	r4, [r0, #24]
+
+       1db0a:	61c4      	str	r4, [r0, #28]
+
+       1db0c:	6204      	str	r4, [r0, #32]
+
+    _ZN4bios13FlexCANDeviceC2ERKNS0_6ConfigERNS_6CanPhyEN3etl8delegateIFvvEEERNS_24IEcuPowerStateControllerE():
+
+       1db0e:	f8c0 42ac 	str.w	r4, [r0, #684]	@ 0x2ac
+
+       1db12:	f8c0 42b0 	str.w	r4, [r0, #688]	@ 0x2b0
+
+       1db16:	f8c0 42b4 	str.w	r4, [r0, #692]	@ 0x2b4
+
+       1db1a:	e892 0003 	ldmia.w	r2, {r0, r1}
+
+       1db1e:	f44f 4200 	mov.w	r2, #32768	@ 0x8000
+
+       1db22:	611a      	str	r2, [r3, #16]
+
+    _ZN3etl10queue_baseILj2EEC4Em():
+
+       1db24:	2220      	movs	r2, #32
+
+       1db26:	625a      	str	r2, [r3, #36]	@ 0x24
+
+    _ZN4bios13FlexCANDeviceC2ERKNS0_6ConfigERNS_6CanPhyEN3etl8delegateIFvvEEERNS_24IEcuPowerStateControllerE():
+
+       1db28:	4e14      	ldr	r6, [pc, #80]	@ (1db7c <<a href="./b15b0010147a9c97308f4e1a02c92279.html">bios::FlexCANDevice::FlexCANDevice(bios::FlexCANDevice::Config const&, bios::CanPhy&, etl::delegate<void ()>, bios::IEcuPowerStateController&)</a>+0x90>)
+
+    _ZN3etl5queueIN3can8CANFrameELj32ELj2EEC4Ev():
+
+       1db2a:	f103 022c 	add.w	r2, r3, #44	@ 0x2c
+
+    _ZN3etl6iqueueIN3can8CANFrameELj2EEC4EPS2_m():
+
+       1db2e:	629a      	str	r2, [r3, #40]	@ 0x28
+
+    _ZN4bios13FlexCANDeviceC2ERKNS0_6ConfigERNS_6CanPhyEN3etl8delegateIFvvEEERNS_24IEcuPowerStateControllerE():
+
+       1db30:	f503 722e 	add.w	r2, r3, #696	@ 0x2b8
+
+       1db34:	e882 0003 	stmia.w	r2, {r0, r1}
+
+       1db38:	42b5      	cmp	r5, r6
+
+       1db3a:	9a06      	ldr	r2, [sp, #24]
+
+       1db3c:	f8c3 22c0 	str.w	r2, [r3, #704]	@ 0x2c0
+
+       1db40:	f883 42c5 	strb.w	r4, [r3, #709]	@ 0x2c5
+
+       1db44:	d013      	beq.n	1db6e <<a href="./b15b0010147a9c97308f4e1a02c92279.html">bios::FlexCANDevice::FlexCANDevice(bios::FlexCANDevice::Config const&, bios::CanPhy&, etl::delegate<void ()>, bios::IEcuPowerStateController&)</a>+0x82>
+
+       1db46:	4a0e      	ldr	r2, [pc, #56]	@ (1db80 <<a href="./b15b0010147a9c97308f4e1a02c92279.html">bios::FlexCANDevice::FlexCANDevice(bios::FlexCANDevice::Config const&, bios::CanPhy&, etl::delegate<void ()>, bios::IEcuPowerStateController&)</a>+0x94>)
+
+       1db48:	4295      	cmp	r5, r2
+
+       1db4a:	d009      	beq.n	1db60 <<a href="./b15b0010147a9c97308f4e1a02c92279.html">bios::FlexCANDevice::FlexCANDevice(bios::FlexCANDevice::Config const&, bios::CanPhy&, etl::delegate<void ()>, bios::IEcuPowerStateController&)</a>+0x74>
+
+       1db4c:	f5a2 42e0 	sub.w	r2, r2, #28672	@ 0x7000
+
+       1db50:	4295      	cmp	r5, r2
+
+       1db52:	d101      	bne.n	1db58 <<a href="./b15b0010147a9c97308f4e1a02c92279.html">bios::FlexCANDevice::FlexCANDevice(bios::FlexCANDevice::Config const&, bios::CanPhy&, etl::delegate<void ()>, bios::IEcuPowerStateController&)</a>+0x6c>
+
+       1db54:	f883 42c4 	strb.w	r4, [r3, #708]	@ 0x2c4
+
+       1db58:	bc70      	pop	{r4, r5, r6}
+
+       1db5a:	4618      	mov	r0, r3
+
+       1db5c:	b002      	add	sp, #8
+
+       1db5e:	4770      	bx	lr
+
+       1db60:	2202      	movs	r2, #2
+
+       1db62:	f883 22c4 	strb.w	r2, [r3, #708]	@ 0x2c4
+
+       1db66:	bc70      	pop	{r4, r5, r6}
+
+       1db68:	4618      	mov	r0, r3
+
+       1db6a:	b002      	add	sp, #8
+
+       1db6c:	4770      	bx	lr
+
+       1db6e:	2201      	movs	r2, #1
+
+       1db70:	f883 22c4 	strb.w	r2, [r3, #708]	@ 0x2c4
+
+       1db74:	bc70      	pop	{r4, r5, r6}
+
+       1db76:	4618      	mov	r0, r3
+
+       1db78:	b002      	add	sp, #8
+
+       1db7a:	4770      	bx	lr
+
+       1db7c:	40025000 	.word	0x40025000
+
+       1db80:	4002b000 	.word	0x4002b000
+
+    </pre>
+
+    
+    <pre><a href="./7066c7994ad05eb783ea0d9cc36da9de.html">bios::FlexCANDevice::stop() (48)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+            <p>No callees for this function.</p>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 140</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,432</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    140
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                12 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,432
+                    
+                    
+                </td>
+                <td class="col_size">152</td>
+                <td><a href="./b15b0010147a9c97308f4e1a02c92279.html" class="icon-function">bios::FlexCANDevice::FlexCANDevice(bios::FlexCANDevice::Config const&amp;, bios::CanPhy&amp;, etl::delegate&lt;void ()&gt;, bios::IEcuPowerStateController&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,280
+                    
+                    
+                </td>
+                <td class="col_size">212</td>
+                <td><a href="../../../../canflex2Transceiver/src/can/transceiver/canflex2/CanFlex2Transceiver.cpp/7cb8fadcdab70f36cecf385ce3259a07.html" class="icon-function">bios::CanFlex2Transceiver::CanFlex2Transceiver(unsigned char, unsigned char, bios::FlexCANDevice::Config const&amp;, bios::CanPhy&amp;, bios::IEcuPowerStateController&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    96
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,068
+                    
+                    
+                </td>
+                <td class="col_size">140</td>
+                <td><a href="../../../../../../../executables/referenceApp/platforms/s32k148evb/main/src/systems/CanSystem.cpp/2e1c47610716b2f99c81f4d19b0a6836.html" class="icon-function">systems::CanSystem::CanSystem(unsigned char, StaticBsp&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    928
+                    
+                    
+                </td>
+                <td class="col_size">224</td>
+                <td><a href="../../../../../../../executables/referenceApp/platforms/s32k148evb/main/src/main.cpp/97ca1c6b6c6550542b317e127d620f42.html" class="icon-function">platform::platformLifecycleAdd(lifecycle::LifecycleManager&amp;, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">704</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html" class="icon-function">app::startApp()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

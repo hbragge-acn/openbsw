@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../application.html">application</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../systems.html">systems</a>
+            </li>
+
+        
+        <li class="active"><a href="../EthernetSystem.cpp.html">EthernetSystem.cpp</a>:84
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">systems::EthernetSystem::EthernetSystem(unsigned char, ethernet::IEthernetDriverSystem&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000617c</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>40 (static)</td>
+                <td>284</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html">app::startApp() (704)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (5,
+                            <span title="sum of used bytes by all callees">
+                            Σ=104
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/5638605dc31aa5d230e8332768d97969.html">lifecycle::AsyncLifecycleComponent::AsyncLifecycleComponent() (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/cpp2ethernet/src/ip/NetworkInterfaceConfig.cpp/64248ab7ead1ca57a9b253407efe35eb.html">ip::NetworkInterfaceConfig::NetworkInterfaceConfig(unsigned long, unsigned long, unsigned long) (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Types.cpp/fcb4700f830501fb36a46bee82cc2f7d.html">async::TimeoutType::TimeoutType() (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/a5d9a6526d752afc14a56502cbf0f528.html">lifecycle::AsyncLifecycleComponent::setTransitionContext(unsigned char) (8)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./b45d36a43415bb7cf434c8eb000a3c7a.html">vlanForNetif (124)</a></pre>
+    
+
+    <pre>
+
+    _ZN7systems14EthernetSystemC2EhRN8ethernet21IEthernetDriverSystemE():
+
+        617c:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
+
+        6180:	b083      	sub	sp, #12
+
+        6182:	4604      	mov	r4, r0
+
+        6184:	460e      	mov	r6, r1
+
+        6186:	4615      	mov	r5, r2
+
+        6188:	f008 fcd4 	bl	eb34 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/5638605dc31aa5d230e8332768d97969.html">lifecycle::AsyncLifecycleComponent::AsyncLifecycleComponent()</a>>
+
+        618c:	4b3e      	ldr	r3, [pc, #248]	@ (6288 <<a href="./223df1a844c23764cbbc23739d778929.html">systems::EthernetSystem::EthernetSystem(unsigned char, ethernet::IEthernetDriverSystem&)</a>+0x10c>)
+
+    _ZN7systems6NetifsILj2EEC4Ev():
+
+        618e:	493f      	ldr	r1, [pc, #252]	@ (628c <<a href="./223df1a844c23764cbbc23739d778929.html">systems::EthernetSystem::EthernetSystem(unsigned char, ethernet::IEthernetDriverSystem&)</a>+0x110>)
+
+    _ZN7systems14EthernetSystemC2EhRN8ethernet21IEthernetDriverSystemE():
+
+        6190:	6165      	str	r5, [r4, #20]
+
+    _ZN5async9QueueNodeINS_9IRunnableEEC4Ev():
+
+        6192:	2201      	movs	r2, #1
+
+        6194:	6122      	str	r2, [r4, #16]
+
+    _ZN7systems14EthernetSystemC2EhRN8ethernet21IEthernetDriverSystemE():
+
+        6196:	f103 0224 	add.w	r2, r3, #36	@ 0x24
+
+    _ZN7systems6NetifsILj2EEC4Ev():
+
+        619a:	2500      	movs	r5, #0
+
+    _ZN7systems14EthernetSystemC2EhRN8ethernet21IEthernetDriverSystemE():
+
+        619c:	60e2      	str	r2, [r4, #12]
+
+    _ZN7systems6NetifsILj2EEC4Ev():
+
+        619e:	f831 2b04 	ldrh.w	r2, [r1], #4
+
+    _ZN7systems14EthernetSystemC2EhRN8ethernet21IEthernetDriverSystemE():
+
+        61a2:	6023      	str	r3, [r4, #0]
+
+    _ZN7systems6NetifsILj2EEC4Ev():
+
+        61a4:	8322      	strh	r2, [r4, #24]
+
+        61a6:	8365      	strh	r5, [r4, #26]
+
+    _ZN3etl5arrayIN2ip9Ip4ConfigELj2EEC4Ev():
+
+        61a8:	7725      	strb	r5, [r4, #28]
+
+        61aa:	7765      	strb	r5, [r4, #29]
+
+    _ZN7systems6NetifsILj2EEC4Ev():
+
+        61ac:	2204      	movs	r2, #4
+
+        61ae:	f104 001e 	add.w	r0, r4, #30
+
+        61b2:	f7fa f9de 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+    _ZN3etl6copy_nIPKcjPhEET1_T_T0_S4_():
+
+        61b6:	4b36      	ldr	r3, [pc, #216]	@ (6290 <<a href="./223df1a844c23764cbbc23739d778929.html">systems::EthernetSystem::EthernetSystem(unsigned char, ethernet::IEthernetDriverSystem&)</a>+0x114>)
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        61b8:	2204      	movs	r2, #4
+
+        61ba:	eb0d 0102 	add.w	r1, sp, r2
+
+        61be:	4668      	mov	r0, sp
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        61c0:	e9cd 5300 	strd	r5, r3, [sp]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        61c4:	f7fa f9d5 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+        61c8:	2204      	movs	r2, #4
+
+        61ca:	eb0d 0102 	add.w	r1, sp, r2
+
+    _ZN3etl6copy_nIPKcjPhEET1_T_T0_S4_():
+
+        61ce:	f06f 497f 	mvn.w	r9, #4278190080	@ 0xff000000
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        61d2:	4668      	mov	r0, sp
+
+        61d4:	9f00      	ldr	r7, [sp, #0]
+
+    _ZN3etl6copy_nIPKcjPhEET1_T_T0_S4_():
+
+        61d6:	f8cd 9004 	str.w	r9, [sp, #4]
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        61da:	9500      	str	r5, [sp, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        61dc:	f7fa f9c9 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+        61e0:	9b00      	ldr	r3, [sp, #0]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+        61e2:	9501      	str	r5, [sp, #4]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        61e4:	2204      	movs	r2, #4
+
+        61e6:	eb0d 0102 	add.w	r1, sp, r2
+
+        61ea:	4668      	mov	r0, sp
+
+        61ec:	fa93 f883 	rev.w	r8, r3
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        61f0:	9500      	str	r5, [sp, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        61f2:	f7fa f9be 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+        61f6:	9b00      	ldr	r3, [sp, #0]
+
+        61f8:	ba3f      	rev	r7, r7
+
+    _ZN7systems6NetifsILj2EEC4Ev():
+
+        61fa:	4642      	mov	r2, r8
+
+        61fc:	4639      	mov	r1, r7
+
+        61fe:	ba1b      	rev	r3, r3
+
+        6200:	f104 0024 	add.w	r0, r4, #36	@ 0x24
+
+        6204:	f014 fa5a 	bl	1a6bc <<a href="../../../../../../libs/bsw/cpp2ethernet/src/ip/NetworkInterfaceConfig.cpp/64248ab7ead1ca57a9b253407efe35eb.html">ip::NetworkInterfaceConfig::NetworkInterfaceConfig(unsigned long, unsigned long, unsigned long)</a>>
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        6208:	2204      	movs	r2, #4
+
+    _ZN3etl6copy_nIPKcjPhEET1_T_T0_S4_():
+
+        620a:	4b22      	ldr	r3, [pc, #136]	@ (6294 <<a href="./223df1a844c23764cbbc23739d778929.html">systems::EthernetSystem::EthernetSystem(unsigned char, ethernet::IEthernetDriverSystem&)</a>+0x118>)
+
+        620c:	9301      	str	r3, [sp, #4]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        620e:	eb0d 0102 	add.w	r1, sp, r2
+
+        6212:	4668      	mov	r0, sp
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        6214:	9500      	str	r5, [sp, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        6216:	f7fa f9ac 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+        621a:	2204      	movs	r2, #4
+
+        621c:	eb0d 0102 	add.w	r1, sp, r2
+
+        6220:	4668      	mov	r0, sp
+
+        6222:	9f00      	ldr	r7, [sp, #0]
+
+    _ZN3etl6copy_nIPKcjPhEET1_T_T0_S4_():
+
+        6224:	f8cd 9004 	str.w	r9, [sp, #4]
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        6228:	9500      	str	r5, [sp, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        622a:	f7fa f9a2 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+        622e:	9b00      	ldr	r3, [sp, #0]
+
+    _ZN3etl22private_unaligned_type22unaligned_type_storageILj4EEC4Ev():
+
+        6230:	9501      	str	r5, [sp, #4]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        6232:	2204      	movs	r2, #4
+
+        6234:	eb0d 0102 	add.w	r1, sp, r2
+
+        6238:	4668      	mov	r0, sp
+
+        623a:	fa93 f883 	rev.w	r8, r3
+
+    _ZNK3etl14unaligned_typeImLi4321EEcvmEv():
+
+        623e:	9500      	str	r5, [sp, #0]
+
+    _ZN3etl22private_unaligned_type14unaligned_copyILj4ELi4321ELb1EE19copy_store_to_valueImEEvPKhRT_():
+
+        6240:	f7fa f997 	bl	572 <<a href="../../../../../../../../../../../unknown/unknown/72d4bd12d6ca07360602e0d6cbc8dc4b.html">memcpy</a>>
+
+        6244:	9b00      	ldr	r3, [sp, #0]
+
+        6246:	ba3f      	rev	r7, r7
+
+    _ZN7systems6NetifsILj2EEC4Ev():
+
+        6248:	4642      	mov	r2, r8
+
+        624a:	4639      	mov	r1, r7
+
+        624c:	ba1b      	rev	r3, r3
+
+        624e:	f104 0038 	add.w	r0, r4, #56	@ 0x38
+
+        6252:	f014 fa33 	bl	1a6bc <<a href="../../../../../../libs/bsw/cpp2ethernet/src/ip/NetworkInterfaceConfig.cpp/64248ab7ead1ca57a9b253407efe35eb.html">ip::NetworkInterfaceConfig::NetworkInterfaceConfig(unsigned long, unsigned long, unsigned long)</a>>
+
+    _ZN3etl5arrayIN9lwipnetif10NetifStateELj2EEC4Ev():
+
+        6256:	64e5      	str	r5, [r4, #76]	@ 0x4c
+
+    _ZN7systems14EthernetSystemC2EhRN8ethernet21IEthernetDriverSystemE():
+
+        6258:	f504 7082 	add.w	r0, r4, #260	@ 0x104
+
+    _ZN3etl5arrayIN9lwipnetif10NetifStateELj2EEC4Ev():
+
+        625c:	6525      	str	r5, [r4, #80]	@ 0x50
+
+    _ZN7systems6NetifsILj2EEC4Ev():
+
+        625e:	f8a4 5054 	strh.w	r5, [r4, #84]	@ 0x54
+
+    _ZN7systems14EthernetSystemC2EhRN8ethernet21IEthernetDriverSystemE():
+
+        6262:	f884 6100 	strb.w	r6, [r4, #256]	@ 0x100
+
+        6266:	f00e f8bd 	bl	143e4 <<a href="../../../../../../libs/bsw/asyncFreeRtos/src/async/Types.cpp/fcb4700f830501fb36a46bee82cc2f7d.html">async::TimeoutType::TimeoutType()</a>>
+
+        626a:	4620      	mov	r0, r4
+
+        626c:	f8c4 511c 	str.w	r5, [r4, #284]	@ 0x11c
+
+        6270:	f884 509e 	strb.w	r5, [r4, #158]	@ 0x9e
+
+        6274:	f884 50f2 	strb.w	r5, [r4, #242]	@ 0xf2
+
+        6278:	4631      	mov	r1, r6
+
+        627a:	f008 fc69 	bl	eb50 <<a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/a5d9a6526d752afc14a56502cbf0f528.html">lifecycle::AsyncLifecycleComponent::setTransitionContext(unsigned char)</a>>
+
+        627e:	4620      	mov	r0, r4
+
+        6280:	b003      	add	sp, #12
+
+        6282:	e8bd 83f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, pc}
+
+        6286:	bf00      	nop
+
+        6288:	00027290 	.word	0x00027290
+
+        628c:	00000470 	.word	0x00000470
+
+        6290:	c800a8c0 	.word	0xc800a8c0
+
+        6294:	c802a8c0 	.word	0xc802a8c0
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../libs/3rdparty/lwip/src/core/init.c/3fed8a6f5142872ae094c3e10d7462b6.html">lwip_init (40)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 76</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 28</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    76
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                4 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">28</td>
+                <td><a href="../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/5638605dc31aa5d230e8332768d97969.html" class="icon-function">lifecycle::AsyncLifecycleComponent::AsyncLifecycleComponent()</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">72
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 72</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 988</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    72
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    988
+                    
+                    
+                </td>
+                <td class="col_size">284</td>
+                <td><a href="./223df1a844c23764cbbc23739d778929.html" class="icon-function">systems::EthernetSystem::EthernetSystem(unsigned char, ethernet::IEthernetDriverSystem&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">704</td>
+                <td><a href="../../app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html" class="icon-function">app::startApp()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

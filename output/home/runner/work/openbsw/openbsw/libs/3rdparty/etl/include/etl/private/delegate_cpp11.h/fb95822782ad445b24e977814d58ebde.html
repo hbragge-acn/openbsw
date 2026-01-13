@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../3rdparty.html">3rdparty</a></li>
+        
+        <li><a href="../../../../../etl.html">etl</a></li>
+        
+        <li><a href="../../../../include.html">include</a></li>
+        
+        <li><a href="../../../etl.html">etl</a></li>
+        
+        <li ><a href="../../private.html">private</a>
+            </li>
+
+        
+        <li class="active"><a href="../delegate_cpp11.h.html">delegate_cpp11.h</a>:677
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">void etl::delegate&lt;void (runtime::StatisticsWriter&amp;, runtime::RuntimeStatistics const&amp;)&gt;::function_stub&lt;&amp;(anonymous namespace)::format&gt;(void*, runtime::StatisticsWriter&amp;, runtime::RuntimeStatistics const&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000f320</td>
+                <td>
+    
+    
+</td>
+                <td></td>
+                <td>112</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (4,
+                            <span title="sum of used bytes by all callees">
+                            Σ=308
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/e82804d8738655eb2221bed6a694c809.html">runtime::StatisticsWriter::writeRuntimePercentage(char const*, unsigned long) (100)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/1dd746bd8d380713947c4b2b1bcc5c95.html">runtime::StatisticsWriter::writeRuntimeMS(char const*, unsigned long, unsigned long) (84)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/7e3bb997b59c5adab14f608bb982417d.html">runtime::StatisticsWriter::writeNumber(char const*, unsigned long, unsigned long) (52)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/1f8ccc2e53bd0f0f947defa2732c4782.html">runtime::StatisticsWriter::writeRuntime(char const*, unsigned long, unsigned long) (72)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../bsw/runtime/include/runtime/StatisticsContainer.h/2a734524292dc52eb4fe07aec70032e3.html">runtime::StatisticsContainer&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics&gt;::Iterator::getValue(unsigned int) (8)</a></pre>
+    
+
+    <pre>
+
+    void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&):
+
+        f320:	b570      	push	{r4, r5, r6, lr}
+
+        f322:	4614      	mov	r4, r2
+
+        f324:	460d      	mov	r5, r1
+
+        f326:	6812      	ldr	r2, [r2, #0]
+
+    format():
+
+        f328:	4913      	ldr	r1, [pc, #76]	@ (f378 <<a href="./fb95822782ad445b24e977814d58ebde.html">void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)</a>+0x58>)
+
+        f32a:	4628      	mov	r0, r5
+
+        f32c:	f007 f9ca 	bl	166c4 <<a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/e82804d8738655eb2221bed6a694c809.html">runtime::StatisticsWriter::writeRuntimePercentage(char const*, unsigned long)</a>>
+
+        f330:	4912      	ldr	r1, [pc, #72]	@ (f37c <<a href="./fb95822782ad445b24e977814d58ebde.html">void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)</a>+0x5c>)
+
+        f332:	6823      	ldr	r3, [r4, #0]
+
+        f334:	2209      	movs	r2, #9
+
+        f336:	4628      	mov	r0, r5
+
+        f338:	f007 f99a 	bl	16670 <<a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/1dd746bd8d380713947c4b2b1bcc5c95.html">runtime::StatisticsWriter::writeRuntimeMS(char const*, unsigned long, unsigned long)</a>>
+
+        f33c:	6863      	ldr	r3, [r4, #4]
+
+        f33e:	4910      	ldr	r1, [pc, #64]	@ (f380 <<a href="./fb95822782ad445b24e977814d58ebde.html">void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)</a>+0x60>)
+
+        f340:	2206      	movs	r2, #6
+
+        f342:	4628      	mov	r0, r5
+
+        f344:	f007 f956 	bl	165f4 <<a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/7e3bb997b59c5adab14f608bb982417d.html">runtime::StatisticsWriter::writeNumber(char const*, unsigned long, unsigned long)</a>>
+
+    _ZNK7runtime17RuntimeStatistics17getAverageRuntimeEv():
+
+        f348:	6863      	ldr	r3, [r4, #4]
+
+        f34a:	b113      	cbz	r3, f352 <<a href="./fb95822782ad445b24e977814d58ebde.html">void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)</a>+0x32>
+
+        f34c:	6822      	ldr	r2, [r4, #0]
+
+        f34e:	fbb2 f3f3 	udiv	r3, r2, r3
+
+    format():
+
+        f352:	4628      	mov	r0, r5
+
+        f354:	490b      	ldr	r1, [pc, #44]	@ (f384 <<a href="./fb95822782ad445b24e977814d58ebde.html">void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)</a>+0x64>)
+
+        f356:	2206      	movs	r2, #6
+
+        f358:	f007 f966 	bl	16628 <<a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/1f8ccc2e53bd0f0f947defa2732c4782.html">runtime::StatisticsWriter::writeRuntime(char const*, unsigned long, unsigned long)</a>>
+
+        f35c:	68a3      	ldr	r3, [r4, #8]
+
+        f35e:	490a      	ldr	r1, [pc, #40]	@ (f388 <<a href="./fb95822782ad445b24e977814d58ebde.html">void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)</a>+0x68>)
+
+        f360:	4628      	mov	r0, r5
+
+        f362:	2206      	movs	r2, #6
+
+        f364:	f007 f960 	bl	16628 <<a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/1f8ccc2e53bd0f0f947defa2732c4782.html">runtime::StatisticsWriter::writeRuntime(char const*, unsigned long, unsigned long)</a>>
+
+        f368:	68e3      	ldr	r3, [r4, #12]
+
+        f36a:	4908      	ldr	r1, [pc, #32]	@ (f38c <<a href="./fb95822782ad445b24e977814d58ebde.html">void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)</a>+0x6c>)
+
+        f36c:	4628      	mov	r0, r5
+
+        f36e:	2206      	movs	r2, #6
+
+    void etl::delegate<void (runtime::StatisticsWriter&, runtime::RuntimeStatistics const&)>::function_stub<&(anonymous namespace)::format>(void*, runtime::StatisticsWriter&, runtime::RuntimeStatistics const&):
+
+        f370:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
+
+    format():
+
+        f374:	f007 b958 	b.w	16628 <<a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/1f8ccc2e53bd0f0f947defa2732c4782.html">runtime::StatisticsWriter::writeRuntime(char const*, unsigned long, unsigned long)</a>>
+
+        f378:	0002421c 	.word	0x0002421c
+
+        f37c:	00024220 	.word	0x00024220
+
+        f380:	00024228 	.word	0x00024228
+
+        f384:	00024230 	.word	0x00024230
+
+        f388:	00024238 	.word	0x00024238
+
+        f38c:	00024240 	.word	0x00024240
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../../executables/referenceApp/consoleCommands/src/lifecycle/console/StatisticsCommand.cpp/92f4374471f256de77d07f2c20675b42.html">(anonymous namespace)::printStack(util::command::CommandContext&amp;, runtime::declare::RuntimeMonitor&lt;runtime::RuntimeStatistics, runtime::RuntimeStatistics, 10u, 3u&gt;&amp;) (136)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 308</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,524</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    308
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,524
+                    
+                    
+                </td>
+                <td class="col_size">432</td>
+                <td><a href="../../../../../../bsw/util/src/util/format/PrintfFormatter.cpp/4aadf02dd7dcf4f301c4d79e66b22e38.html" class="icon-function">util::format::PrintfFormatter::formatIntDatatype(char*, util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;, signed char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    284
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,092
+                    
+                    
+                </td>
+                <td class="col_size">436</td>
+                <td><a href="../../../../../../bsw/util/src/util/format/PrintfFormatter.cpp/a55fbe8aa7abfc498675bef9f2e3bbf3.html" class="icon-function">util::format::PrintfFormatter::formatIntParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    656
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td><a href="../../../../../../bsw/util/src/util/format/PrintfFormatter.cpp/1fd658a3cadf7a6a384e16e0b788aef4.html" class="icon-function">util::format::PrintfFormatter::formatParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    164
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    524
+                    
+                    
+                </td>
+                <td class="col_size">192</td>
+                <td><a href="../../../../../../bsw/util/src/util/format/PrintfFormatter.cpp/54d7602074146c5884ce6c1e97059b8b.html" class="icon-function">util::format::PrintfFormatter::format(char const*, util::format::IPrintfArgumentReader&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    108
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                44 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    332
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../../../bsw/util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html" class="icon-function">util::format::StringWriter::printf(char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    64
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    272
+                    
+                    
+                </td>
+                <td class="col_size">172</td>
+                <td><a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/7bdb59e8862afd3cddcfa638686f2c9f.html" class="icon-function">runtime::StatisticsWriter::handleDefaultMode(char const*, unsigned long, unsigned long, bool, unsigned long&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td><a href="../../../../../../bsw/runtime/src/runtime/StatisticsWriter.cpp/e82804d8738655eb2221bed6a694c809.html" class="icon-function">runtime::StatisticsWriter::writeRuntimePercentage(char const*, unsigned long)</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

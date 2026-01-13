@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../async.html">async</a></li>
+        
+        <li><a href="../../../../include.html">include</a></li>
+        
+        <li><a href="../../../async.html">async</a></li>
+        
+        <li ><a href="../../util.html">util</a>
+            </li>
+
+        
+        <li class="active"><a href="../MemberCall.h.html">MemberCall.h</a>:29
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">async::MemberCall&lt;docan::DoCanTransportLayer&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;, &amp;docan::DoCanTransportLayer&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::processShutdown&gt;::execute()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000043a8</td>
+                <td>
+    
+    
+</td>
+                <td></td>
+                <td>104</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=372
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../docan/include/docan/transmitter/DoCanTransmitter.h/76df9456321e11d70131cbf706d7d7ae.html">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::shutdown() (176)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../docan/include/docan/receiver/DoCanReceiver.h/5a52863f8eb344552396c286a50a99da.html">docan::DoCanReceiver&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::shutdown() (196)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../docan/include/docan/transmitter/DoCanTransmitter.h/76df9456321e11d70131cbf706d7d7ae.html">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::shutdown() (176)</a></pre>
+    
+
+    <pre>
+
+    async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute():
+
+        43a8:	b510      	push	{r4, lr}
+
+        43aa:	6884      	ldr	r4, [r0, #8]
+
+        43ac:	b082      	sub	sp, #8
+
+    _ZN5docan19DoCanTransportLayerINS_18DoCanDataLinkLayerImthLm4294967295EtEEE15processShutdownEv():
+
+        43ae:	f104 0064 	add.w	r0, r4, #100	@ 0x64
+
+        43b2:	f7ff ffa1 	bl	42f8 <<a href="../../../../../docan/include/docan/transmitter/DoCanTransmitter.h/76df9456321e11d70131cbf706d7d7ae.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::shutdown()</a>>
+
+        43b6:	f104 002c 	add.w	r0, r4, #44	@ 0x2c
+
+        43ba:	f7ff fb85 	bl	3ac8 <<a href="../../../../../docan/include/docan/receiver/DoCanReceiver.h/5a52863f8eb344552396c286a50a99da.html">docan::DoCanReceiver<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::shutdown()</a>>
+
+        43be:	6aa1      	ldr	r1, [r4, #40]	@ 0x28
+
+        43c0:	4a10      	ldr	r2, [pc, #64]	@ (4404 <<a href="./6ce750386ae044aec36c8dc6ce225197.html">async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute()</a>+0x5c>)
+
+        43c2:	680b      	ldr	r3, [r1, #0]
+
+        43c4:	68db      	ldr	r3, [r3, #12]
+
+        43c6:	4293      	cmp	r3, r2
+
+        43c8:	d119      	bne.n	43fe <<a href="./6ce750386ae044aec36c8dc6ce225197.html">async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute()</a>+0x56>
+
+    docan::DoCanPhysicalCanTransceiver<docan::DoCanNormalAddressing<unsigned short, unsigned char, unsigned short> >::shutdown():
+
+        43ca:	6ac8      	ldr	r0, [r1, #44]	@ 0x2c
+
+        43cc:	6803      	ldr	r3, [r0, #0]
+
+        43ce:	2200      	movs	r2, #0
+
+        43d0:	63ca      	str	r2, [r1, #60]	@ 0x3c
+
+        43d2:	6b9b      	ldr	r3, [r3, #56]	@ 0x38
+
+        43d4:	3108      	adds	r1, #8
+
+        43d6:	4798      	blx	r3
+
+    _ZNK3etl8delegateIFvRN9transport22AbstractTransportLayerEEE8is_validEv():
+
+        43d8:	f8d4 30b4 	ldr.w	r3, [r4, #180]	@ 0xb4
+
+    _ZNK3etl8delegateIFvRN9transport22AbstractTransportLayerEEEclIJRN5docan19DoCanTransportLayerINS7_18DoCanDataLinkLayerImthLm4294967295EtEEEEEEEvDpOT_():
+
+        43dc:	b133      	cbz	r3, 43ec <<a href="./6ce750386ae044aec36c8dc6ce225197.html">async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute()</a>+0x44>
+
+        43de:	f8d4 00b0 	ldr.w	r0, [r4, #176]	@ 0xb0
+
+        43e2:	4621      	mov	r1, r4
+
+    async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute():
+
+        43e4:	b002      	add	sp, #8
+
+        43e6:	e8bd 4010 	ldmia.w	sp!, {r4, lr}
+
+    _ZNK3etl8delegateIFvRN9transport22AbstractTransportLayerEEEclIJRN5docan19DoCanTransportLayerINS7_18DoCanDataLinkLayerImthLm4294967295EtEEEEEEEvDpOT_():
+
+        43ea:	4718      	bx	r3
+
+        43ec:	4b06      	ldr	r3, [pc, #24]	@ (4408 <<a href="./6ce750386ae044aec36c8dc6ce225197.html">async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute()</a>+0x60>)
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        43ee:	4a07      	ldr	r2, [pc, #28]	@ (440c <<a href="./6ce750386ae044aec36c8dc6ce225197.html">async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute()</a>+0x64>)
+
+    _ZNK3etl8delegateIFvRN9transport22AbstractTransportLayerEEEclIJRN5docan19DoCanTransportLayerINS7_18DoCanDataLinkLayerImthLm4294967295EtEEEEEEEvDpOT_():
+
+        43f0:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        43f2:	9201      	str	r2, [sp, #4]
+
+    _ZNK3etl8delegateIFvRN9transport22AbstractTransportLayerEEEclIJRN5docan19DoCanTransportLayerINS7_18DoCanDataLinkLayerImthLm4294967295EtEEEEEEEvDpOT_():
+
+        43f4:	a801      	add	r0, sp, #4
+
+        43f6:	4798      	blx	r3
+
+        43f8:	f8d4 30b4 	ldr.w	r3, [r4, #180]	@ 0xb4
+
+        43fc:	e7ef      	b.n	43de <<a href="./6ce750386ae044aec36c8dc6ce225197.html">async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute()</a>+0x36>
+
+    _ZN5docan19DoCanTransportLayerINS_18DoCanDataLinkLayerImthLm4294967295EtEEE15processShutdownEv():
+
+        43fe:	4608      	mov	r0, r1
+
+        4400:	4798      	blx	r3
+
+        4402:	e7e9      	b.n	43d8 <<a href="./6ce750386ae044aec36c8dc6ce225197.html">async::MemberCall<docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >, &docan::DoCanTransportLayer<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::processShutdown>::execute()</a>+0x30>
+
+        4404:	00002add 	.word	0x00002add
+
+        4408:	1ffe0120 	.word	0x1ffe0120
+
+        440c:	00022840 	.word	0x00022840
+
+    </pre>
+
+    
+    <pre><a href="../../../../../docan/include/docan/transmitter/DoCanTransmitter.h/6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::cyclicTask(unsigned long) (600)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 460</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 2,232</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    460
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    2,232
+                    
+                    
+                </td>
+                <td class="col_size">432</td>
+                <td><a href="../../../../../util/src/util/format/PrintfFormatter.cpp/4aadf02dd7dcf4f301c4d79e66b22e38.html" class="icon-function">util::format::PrintfFormatter::formatIntDatatype(char*, util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;, signed char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    436
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,800
+                    
+                    
+                </td>
+                <td class="col_size">436</td>
+                <td><a href="../../../../../util/src/util/format/PrintfFormatter.cpp/a55fbe8aa7abfc498675bef9f2e3bbf3.html" class="icon-function">util::format::PrintfFormatter::formatIntParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    340
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,364
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td><a href="../../../../../util/src/util/format/PrintfFormatter.cpp/1fd658a3cadf7a6a384e16e0b788aef4.html" class="icon-function">util::format::PrintfFormatter::formatParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    316
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,232
+                    
+                    
+                </td>
+                <td class="col_size">192</td>
+                <td><a href="../../../../../util/src/util/format/PrintfFormatter.cpp/54d7602074146c5884ce6c1e97059b8b.html" class="icon-function">util::format::PrintfFormatter::format(char const*, util::format::IPrintfArgumentReader&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    260
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                44 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,040
+                    
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html" class="icon-function">util::format::StringWriter::printf(char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>6</th>
+                <td class="col_size">
+                    
+                    216
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                136 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    980
+                    
+                    
+                </td>
+                <td class="col_size">396</td>
+                <td><a href="../../../../../docan/include/docan/receiver/DoCanReceiver.h/43c823227c661a2523f9672889ebc851.html" class="icon-function">docan::DoCanReceiver&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::allocateTransportMessage(docan::DoCanMessageReceiver&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;&amp;, bool)</a></td>
+            </tr>
+        
+            <tr>
+                <th>7</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    584
+                    
+                    
+                </td>
+                <td class="col_size">388</td>
+                <td><a href="../../../../../docan/include/docan/receiver/DoCanReceiver.h/80296c98e8d001723c6cc94709509d01.html" class="icon-function">docan::DoCanReceiver&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::handleTransition(docan::DoCanMessageReceiver&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>8</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                40 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">196</td>
+                <td><a href="../../../../../docan/include/docan/receiver/DoCanReceiver.h/5a52863f8eb344552396c286a50a99da.html" class="icon-function">docan::DoCanReceiver&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::shutdown()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../logger.html">logger</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../logger.html">logger</a>
+            </li>
+
+        
+        <li class="active"><a href="../DefaultLoggerCommand.cpp.html">DefaultLoggerCommand.cpp</a>:21
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0000fc00</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>64 (static)</td>
+                <td>520</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../3rdparty/etl/include/etl/private/delegate_cpp11.h/47a64afef674905707e771413be3f989.html">void etl::delegate&lt;void (util::command::CommandContext&amp;)&gt;::method_stub&lt;logger::DefaultLoggerCommand, &amp;logger::DefaultLoggerCommand::levelCommand&gt;(void*, util::command::CommandContext&amp;) (4)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (9,
+                            <span title="sum of used bytes by all callees">
+                            Σ=400
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/command/CommandContext.cpp/74c51ebf813b1f4a7dc14ee9e4ad4d7d.html">util::command::CommandContext::scanIdentifierToken() (116)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/AttributedString.cpp/10a44a9d5b04035e0a25b228e960ccaa.html">util::format::AttributedString::AttributedString(util::format::PlainAttributedString const&amp;) (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/SharedStringWriter.cpp/24de4bdafd640327a685592964dac867.html">util::format::SharedStringWriter::SharedStringWriter(util::stream::ISharedOutputStream&amp;) (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...) (60)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/format/SharedStringWriter.cpp/75b447666d62ed8c6c384efa69c8d1d1.html">util::format::SharedStringWriter::~SharedStringWriter() (20)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/logger/ComponentInfo.cpp/b898d02e39940a3d3835004d375685ac.html">util::logger::ComponentInfo::getName() const (60)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result) (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../util/src/util/command/CommandContext.cpp/af39a4065f86e9957b5727628c6f7577.html">util::command::CommandContext::checkEol() (36)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../executables/referenceApp/consoleCommands/src/safety/console/SafetyCommand.cpp/8ae8ef686d093a62fe8ec5b502392d88.html">safety::SafetyCommand::executeCommand(util::command::CommandContext&amp;, unsigned char) (216)</a></pre>
+    
+
+    <pre>
+
+    logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&):
+
+        fc00:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+        fc04:	4606      	mov	r6, r0
+
+        fc06:	b087      	sub	sp, #28
+
+        fc08:	4608      	mov	r0, r1
+
+        fc0a:	460d      	mov	r5, r1
+
+        fc0c:	f005 fbe2 	bl	153d4 <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+        fc10:	2800      	cmp	r0, #0
+
+        fc12:	d036      	beq.n	fc82 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x82>
+
+        fc14:	4629      	mov	r1, r5
+
+        fc16:	4668      	mov	r0, sp
+
+        fc18:	f005 fc80 	bl	1551c <<a href="../../../../util/src/util/command/CommandContext.cpp/74c51ebf813b1f4a7dc14ee9e4ad4d7d.html">util::command::CommandContext::scanIdentifierToken()</a>>
+
+        fc1c:	6831      	ldr	r1, [r6, #0]
+
+        fc1e:	680b      	ldr	r3, [r1, #0]
+
+        fc20:	466a      	mov	r2, sp
+
+        fc22:	699b      	ldr	r3, [r3, #24]
+
+        fc24:	a802      	add	r0, sp, #8
+
+        fc26:	4798      	blx	r3
+
+        fc28:	9b03      	ldr	r3, [sp, #12]
+
+        fc2a:	2b00      	cmp	r3, #0
+
+        fc2c:	d071      	beq.n	fd12 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x112>
+
+        fc2e:	4628      	mov	r0, r5
+
+        fc30:	f005 fbd0 	bl	153d4 <<a href="../../../../util/src/util/command/CommandContext.cpp/14bde16788d9f16b26aafb4d12598bec.html">util::command::CommandContext::hasToken() const</a>>
+
+        fc34:	6834      	ldr	r4, [r6, #0]
+
+        fc36:	6823      	ldr	r3, [r4, #0]
+
+        fc38:	2800      	cmp	r0, #0
+
+        fc3a:	f040 80a2 	bne.w	fd82 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x182>
+
+        fc3e:	685a      	ldr	r2, [r3, #4]
+
+        fc40:	f89d 1008 	ldrb.w	r1, [sp, #8]
+
+        fc44:	68de      	ldr	r6, [r3, #12]
+
+        fc46:	4620      	mov	r0, r4
+
+        fc48:	4790      	blx	r2
+
+        fc4a:	4601      	mov	r1, r0
+
+        fc4c:	4620      	mov	r0, r4
+
+        fc4e:	47b0      	blx	r6
+
+    _ZNK4util6logger9LevelInfo7getNameEv():
+
+        fc50:	4604      	mov	r4, r0
+
+        fc52:	2800      	cmp	r0, #0
+
+        fc54:	f000 80bc 	beq.w	fdd0 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1d0>
+
+        fc58:	af04      	add	r7, sp, #16
+
+        fc5a:	4621      	mov	r1, r4
+
+        fc5c:	4638      	mov	r0, r7
+
+        fc5e:	f005 fa79 	bl	15154 <<a href="../../../../util/src/util/format/AttributedString.cpp/10a44a9d5b04035e0a25b228e960ccaa.html">util::format::AttributedString::AttributedString(util::format::PlainAttributedString const&)</a>>
+
+    _ZNK4util6format16AttributedString9getStringEv():
+
+        fc62:	9c04      	ldr	r4, [sp, #16]
+
+    logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&):
+
+        fc64:	4629      	mov	r1, r5
+
+        fc66:	4638      	mov	r0, r7
+
+        fc68:	f005 fae8 	bl	1523c <<a href="../../../../util/src/util/format/SharedStringWriter.cpp/24de4bdafd640327a685592964dac867.html">util::format::SharedStringWriter::SharedStringWriter(util::stream::ISharedOutputStream&)</a>>
+
+        fc6c:	4960      	ldr	r1, [pc, #384]	@ (fdf0 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1f0>)
+
+        fc6e:	4622      	mov	r2, r4
+
+        fc70:	4638      	mov	r0, r7
+
+        fc72:	f005 f8df 	bl	14e34 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+        fc76:	4638      	mov	r0, r7
+
+        fc78:	f005 faec 	bl	15254 <<a href="../../../../util/src/util/format/SharedStringWriter.cpp/75b447666d62ed8c6c384efa69c8d1d1.html">util::format::SharedStringWriter::~SharedStringWriter()</a>>
+
+        fc7c:	b007      	add	sp, #28
+
+        fc7e:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+        fc82:	4629      	mov	r1, r5
+
+        fc84:	4604      	mov	r4, r0
+
+        fc86:	4668      	mov	r0, sp
+
+        fc88:	f005 fad8 	bl	1523c <<a href="../../../../util/src/util/format/SharedStringWriter.cpp/24de4bdafd640327a685592964dac867.html">util::format::SharedStringWriter::SharedStringWriter(util::stream::ISharedOutputStream&)</a>>
+
+        fc8c:	4a59      	ldr	r2, [pc, #356]	@ (fdf4 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1f4>)
+
+        fc8e:	495a      	ldr	r1, [pc, #360]	@ (fdf8 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1f8>)
+
+        fc90:	4668      	mov	r0, sp
+
+        fc92:	f005 f8cf 	bl	14e34 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+        fc96:	6830      	ldr	r0, [r6, #0]
+
+        fc98:	6803      	ldr	r3, [r0, #0]
+
+        fc9a:	681b      	ldr	r3, [r3, #0]
+
+        fc9c:	4798      	blx	r3
+
+        fc9e:	af04      	add	r7, sp, #16
+
+        fca0:	4681      	mov	r9, r0
+
+        fca2:	b9c0      	cbnz	r0, fcd6 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xd6>
+
+        fca4:	4668      	mov	r0, sp
+
+        fca6:	f005 fad5 	bl	15254 <<a href="../../../../util/src/util/format/SharedStringWriter.cpp/75b447666d62ed8c6c384efa69c8d1d1.html">util::format::SharedStringWriter::~SharedStringWriter()</a>>
+
+        fcaa:	b007      	add	sp, #28
+
+        fcac:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        fcb0:	4b52      	ldr	r3, [pc, #328]	@ (fdfc <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1fc>)
+
+        fcb2:	9304      	str	r3, [sp, #16]
+
+    _ZNK4util6logger9LevelInfo7getNameEv():
+
+        fcb4:	4b52      	ldr	r3, [pc, #328]	@ (fe00 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x200>)
+
+        fcb6:	4638      	mov	r0, r7
+
+        fcb8:	681b      	ldr	r3, [r3, #0]
+
+        fcba:	4798      	blx	r3
+
+        fcbc:	4629      	mov	r1, r5
+
+        fcbe:	4638      	mov	r0, r7
+
+        fcc0:	f005 fa48 	bl	15154 <<a href="../../../../util/src/util/format/AttributedString.cpp/10a44a9d5b04035e0a25b228e960ccaa.html">util::format::AttributedString::AttributedString(util::format::PlainAttributedString const&)</a>>
+
+    logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&):
+
+        fcc4:	3401      	adds	r4, #1
+
+        fcc6:	9b04      	ldr	r3, [sp, #16]
+
+        fcc8:	494e      	ldr	r1, [pc, #312]	@ (fe04 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x204>)
+
+        fcca:	4642      	mov	r2, r8
+
+        fccc:	4668      	mov	r0, sp
+
+        fcce:	f005 f8b1 	bl	14e34 <<a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html">util::format::StringWriter::printf(char const*, ...)</a>>
+
+        fcd2:	45a1      	cmp	r9, r4
+
+        fcd4:	d0e6      	beq.n	fca4 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xa4>
+
+        fcd6:	6831      	ldr	r1, [r6, #0]
+
+        fcd8:	680b      	ldr	r3, [r1, #0]
+
+        fcda:	b2e5      	uxtb	r5, r4
+
+        fcdc:	695b      	ldr	r3, [r3, #20]
+
+        fcde:	462a      	mov	r2, r5
+
+        fce0:	a802      	add	r0, sp, #8
+
+        fce2:	4798      	blx	r3
+
+        fce4:	a902      	add	r1, sp, #8
+
+        fce6:	4638      	mov	r0, r7
+
+        fce8:	f004 fc00 	bl	144ec <<a href="../../../../util/src/util/logger/ComponentInfo.cpp/b898d02e39940a3d3835004d375685ac.html">util::logger::ComponentInfo::getName() const</a>>
+
+        fcec:	f8d6 b000 	ldr.w	fp, [r6]
+
+    _ZNK4util6format16AttributedString9getStringEv():
+
+        fcf0:	f8dd 8010 	ldr.w	r8, [sp, #16]
+
+    logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&):
+
+        fcf4:	f8db 2000 	ldr.w	r2, [fp]
+
+        fcf8:	4629      	mov	r1, r5
+
+        fcfa:	4658      	mov	r0, fp
+
+        fcfc:	6855      	ldr	r5, [r2, #4]
+
+        fcfe:	f8d2 a00c 	ldr.w	sl, [r2, #12]
+
+        fd02:	47a8      	blx	r5
+
+        fd04:	4601      	mov	r1, r0
+
+        fd06:	4658      	mov	r0, fp
+
+        fd08:	47d0      	blx	sl
+
+    _ZNK4util6logger9LevelInfo7getNameEv():
+
+        fd0a:	4605      	mov	r5, r0
+
+        fd0c:	2800      	cmp	r0, #0
+
+        fd0e:	d1d5      	bne.n	fcbc <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xbc>
+
+        fd10:	e7ce      	b.n	fcb0 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xb0>
+
+    logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&):
+
+        fd12:	6830      	ldr	r0, [r6, #0]
+
+        fd14:	6803      	ldr	r3, [r0, #0]
+
+        fd16:	4669      	mov	r1, sp
+
+        fd18:	691b      	ldr	r3, [r3, #16]
+
+        fd1a:	4798      	blx	r3
+
+        fd1c:	1e01      	subs	r1, r0, #0
+
+        fd1e:	4607      	mov	r7, r0
+
+        fd20:	bf18      	it	ne
+
+        fd22:	2101      	movne	r1, #1
+
+        fd24:	2204      	movs	r2, #4
+
+        fd26:	4628      	mov	r0, r5
+
+        fd28:	f005 fb72 	bl	15410 <<a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result)</a>>
+
+        fd2c:	2800      	cmp	r0, #0
+
+        fd2e:	d0bc      	beq.n	fcaa <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xaa>
+
+        fd30:	4628      	mov	r0, r5
+
+        fd32:	f005 fb5b 	bl	153ec <<a href="../../../../util/src/util/command/CommandContext.cpp/af39a4065f86e9957b5727628c6f7577.html">util::command::CommandContext::checkEol()</a>>
+
+        fd36:	2800      	cmp	r0, #0
+
+        fd38:	d0b7      	beq.n	fcaa <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xaa>
+
+        fd3a:	6830      	ldr	r0, [r6, #0]
+
+        fd3c:	6803      	ldr	r3, [r0, #0]
+
+        fd3e:	681b      	ldr	r3, [r3, #0]
+
+        fd40:	4798      	blx	r3
+
+        fd42:	4681      	mov	r9, r0
+
+        fd44:	b1c0      	cbz	r0, fd78 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x178>
+
+        fd46:	6835      	ldr	r5, [r6, #0]
+
+        fd48:	682b      	ldr	r3, [r5, #0]
+
+        fd4a:	f8d3 8008 	ldr.w	r8, [r3, #8]
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+        fd4e:	b92f      	cbnz	r7, fd5c <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x15c>
+
+        fd50:	4b2b      	ldr	r3, [pc, #172]	@ (fe00 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x200>)
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        fd52:	4a2a      	ldr	r2, [pc, #168]	@ (fdfc <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1fc>)
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+        fd54:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        fd56:	9204      	str	r2, [sp, #16]
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+        fd58:	a804      	add	r0, sp, #16
+
+        fd5a:	4798      	blx	r3
+
+    logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&):
+
+        fd5c:	2400      	movs	r4, #0
+
+        fd5e:	4621      	mov	r1, r4
+
+        fd60:	e004      	b.n	fd6c <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x16c>
+
+        fd62:	6835      	ldr	r5, [r6, #0]
+
+        fd64:	682b      	ldr	r3, [r5, #0]
+
+        fd66:	f8d3 8008 	ldr.w	r8, [r3, #8]
+
+        fd6a:	b2e1      	uxtb	r1, r4
+
+        fd6c:	7a3a      	ldrb	r2, [r7, #8]
+
+        fd6e:	4628      	mov	r0, r5
+
+        fd70:	3401      	adds	r4, #1
+
+        fd72:	47c0      	blx	r8
+
+        fd74:	45a1      	cmp	r9, r4
+
+        fd76:	d1f4      	bne.n	fd62 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x162>
+
+        fd78:	6830      	ldr	r0, [r6, #0]
+
+        fd7a:	6803      	ldr	r3, [r0, #0]
+
+        fd7c:	6a1b      	ldr	r3, [r3, #32]
+
+        fd7e:	4798      	blx	r3
+
+        fd80:	e793      	b.n	fcaa <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xaa>
+
+        fd82:	4629      	mov	r1, r5
+
+        fd84:	a804      	add	r0, sp, #16
+
+        fd86:	691f      	ldr	r7, [r3, #16]
+
+        fd88:	f005 fbc8 	bl	1551c <<a href="../../../../util/src/util/command/CommandContext.cpp/74c51ebf813b1f4a7dc14ee9e4ad4d7d.html">util::command::CommandContext::scanIdentifierToken()</a>>
+
+        fd8c:	a904      	add	r1, sp, #16
+
+        fd8e:	4620      	mov	r0, r4
+
+        fd90:	47b8      	blx	r7
+
+        fd92:	1e01      	subs	r1, r0, #0
+
+        fd94:	4604      	mov	r4, r0
+
+        fd96:	bf18      	it	ne
+
+        fd98:	2101      	movne	r1, #1
+
+        fd9a:	2204      	movs	r2, #4
+
+        fd9c:	4628      	mov	r0, r5
+
+        fd9e:	f005 fb37 	bl	15410 <<a href="../../../../util/src/util/command/CommandContext.cpp/b2ce40f9dd9a53ee51be5469e7a471d7.html">util::command::CommandContext::check(bool, util::command::ICommand::Result)</a>>
+
+        fda2:	2800      	cmp	r0, #0
+
+        fda4:	d081      	beq.n	fcaa <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xaa>
+
+        fda6:	4628      	mov	r0, r5
+
+        fda8:	f005 fb20 	bl	153ec <<a href="../../../../util/src/util/command/CommandContext.cpp/af39a4065f86e9957b5727628c6f7577.html">util::command::CommandContext::checkEol()</a>>
+
+        fdac:	2800      	cmp	r0, #0
+
+        fdae:	f43f af7c 	beq.w	fcaa <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xaa>
+
+        fdb2:	6835      	ldr	r5, [r6, #0]
+
+    _ZNK4util6logger13ComponentInfo8getIndexEv():
+
+        fdb4:	f89d 8008 	ldrb.w	r8, [sp, #8]
+
+    logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&):
+
+        fdb8:	682b      	ldr	r3, [r5, #0]
+
+        fdba:	689f      	ldr	r7, [r3, #8]
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+        fdbc:	b184      	cbz	r4, fde0 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1e0>
+
+    logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&):
+
+        fdbe:	4628      	mov	r0, r5
+
+        fdc0:	7a22      	ldrb	r2, [r4, #8]
+
+        fdc2:	4641      	mov	r1, r8
+
+        fdc4:	47b8      	blx	r7
+
+        fdc6:	6830      	ldr	r0, [r6, #0]
+
+        fdc8:	6803      	ldr	r3, [r0, #0]
+
+        fdca:	6a1b      	ldr	r3, [r3, #32]
+
+        fdcc:	4798      	blx	r3
+
+        fdce:	e76c      	b.n	fcaa <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0xaa>
+
+    _ZNK4util6logger9LevelInfo7getNameEv():
+
+        fdd0:	4b0b      	ldr	r3, [pc, #44]	@ (fe00 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x200>)
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        fdd2:	4a0a      	ldr	r2, [pc, #40]	@ (fdfc <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1fc>)
+
+    _ZNK4util6logger9LevelInfo7getNameEv():
+
+        fdd4:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        fdd6:	9204      	str	r2, [sp, #16]
+
+    _ZNK4util6logger9LevelInfo7getNameEv():
+
+        fdd8:	af04      	add	r7, sp, #16
+
+        fdda:	4638      	mov	r0, r7
+
+        fddc:	4798      	blx	r3
+
+        fdde:	e73c      	b.n	fc5a <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x5a>
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+        fde0:	4b07      	ldr	r3, [pc, #28]	@ (fe00 <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x200>)
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        fde2:	4a06      	ldr	r2, [pc, #24]	@ (fdfc <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1fc>)
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+        fde4:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        fde6:	9204      	str	r2, [sp, #16]
+
+    _ZNK4util6logger9LevelInfo8getLevelEv():
+
+        fde8:	a804      	add	r0, sp, #16
+
+        fdea:	4798      	blx	r3
+
+        fdec:	e7e7      	b.n	fdbe <<a href="./e99a3fcb4972745b1628a30d95031ab4.html">logger::DefaultLoggerCommand::levelCommand(util::command::CommandContext&)</a>+0x1be>
+
+        fdee:	bf00      	nop
+
+        fdf0:	000246b0 	.word	0x000246b0
+
+        fdf4:	000246b4 	.word	0x000246b4
+
+        fdf8:	000246c0 	.word	0x000246c0
+
+        fdfc:	00024698 	.word	0x00024698
+
+        fe00:	1ffe0120 	.word	0x1ffe0120
+
+        fe04:	000246d0 	.word	0x000246d0
+
+    </pre>
+
+    
+    <pre><a href="../../../../../3rdparty/etl/include/etl/private/delegate_cpp11.h/47a64afef674905707e771413be3f989.html">void etl::delegate&lt;void (util::command::CommandContext&amp;)&gt;::method_stub&lt;logger::DefaultLoggerCommand, &amp;logger::DefaultLoggerCommand::levelCommand&gt;(void*, util::command::CommandContext&amp;) (4)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 308</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,252</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    308
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,252
+                    
+                    
+                </td>
+                <td class="col_size">432</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/4aadf02dd7dcf4f301c4d79e66b22e38.html" class="icon-function">util::format::PrintfFormatter::formatIntDatatype(char*, util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;, signed char&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    284
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                96 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    820
+                    
+                    
+                </td>
+                <td class="col_size">436</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/a55fbe8aa7abfc498675bef9f2e3bbf3.html" class="icon-function">util::format::PrintfFormatter::formatIntParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    188
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    384
+                    
+                    
+                </td>
+                <td class="col_size">132</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/1fd658a3cadf7a6a384e16e0b788aef4.html" class="icon-function">util::format::PrintfFormatter::formatParam(util::format::ParamInfo const&amp;, util::format::ParamVariant const&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    164
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                56 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    252
+                    
+                    
+                </td>
+                <td class="col_size">192</td>
+                <td><a href="../../../../util/src/util/format/PrintfFormatter.cpp/54d7602074146c5884ce6c1e97059b8b.html" class="icon-function">util::format::PrintfFormatter::format(char const*, util::format::IPrintfArgumentReader&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    108
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                44 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">60</td>
+                <td><a href="../../../../util/src/util/format/StringWriter.cpp/97429f3089d9f361a2822ba86177689e.html" class="icon-function">util::format::StringWriter::printf(char const*, ...)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">64
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

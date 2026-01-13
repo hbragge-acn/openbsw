@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../docan.html">docan</a></li>
+        
+        <li><a href="../../../../include.html">include</a></li>
+        
+        <li><a href="../../../docan.html">docan</a></li>
+        
+        <li ><a href="../../transmitter.html">transmitter</a>
+            </li>
+
+        
+        <li class="active"><a href="../DoCanTransmitter.h.html">DoCanTransmitter.h</a>:379
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::cyclicTask(unsigned long)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00004410</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>48 (static)</td>
+                <td>600</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (3)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../executables/referenceApp/application/src/systems/DoCanSystem.cpp/08ec7ead8c80881e263084632b9e8116.html">docan::DoCanSystem::TickGeneratorRunnableAdapter::execute() (88)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../executables/referenceApp/application/src/systems/DoCanSystem.cpp/724429bde7f61dda5efb38e2b412eb9e.html">docan::DoCanSystem::execute() (56)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../executables/referenceApp/application/include/systems/DoCanSystem.h/70261d5a4e888d6e0dd4a017245e5bfb.html">non-virtual thunk to docan::DoCanSystem::execute() (56)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=1100
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./522c0124e45dce5c143b4eb6df62f011.html">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::releaseRemoveLock(bool) (480)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./df59d153d007366c212e4d868fe64610.html">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::handleResult(docan::DoCanMessageTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;&amp;, docan::TransmitResult, char const*) (620)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../async/include/async/util/MemberCall.h/6ce750386ae044aec36c8dc6ce225197.html">async::MemberCall&lt;docan::DoCanTransportLayer&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;, &amp;docan::DoCanTransportLayer&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::processShutdown&gt;::execute() (104)</a></pre>
+    
+
+    <pre>
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        4410:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+
+    _ZN5docan16DoCanTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE13setRemoveLockEv():
+
+        4414:	f890 3039 	ldrb.w	r3, [r0, #57]	@ 0x39
+
+        4418:	2bff      	cmp	r3, #255	@ 0xff
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        441a:	b083      	sub	sp, #12
+
+        441c:	4606      	mov	r6, r0
+
+        441e:	4688      	mov	r8, r1
+
+    _ZN5docan16DoCanTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE13setRemoveLockEv():
+
+        4420:	d107      	bne.n	4432 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x22>
+
+        4422:	4b8e      	ldr	r3, [pc, #568]	@ (465c <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x24c>)
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        4424:	4a8e      	ldr	r2, [pc, #568]	@ (4660 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x250>)
+
+    _ZN5docan16DoCanTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE13setRemoveLockEv():
+
+        4426:	681b      	ldr	r3, [r3, #0]
+
+    _ZN3etl9exceptionC4EPKcS2_i():
+
+        4428:	9201      	str	r2, [sp, #4]
+
+    _ZN5docan16DoCanTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE13setRemoveLockEv():
+
+        442a:	a801      	add	r0, sp, #4
+
+        442c:	4798      	blx	r3
+
+        442e:	f896 3039 	ldrb.w	r3, [r6, #57]	@ 0x39
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        4432:	f3ef 8210 	mrs	r2, PRIMASK
+
+    getMachineStateRegisterValueAndSuspendAllInterrupts():
+
+        4436:	b672      	cpsid	i
+
+    _ZN5docan16DoCanTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE13setRemoveLockEv():
+
+        4438:	3301      	adds	r3, #1
+
+        443a:	f886 3039 	strb.w	r3, [r6, #57]	@ 0x39
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        443e:	f382 8810 	msr	PRIMASK, r2
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE8get_headEv():
+
+        4442:	69f5      	ldr	r5, [r6, #28]
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE3endEv():
+
+        4444:	f106 0418 	add.w	r4, r6, #24
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        4448:	42a5      	cmp	r5, r4
+
+        444a:	d011      	beq.n	4470 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x60>
+
+    _ZN5docan23DoCanMessageTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11updateTimerEm():
+
+        444c:	f04f 0900 	mov.w	r9, #0
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        4450:	f3ef 8710 	mrs	r7, PRIMASK
+
+    getMachineStateRegisterValueAndSuspendAllInterrupts():
+
+        4454:	b672      	cpsid	i
+
+    _ZNK3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratorptEv():
+
+        4456:	2d00      	cmp	r5, #0
+
+        4458:	f000 80fd 	beq.w	4656 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x246>
+
+    _ZN5docan23DoCanMessageTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11updateTimerEm():
+
+        445c:	f895 302b 	ldrb.w	r3, [r5, #43]	@ 0x2b
+
+        4460:	b123      	cbz	r3, 446c <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x5c>
+
+    _ZN5docan15timermanagement4lessEmm():
+
+        4462:	6a2b      	ldr	r3, [r5, #32]
+
+        4464:	eba3 0308 	sub.w	r3, r3, r8
+
+    _ZN5docan23DoCanMessageTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11updateTimerEm():
+
+        4468:	2b01      	cmp	r3, #1
+
+        446a:	d40c      	bmi.n	4486 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x76>
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        446c:	f387 8810 	msr	PRIMASK, r7
+
+    _ZN5docan16DoCanTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11RemoveGuardD4Ev():
+
+        4470:	2101      	movs	r1, #1
+
+        4472:	4630      	mov	r0, r6
+
+        4474:	f7ff fe00 	bl	4078 <<a href="./522c0124e45dce5c143b4eb6df62f011.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::releaseRemoveLock(bool)</a>>
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        4478:	f896 303f 	ldrb.w	r3, [r6, #63]	@ 0x3f
+
+        447c:	2b00      	cmp	r3, #0
+
+        447e:	d157      	bne.n	4530 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x120>
+
+        4480:	b003      	add	sp, #12
+
+        4482:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE7expiredEv():
+
+        4486:	f815 3c05 	ldrb.w	r3, [r5, #-5]
+
+    _ZN5docan23DoCanMessageTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11updateTimerEm():
+
+        448a:	f885 902b 	strb.w	r9, [r5, #43]	@ 0x2b
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE7expiredEv():
+
+        448e:	2b02      	cmp	r3, #2
+
+        4490:	d034      	beq.n	44fc <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0xec>
+
+        4492:	2b03      	cmp	r3, #3
+
+        4494:	d029      	beq.n	44ea <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0xda>
+
+        4496:	2b01      	cmp	r3, #1
+
+        4498:	d124      	bne.n	44e4 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0xd4>
+
+    _ZN3etl11bitset_implIhLc1EE12set_positionEPhjb():
+
+        449a:	f835 2c06 	ldrh.w	r2, [r5, #-6]
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE9setFailedENS_15TransmitMessageEh():
+
+        449e:	f805 9c04 	strb.w	r9, [r5, #-4]
+
+    _ZN3etl11bitset_implIhLc1EE12set_positionEPhjb():
+
+        44a2:	f5a2 7281 	sub.w	r2, r2, #258	@ 0x102
+
+        44a6:	fab2 f282 	clz	r2, r2
+
+        44aa:	0952      	lsrs	r2, r2, #5
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE9setFailedENS_15TransmitMessageEh():
+
+        44ac:	2102      	movs	r1, #2
+
+    _ZN3etl11bitset_implIhLc1EE12set_positionEPhjb():
+
+        44ae:	0052      	lsls	r2, r2, #1
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE9setFailedENS_15TransmitMessageEh():
+
+        44b0:	2004      	movs	r0, #4
+
+        44b2:	f805 9c05 	strb.w	r9, [r5, #-5]
+
+        44b6:	f805 1c03 	strb.w	r1, [r5, #-3]
+
+        44ba:	f805 0c06 	strb.w	r0, [r5, #-6]
+
+    _ZN5docan14TransmitResultC4ERKS0_():
+
+        44be:	f88d 3004 	strb.w	r3, [sp, #4]
+
+    _ZN3etl11bitset_implIhLc1EE19operator_assignmentEPhPKhj():
+
+        44c2:	f88d 2005 	strb.w	r2, [sp, #5]
+
+    _ZN5docan14TransmitResultC4ERKS0_():
+
+        44c6:	f8ad 1006 	strh.w	r1, [sp, #6]
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        44ca:	4b66      	ldr	r3, [pc, #408]	@ (4664 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x254>)
+
+        44cc:	aa01      	add	r2, sp, #4
+
+        44ce:	f1a5 010c 	sub.w	r1, r5, #12
+
+        44d2:	4630      	mov	r0, r6
+
+        44d4:	f7fe fe82 	bl	31dc <<a href="./df59d153d007366c212e4d868fe64610.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::handleResult(docan::DoCanMessageTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >&, docan::TransmitResult, char const*)</a>>
+
+        44d8:	f387 8810 	msr	PRIMASK, r7
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratorppEv():
+
+        44dc:	686d      	ldr	r5, [r5, #4]
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        44de:	42a5      	cmp	r5, r4
+
+        44e0:	d1b6      	bne.n	4450 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x40>
+
+        44e2:	e7c5      	b.n	4470 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x60>
+
+    _ZN5docan14TransmitResultC4Eb():
+
+        44e4:	f8cd 9004 	str.w	r9, [sp, #4]
+
+        44e8:	e7ef      	b.n	44ca <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0xba>
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE7setSendEv():
+
+        44ea:	f240 1301 	movw	r3, #257	@ 0x101
+
+        44ee:	f825 3c06 	strh.w	r3, [r5, #-6]
+
+    _ZN5docan14TransmitResultC4Eb():
+
+        44f2:	2301      	movs	r3, #1
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE7setSendEv():
+
+        44f4:	f805 9c04 	strb.w	r9, [r5, #-4]
+
+    _ZN5docan14TransmitResultC4Eb():
+
+        44f8:	9301      	str	r3, [sp, #4]
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE7setSendEv():
+
+        44fa:	e7e6      	b.n	44ca <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0xba>
+
+    _ZN3etl11bitset_implIhLc1EE12set_positionEPhjb():
+
+        44fc:	f835 3c06 	ldrh.w	r3, [r5, #-6]
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE9setFailedENS_15TransmitMessageEh():
+
+        4500:	f805 9c04 	strb.w	r9, [r5, #-4]
+
+    _ZN3etl11bitset_implIhLc1EE12set_positionEPhjb():
+
+        4504:	f5a3 7381 	sub.w	r3, r3, #258	@ 0x102
+
+        4508:	fab3 f383 	clz	r3, r3
+
+        450c:	095b      	lsrs	r3, r3, #5
+
+        450e:	005b      	lsls	r3, r3, #1
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE9setFailedENS_15TransmitMessageEh():
+
+        4510:	2205      	movs	r2, #5
+
+        4512:	2104      	movs	r1, #4
+
+        4514:	f805 9c05 	strb.w	r9, [r5, #-5]
+
+        4518:	f805 2c03 	strb.w	r2, [r5, #-3]
+
+        451c:	f805 1c06 	strb.w	r1, [r5, #-6]
+
+    _ZN3etl11bitset_implIhLc1EE19operator_assignmentEPhPKhj():
+
+        4520:	f88d 3005 	strb.w	r3, [sp, #5]
+
+    _ZN5docan14TransmitResultC4ERKS0_():
+
+        4524:	2301      	movs	r3, #1
+
+        4526:	f8ad 2006 	strh.w	r2, [sp, #6]
+
+        452a:	f88d 3004 	strb.w	r3, [sp, #4]
+
+    _ZN5docan35DoCanMessageTransmitProtocolHandlerItE9setFailedENS_15TransmitMessageEh():
+
+        452e:	e7cc      	b.n	44ca <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0xba>
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        4530:	f3ef 8a10 	mrs	sl, PRIMASK
+
+    getMachineStateRegisterValueAndSuspendAllInterrupts():
+
+        4534:	b672      	cpsid	i
+
+    _ZNK3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE15is_trivial_listEv():
+
+        4536:	69f7      	ldr	r7, [r6, #28]
+
+        4538:	42a7      	cmp	r7, r4
+
+        453a:	d065      	beq.n	4608 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1f8>
+
+        453c:	687b      	ldr	r3, [r7, #4]
+
+        453e:	42a3      	cmp	r3, r4
+
+        4540:	d062      	beq.n	4608 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1f8>
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratoraSERKS9_():
+
+        4542:	4621      	mov	r1, r4
+
+        4544:	46a4      	mov	ip, r4
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        4546:	f04f 0801 	mov.w	r8, #1
+
+        454a:	f04f 0900 	mov.w	r9, #0
+
+        454e:	f109 0901 	add.w	r9, r9, #1
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratoraSERKS9_():
+
+        4552:	463a      	mov	r2, r7
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        4554:	2000      	movs	r0, #0
+
+        4556:	e004      	b.n	4562 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x152>
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratorppEv():
+
+        4558:	6852      	ldr	r2, [r2, #4]
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        455a:	42a2      	cmp	r2, r4
+
+        455c:	f100 0001 	add.w	r0, r0, #1
+
+        4560:	d001      	beq.n	4566 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x156>
+
+        4562:	4580      	cmp	r8, r0
+
+        4564:	dcf8      	bgt.n	4558 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x148>
+
+        4566:	2800      	cmp	r0, #0
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratorppEv():
+
+        4568:	4645      	mov	r5, r8
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        456a:	dd2b      	ble.n	45c4 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1b4>
+
+        456c:	b1d5      	cbz	r5, 45a4 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x194>
+
+        456e:	42a2      	cmp	r2, r4
+
+        4570:	d018      	beq.n	45a4 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x194>
+
+    _ZNK3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratordeEv():
+
+        4572:	2a00      	cmp	r2, #0
+
+        4574:	d06d      	beq.n	4652 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x242>
+
+        4576:	f1a2 030c 	sub.w	r3, r2, #12
+
+        457a:	2f00      	cmp	r7, #0
+
+        457c:	d067      	beq.n	464e <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x23e>
+
+        457e:	f1a7 0e0c 	sub.w	lr, r7, #12
+
+    _ZNK5docan23DoCanMessageTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEEltERKS3_():
+
+        4582:	f893 b037 	ldrb.w	fp, [r3, #55]	@ 0x37
+
+        4586:	f1bb 0f00 	cmp.w	fp, #0
+
+        458a:	d00b      	beq.n	45a4 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x194>
+
+        458c:	f89e b037 	ldrb.w	fp, [lr, #55]	@ 0x37
+
+        4590:	f1bb 0f00 	cmp.w	fp, #0
+
+        4594:	d057      	beq.n	4646 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x236>
+
+    _ZN5docan15timermanagement4lessEmm():
+
+        4596:	6adb      	ldr	r3, [r3, #44]	@ 0x2c
+
+        4598:	f8de e02c 	ldr.w	lr, [lr, #44]	@ 0x2c
+
+        459c:	eba3 030e 	sub.w	r3, r3, lr
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        45a0:	2b00      	cmp	r3, #0
+
+        45a2:	db50      	blt.n	4646 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x236>
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratoraSERKS9_():
+
+        45a4:	463b      	mov	r3, r7
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratorppEi():
+
+        45a6:	687f      	ldr	r7, [r7, #4]
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        45a8:	3801      	subs	r0, #1
+
+        45aa:	45a4      	cmp	ip, r4
+
+        45ac:	d042      	beq.n	4634 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x224>
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_SA_():
+
+        45ae:	2900      	cmp	r1, #0
+
+        45b0:	d046      	beq.n	4640 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x230>
+
+        45b2:	604b      	str	r3, [r1, #4]
+
+        45b4:	468e      	mov	lr, r1
+
+        45b6:	4619      	mov	r1, r3
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        45b8:	2800      	cmp	r0, #0
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_SA_():
+
+        45ba:	f8c3 e000 	str.w	lr, [r3]
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_RS5_():
+
+        45be:	605c      	str	r4, [r3, #4]
+
+        45c0:	61b3      	str	r3, [r6, #24]
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        45c2:	dcd3      	bgt.n	456c <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x15c>
+
+        45c4:	2d00      	cmp	r5, #0
+
+        45c6:	dd31      	ble.n	462c <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x21c>
+
+        45c8:	42a2      	cmp	r2, r4
+
+        45ca:	d010      	beq.n	45ee <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1de>
+
+        45cc:	2800      	cmp	r0, #0
+
+        45ce:	d1d0      	bne.n	4572 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x162>
+
+        45d0:	45a4      	cmp	ip, r4
+
+        45d2:	4613      	mov	r3, r2
+
+        45d4:	f105 35ff 	add.w	r5, r5, #4294967295	@ 0xffffffff
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratorppEi():
+
+        45d8:	6852      	ldr	r2, [r2, #4]
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        45da:	d01d      	beq.n	4618 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x208>
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_SA_():
+
+        45dc:	2900      	cmp	r1, #0
+
+        45de:	d1e8      	bne.n	45b2 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1a2>
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_RS5_():
+
+        45e0:	e9c3 1400 	strd	r1, r4, [r3]
+
+        45e4:	61b3      	str	r3, [r6, #24]
+
+        45e6:	4619      	mov	r1, r3
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        45e8:	b305      	cbz	r5, 462c <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x21c>
+
+        45ea:	42a2      	cmp	r2, r4
+
+        45ec:	d1f0      	bne.n	45d0 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1c0>
+
+        45ee:	f1b9 0f01 	cmp.w	r9, #1
+
+        45f2:	d009      	beq.n	4608 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1f8>
+
+    _ZN3etl19intrusive_list_baseINS_18bidirectional_linkILj0EEEE8get_headEv():
+
+        45f4:	69f7      	ldr	r7, [r6, #28]
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        45f6:	42a7      	cmp	r7, r4
+
+        45f8:	ea4f 0848 	mov.w	r8, r8, lsl #1
+
+        45fc:	d004      	beq.n	4608 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1f8>
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratoraSERKS9_():
+
+        45fe:	4621      	mov	r1, r4
+
+        4600:	46a4      	mov	ip, r4
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        4602:	f04f 0900 	mov.w	r9, #0
+
+        4606:	e7a2      	b.n	454e <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x13e>
+
+    docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long):
+
+        4608:	2300      	movs	r3, #0
+
+        460a:	f886 303f 	strb.w	r3, [r6, #63]	@ 0x3f
+
+        460e:	f38a 8810 	msr	PRIMASK, sl
+
+        4612:	b003      	add	sp, #12
+
+        4614:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_SA_():
+
+        4618:	4661      	mov	r1, ip
+
+        461a:	f8cc 3004 	str.w	r3, [ip, #4]
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_RS5_():
+
+        461e:	e9c3 1400 	strd	r1, r4, [r3]
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratoraSERKS9_():
+
+        4622:	469c      	mov	ip, r3
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_RS5_():
+
+        4624:	61b3      	str	r3, [r6, #24]
+
+        4626:	4619      	mov	r1, r3
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        4628:	2d00      	cmp	r5, #0
+
+        462a:	d1de      	bne.n	45ea <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1da>
+
+        462c:	4294      	cmp	r4, r2
+
+        462e:	4617      	mov	r7, r2
+
+        4630:	d18d      	bne.n	454e <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x13e>
+
+        4632:	e7dc      	b.n	45ee <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1de>
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_SA_():
+
+        4634:	f8cc 3004 	str.w	r3, [ip, #4]
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratoraSERKS9_():
+
+        4638:	46e6      	mov	lr, ip
+
+        463a:	4619      	mov	r1, r3
+
+        463c:	469c      	mov	ip, r3
+
+        463e:	e7bb      	b.n	45b8 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1a8>
+
+    _ZN3etl4linkINS_18bidirectional_linkILj0EEEEENS_9enable_ifIXsrNS_7is_sameIT_NS1_IXsrS5_2IDEEEEE5valueEvE4typeEPS5_SA_():
+
+        4640:	468e      	mov	lr, r1
+
+        4642:	4619      	mov	r1, r3
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratoraSERKS9_():
+
+        4644:	e7b8      	b.n	45b8 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x1a8>
+
+        4646:	4613      	mov	r3, r2
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE4sortINS_4lessIS5_EEEEvT_():
+
+        4648:	3d01      	subs	r5, #1
+
+    _ZN3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratorppEv():
+
+        464a:	6852      	ldr	r2, [r2, #4]
+
+        464c:	e7ad      	b.n	45aa <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x19a>
+
+    _ZNK3etl14intrusive_listIN5docan23DoCanMessageTransmitterINS1_18DoCanDataLinkLayerImthLm4294967295EtEEEENS_18bidirectional_linkILj0EEEE8iteratordeEv():
+
+        464e:	46be      	mov	lr, r7
+
+        4650:	e797      	b.n	4582 <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x172>
+
+        4652:	4613      	mov	r3, r2
+
+        4654:	e791      	b.n	457a <<a href="./6e8ce14f037c6755ca42b9edba53a415.html">docan::DoCanTransmitter<docan::DoCanDataLinkLayer<unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short> >::cyclicTask(unsigned long)</a>+0x16a>
+
+    _ZN5docan23DoCanMessageTransmitterINS_18DoCanDataLinkLayerImthLm4294967295EtEEE11updateTimerEm():
+
+        4656:	f895 3037 	ldrb.w	r3, [r5, #55]	@ 0x37
+
+        465a:	deff      	udf	#255	@ 0xff
+
+        465c:	1ffe0120 	.word	0x1ffe0120
+
+        4660:	00022d58 	.word	0x00022d58
+
+        4664:	00022fb8 	.word	0x00022fb8
+
+    </pre>
+
+    
+    <pre><a href="../../../../../../../executables/referenceApp/application/src/systems/DoCanSystem.cpp/724429bde7f61dda5efb38e2b412eb9e.html">docan::DoCanSystem::execute() (56)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 356</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,700</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    356
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,700
+                    
+                    
+                </td>
+                <td class="col_size">68</td>
+                <td><a href="../../../../../util/src/util/logger/Logger.cpp/d658d7c78dcca1ca01e61ef198b3eeaa.html" class="icon-function">util::logger::Logger::doLog(unsigned char, util::logger::Level, char const*, std::__va_list)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    308
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,632
+                    
+                    
+                </td>
+                <td class="col_size">56</td>
+                <td><a href="../../../../../util/include/util/logger/Logger.h/fee4073070054ecc160dbd4d6b194f36.html" class="icon-function">util::logger::Logger::warn(unsigned char, char const*, ...)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    288
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,576
+                    
+                    
+                </td>
+                <td class="col_size">620</td>
+                <td><a href="./df59d153d007366c212e4d868fe64610.html" class="icon-function">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::handleResult(docan::DoCanMessageTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;&amp;, docan::TransmitResult, char const*)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    240
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                88 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    956
+                    
+                    
+                </td>
+                <td class="col_size">476</td>
+                <td><a href="./4ee91e092a72cec93c86ca20dae17d71.html" class="icon-function">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::sendNextFrames()</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    152
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">480</td>
+                <td><a href="./522c0124e45dce5c143b4eb6df62f011.html" class="icon-function">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::releaseRemoveLock(bool)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">80
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 80</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 688</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    688
+                    
+                    
+                </td>
+                <td class="col_size">600</td>
+                <td><a href="./6e8ce14f037c6755ca42b9edba53a415.html" class="icon-function">docan::DoCanTransmitter&lt;docan::DoCanDataLinkLayer&lt;unsigned long, unsigned short, unsigned char, 4294967295ul, unsigned short&gt; &gt;::cyclicTask(unsigned long)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                32 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">88</td>
+                <td><a href="../../../../../../../executables/referenceApp/application/src/systems/DoCanSystem.cpp/08ec7ead8c80881e263084632b9e8116.html" class="icon-function">docan::DoCanSystem::TickGeneratorRunnableAdapter::execute()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>
